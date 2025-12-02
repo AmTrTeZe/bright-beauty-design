@@ -20,22 +20,22 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
       <div className="flex items-center justify-center transition-all duration-500 ease-out">
         <span 
           className={`
-            text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.5em] text-foreground/80 
+            text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.15em] text-foreground/80 
             transition-all duration-300
             ${isHovered ? 'font-medium text-foreground' : 'font-light'}
           `}
         >
-          {word.split('').join(' ')}
+          {word}
         </span>
         
         <span 
           className={`
-            text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light tracking-[0.4em] text-foreground/60
+            text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light tracking-[0.15em] text-foreground/60
             transition-all duration-500 ease-out whitespace-nowrap overflow-hidden
-            ${isHovered ? 'opacity-100 max-w-[500px] ml-6' : 'opacity-0 max-w-0 ml-0'}
+            ${isHovered ? 'opacity-100 max-w-[500px] ml-4' : 'opacity-0 max-w-0 ml-0'}
           `}
         >
-          | {secondWord.split('').join(' ')}
+          | {secondWord}
         </span>
       </div>
     </Link>
