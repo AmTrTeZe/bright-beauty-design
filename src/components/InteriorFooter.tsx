@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const InteriorFooter = () => {
   return (
-    <footer className="bg-white px-6 md:px-10 py-4 flex flex-col md:flex-row justify-between items-center gap-3 border-t border-[hsl(200_20%_85%)]">
-      <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 md:gap-3 text-[hsl(200_20%_50%)] text-[9px] md:text-[10px] font-normal">
+    <footer className="bg-white px-6 md:px-10 py-4 flex flex-row justify-between items-center gap-4 border-t border-[hsl(200_20%_85%)]">
+      <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[10px] md:text-xs font-normal whitespace-nowrap">
         <Logo size="sm" />
-        <span className="hidden md:inline text-[hsl(200_20%_75%)]">|</span>
+        <span className="text-[hsl(200_20%_75%)]">|</span>
         <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
           Mentions Légales
         </Link>
@@ -19,7 +19,7 @@ const InteriorFooter = () => {
         <span className="text-[hsl(200_20%_75%)]">|</span>
         <span>©Trademark 2025</span>
       </div>
-      <div className="text-right text-[hsl(200_20%_50%)] font-normal tracking-wider text-[8px] md:text-[9px] leading-tight">
+      <div className="text-right text-[hsl(200_20%_50%)] font-normal tracking-wider text-[9px] md:text-[10px] leading-tight shrink-0">
         <div>BRAND</div>
         <div>POWERS</div>
         <div>BUSINESS</div>
