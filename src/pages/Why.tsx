@@ -4,19 +4,19 @@ import Tagline from "@/components/Tagline";
 const Why = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header */}
+      {/* Header - gradient background */}
       <header className="gradient-trademark p-6 md:p-10 flex justify-between items-center">
         <Logo />
-        <div className="text-foreground text-spaced text-sm md:text-lg tracking-[0.3em] font-extralight">
+        <div className="text-foreground font-light text-sm md:text-base tracking-[0.4em]">
           W H Y | P U R P O S E
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="gradient-trademark px-6 md:px-10 lg:px-20 py-10 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-foreground/10 backdrop-blur-sm px-6 py-4 md:px-8 md:py-6 inline-block">
-            <h1 className="text-foreground text-sm md:text-base lg:text-lg font-medium tracking-wide leading-relaxed uppercase">
+      {/* Hero Section - white/light gray background */}
+      <section className="bg-[hsl(210_20%_95%)] px-6 md:px-10 lg:px-20 py-8 md:py-12">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-[hsl(200_15%_60%)] px-6 py-4 md:px-10 md:py-6 inline-block">
+            <h1 className="text-white text-xs md:text-sm lg:text-base font-medium tracking-wide leading-relaxed uppercase">
               La marque n'est pas qu'un signe de reconnaissance,
               <br />
               c'est un vecteur de sens et un levier de performance.
@@ -25,10 +25,10 @@ const Why = () => {
         </div>
       </section>
 
-      {/* Content Section - Light */}
-      <section className="gradient-trademark px-6 md:px-10 lg:px-20 py-8 md:py-12">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-foreground/90 text-sm md:text-base leading-relaxed font-light tracking-wide text-justify">
+      {/* Content Section - white/light background */}
+      <section className="bg-[hsl(210_20%_95%)] px-6 md:px-10 lg:px-20 pb-12">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
             Dans un monde en constante transformation par une digitalisation accélérée
             et des ruptures technologiques répétées, les modèles économiques sont challengés
             et les modes opératoires reconsidérés, les médias sont saturés et les points de
@@ -39,14 +39,14 @@ const Why = () => {
         </div>
       </section>
 
-      {/* Content Section - Dark */}
-      <section className="bg-secondary px-6 md:px-10 lg:px-20 py-10 md:py-16 flex-1">
-        <div className="max-w-4xl mx-auto space-y-8">
+      {/* Dark Section - blue-gray background */}
+      <section className="gradient-trademark flex-1 px-6 md:px-10 lg:px-20 py-12 md:py-16">
+        <div className="max-w-5xl mx-auto space-y-8">
           <h2 className="text-foreground text-sm md:text-base lg:text-lg font-semibold tracking-wider uppercase">
             Brand Engineering & Business Empowerment
           </h2>
           
-          <p className="text-foreground/90 text-sm md:text-base leading-relaxed font-light tracking-wide text-justify">
+          <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
             TRADEMARK™ constitue le maillon manquant entre les cabinets conseil en stratégie,
             trop généralistes et les agences de communication, trop opérationnelles.
             Un concentré d'expertises focalisées sur les champs Brand & Business,
@@ -54,7 +54,7 @@ const Why = () => {
             générateur de soft power pour l'image, créateur de hard power pour le business.
           </p>
 
-          <p className="text-foreground/70 text-xs md:text-sm tracking-wider uppercase font-light">
+          <p className="text-foreground/60 text-xs md:text-sm tracking-wider uppercase font-light border-t border-foreground/20 pt-4">
             Brand Fortification / Market Activation / Business Acceleration
           </p>
 
@@ -65,8 +65,8 @@ const Why = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary p-6 md:p-10 flex justify-between items-end">
-        <div className="text-foreground/60 text-xs font-extralight tracking-wider">
+      <footer className="gradient-trademark p-6 md:p-10 flex justify-between items-end border-t border-foreground/10">
+        <div className="text-foreground/60 text-xs font-light tracking-wider">
           TRADEMARK™ | BRAND AS ASSET
         </div>
         <Tagline />
