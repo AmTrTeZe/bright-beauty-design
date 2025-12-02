@@ -19,7 +19,7 @@ const Why = () => {
 
         {/* White Content Block */}
         <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto">
             <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
               Dans un monde en constante transformation par une digitalisation accélérée
               et des ruptures technologiques répétées, les modèles économiques sont challengés
@@ -33,7 +33,7 @@ const Why = () => {
 
         {/* Dark Section */}
         <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
               Brand Engineering & Business Empowerment
             </h2>
