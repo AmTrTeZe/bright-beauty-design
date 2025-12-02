@@ -41,8 +41,8 @@ const What = () => {
         <section id="brand-fortification" className="scroll-mt-40">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
-            <div className="gradient-trademark p-8 max-w-4xl mx-auto">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify text-center">
+            <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                 LA MARQUE EST UN CAPITAL STRATÉGIQUE DE LONG TERME ET UN ACTIF OPÉRATIONNEL DE COURT TERME.
               </p>
             </div>
@@ -83,8 +83,8 @@ const What = () => {
         <section id="market-activation" className="scroll-mt-40">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
-            <div className="gradient-trademark p-8 max-w-4xl mx-auto">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify text-center">
+            <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                 L'IMAGE D'UNE MARQUE SE CONSTRUIT À CHAQUE POINT DE CONTACT.
               </p>
             </div>
@@ -125,8 +125,8 @@ const What = () => {
         <section id="business-acceleration" className="scroll-mt-40">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
-            <div className="gradient-trademark p-8 max-w-4xl mx-auto">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify text-center">
+            <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                 LA FORCE CRÉATIVE EST UNE FORCE CRÉATRICE.
               </p>
             </div>
