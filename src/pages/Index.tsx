@@ -16,7 +16,7 @@ const Index = () => {
     <div className="min-h-screen gradient-trademark flex flex-col">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10">
-        <Logo />
+        <Logo variant="white" size="lg" />
       </header>
 
       {/* Menu - centered */}
