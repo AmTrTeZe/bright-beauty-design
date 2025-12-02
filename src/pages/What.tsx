@@ -38,7 +38,7 @@ const What = () => {
       <AnchorNav items={anchorItems} activeIndex={activeSection} />
 
       {/* Main Content */}
-      <main className="flex-1 pt-32">
+      <main className="flex-1 pt-28">
         {/* Section 1: Brand Fortification */}
         <section id="brand-fortification" className="scroll-mt-32">
           {/* Quote Block - centered */}
