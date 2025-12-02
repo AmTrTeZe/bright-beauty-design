@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logoImage from "@/assets/logo-trademark.png";
 import logoWhiteImage from "@/assets/logo-trademark-white.png";
 
@@ -9,6 +9,9 @@ interface LogoProps {
 }
 
 const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  
   const sizeClasses = {
     sm: "h-3 md:h-4",
     md: "h-5 md:h-6",
@@ -17,8 +20,25 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
   
   const logoSrc = variant === "white" ? logoWhiteImage : logoImage;
   
+  // If already on home, just render the logo without link
+  if (isHomePage) {
+    return (
+      <div className={`${className}`}>
+        <img 
+          src={logoSrc} 
+          alt="TRADEMARK" 
+          className={`${sizeClasses[size]} w-auto`}
+        />
+      </div>
+    );
+  }
+  
   return (
-    <Link to="/" className={`${className} hover:opacity-80 transition-opacity`}>
+    <Link 
+      to="/" 
+      state={{ skipSplash: true }}
+      className={`${className} hover:opacity-80 transition-opacity`}
+    >
       <img 
         src={logoSrc} 
         alt="TRADEMARK" 
