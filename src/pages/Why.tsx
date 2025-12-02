@@ -55,11 +55,9 @@ const Why = () => {
         {/* Content */}
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Gray quote block */}
-          <div className="bg-[hsl(200_10%_75%)] px-8 py-6">
+          <div className="bg-[hsl(200_10%_75%)] p-8">
             <p className="text-white text-sm md:text-base font-medium tracking-wide leading-relaxed uppercase">
-              La marque n'est pas qu'un signe de reconnaissance,
-              <br />
-              c'est un vecteur de sens et un levier de performance.
+              La marque n'est pas qu'un signe de reconnaissance, c'est un vecteur de sens et un levier de performance.
             </p>
           </div>
 
