@@ -1,6 +1,22 @@
 import Logo from "@/components/Logo";
 import Tagline from "@/components/Tagline";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const menuItems = [
+  { word: "WHY", to: "/why" },
+  { word: "WHAT", to: "/what" },
+  { word: "HOW", to: "/how" },
+  { word: "WHO", to: "/who" },
+  { word: "WITH", to: "/with" },
+  { word: "WHERE", to: "/where" },
+];
 
 const Why = () => {
   return (
@@ -9,14 +25,30 @@ const Why = () => {
       <section className="bg-white flex-1 px-8 md:px-16 lg:px-24 py-8">
         {/* Header */}
         <header className="flex justify-between items-center mb-16">
-          <Logo />
+          <Logo className="text-[hsl(200_20%_30%)]" />
           <div className="flex items-center gap-8">
-            <div className="text-foreground font-light text-sm md:text-base tracking-[0.3em]">
+            <div className="text-[hsl(200_20%_30%)] font-light text-sm md:text-base tracking-[0.3em]">
               WHY | PURPOSE
             </div>
-            <button className="text-foreground hover:opacity-70 transition-opacity">
-              <Menu className="w-6 h-6" strokeWidth={1.5} />
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="text-[hsl(200_20%_30%)] hover:opacity-70 transition-opacity">
+                  <Menu className="w-6 h-6" strokeWidth={1.5} />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="bg-white border-[hsl(200_20%_80%)]">
+                {menuItems.map((item) => (
+                  <DropdownMenuItem key={item.word} asChild>
+                    <Link 
+                      to={item.to} 
+                      className="text-[hsl(200_20%_30%)] font-light tracking-[0.2em] cursor-pointer"
+                    >
+                      {item.word}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </header>
 

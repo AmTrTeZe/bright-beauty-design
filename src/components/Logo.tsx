@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 
-const Logo = () => {
+interface LogoProps {
+  className?: string;
+}
+
+const Logo = ({ className = "text-foreground" }: LogoProps) => {
   return (
-    <Link to="/" className="text-foreground hover:opacity-80 transition-opacity">
+    <Link to="/" className={`${className} hover:opacity-80 transition-opacity`}>
       <svg 
         viewBox="0 0 280 40" 
         className="h-6 md:h-8 w-auto"
