@@ -74,8 +74,9 @@ const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }:
         <nav className="flex justify-end gap-4 mt-3">
           {anchorItems.map((item, index) => {
             const isHovered = hoveredIndex === index;
-            const isActive = activeAnchorIndex === index && hoveredIndex === null;
-            const showLabel = isHovered || isActive;
+            // When any item is hovered, only show label for hovered item
+            // When no item is hovered, show label for active item
+            const showLabel = hoveredIndex !== null ? isHovered : activeAnchorIndex === index;
 
             return (
               <button
@@ -83,7 +84,7 @@ const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }:
                 onClick={() => handleAnchorClick(item.id)}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="flex items-center gap-2 text-[hsl(200_20%_59%)] hover:text-[hsl(200_20%_50%)] transition-all"
+                className="flex items-center justify-end min-w-[12px] text-[hsl(200_20%_59%)] hover:text-[hsl(200_20%_50%)] transition-colors"
               >
                 {showLabel ? (
                   <span className="text-[10px] md:text-xs font-normal tracking-[0.1em] whitespace-nowrap uppercase">
