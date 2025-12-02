@@ -10,6 +10,7 @@ import How from "./pages/How";
 import Who from "./pages/Who";
 import With from "./pages/With";
 import Where from "./pages/Where";
+import MentionsLegales from "./pages/MentionsLegales";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/who" element={<Who />} />
           <Route path="/with" element={<With />} />
           <Route path="/where" element={<Where />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
