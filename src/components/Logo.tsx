@@ -1,37 +1,18 @@
 import { Link } from "react-router-dom";
+import logoImage from "@/assets/logo-trademark.png";
 
 interface LogoProps {
   className?: string;
 }
 
-const Logo = ({ className = "text-foreground" }: LogoProps) => {
+const Logo = ({ className = "" }: LogoProps) => {
   return (
     <Link to="/" className={`${className} hover:opacity-80 transition-opacity`}>
-      <svg 
-        viewBox="0 0 280 40" 
-        className="h-6 md:h-8 w-auto"
-        fill="currentColor"
-      >
-        <text 
-          x="0" 
-          y="30" 
-          fontFamily="Space Grotesk, sans-serif" 
-          fontSize="28" 
-          fontWeight="300"
-          letterSpacing="0.15em"
-        >
-          TRADEMARK
-        </text>
-        <text 
-          x="248" 
-          y="18" 
-          fontFamily="Space Grotesk, sans-serif" 
-          fontSize="12" 
-          fontWeight="300"
-        >
-          ™
-        </text>
-      </svg>
+      <img 
+        src={logoImage} 
+        alt="TRADEMARK" 
+        className="h-5 md:h-6 w-auto"
+      />
     </Link>
   );
 };
