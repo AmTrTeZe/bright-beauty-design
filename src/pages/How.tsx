@@ -19,7 +19,7 @@ const How = () => {
 
         {/* White Content Block */}
         <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto">
             <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
               Par la distinction croissante des disciplines et la spécialisation des acteurs, il est désormais communément admis qu'aucun cabinet conseil ou agence de communication ne peut disposer en interne du large spectre de compétences et d'expertises permettant de couvrir l'ensemble de la chaine de valeur, comme l'exige désormais la complexité grandissante des problématiques clients et des spécificités sectorielles. Ce qui, à l'évidence, serait utopique, tant d'un point de vue organisationnel que de viabilisation des coûts de structure correspondants.
             </p>
@@ -28,7 +28,7 @@ const How = () => {
 
         {/* Dark Section */}
         <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
               L'intégration des métiers & L'hybridation des compétences
             </h2>
