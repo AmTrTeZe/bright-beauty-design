@@ -31,8 +31,8 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
         <span 
           className={`
             text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[0.15em] text-foreground/60
-            transition-all duration-500 ease-out whitespace-nowrap overflow-hidden
-            ${isHovered ? 'font-semibold opacity-100 max-w-[500px] ml-4' : 'font-extralight opacity-0 max-w-0 ml-0'}
+            transition-all duration-500 ease-out whitespace-nowrap overflow-hidden font-extralight
+            ${isHovered ? 'opacity-100 max-w-[500px] ml-4' : 'opacity-0 max-w-0 ml-0'}
           `}
         >
           | {secondWord}
