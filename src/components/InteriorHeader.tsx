@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Logo from "@/components/Logo";
 import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -17,39 +18,85 @@ const menuItems = [
   { word: "WHERE", to: "/where" },
 ];
 
+interface AnchorItem {
+  id: string;
+  label: string;
+}
+
 interface InteriorHeaderProps {
   title: string;
   subtitle: string;
+  anchorItems?: AnchorItem[];
+  activeAnchorIndex?: number;
 }
 
-const InteriorHeader = ({ title, subtitle }: InteriorHeaderProps) => {
+const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }: InteriorHeaderProps) => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const handleAnchorClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white px-6 md:px-10 py-4 flex justify-between items-center">
-      <Logo />
-      <div className="flex items-center gap-6">
-        <div className="text-[hsl(200_20%_50%)] font-normal text-sm md:text-base tracking-[0.15em]">
-          {title} | {subtitle}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white px-6 md:px-10 py-4">
+      <div className="flex justify-between items-center">
+        <Logo />
+        <div className="flex items-center gap-6">
+          <div className="text-[hsl(200_20%_50%)] font-normal text-sm md:text-base tracking-[0.15em]">
+            {title} | {subtitle}
+          </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="text-[hsl(200_20%_50%)] hover:opacity-70 transition-opacity">
+                <Menu className="w-6 h-6" strokeWidth={1.5} />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="bg-white border-[hsl(200_20%_80%)]">
+              {menuItems.map((item) => (
+                <DropdownMenuItem key={item.word} asChild>
+                  <Link 
+                    to={item.to} 
+                    className="text-[hsl(200_20%_50%)] font-normal tracking-[0.15em] cursor-pointer"
+                  >
+                    {item.word}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <button className="text-[hsl(200_20%_50%)] hover:opacity-70 transition-opacity">
-              <Menu className="w-6 h-6" strokeWidth={1.5} />
-            </button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="bg-white border-[hsl(200_20%_80%)]">
-            {menuItems.map((item) => (
-              <DropdownMenuItem key={item.word} asChild>
-                <Link 
-                  to={item.to} 
-                  className="text-[hsl(200_20%_50%)] font-normal tracking-[0.15em] cursor-pointer"
-                >
-                  {item.word}
-                </Link>
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
       </div>
+      
+      {anchorItems && anchorItems.length > 0 && (
+        <nav className="flex justify-end gap-4 mt-3">
+          {anchorItems.map((item, index) => {
+            const isHovered = hoveredIndex === index;
+            const isActive = activeAnchorIndex === index && hoveredIndex === null;
+            const showLabel = isHovered || isActive;
+
+            return (
+              <button
+                key={item.id}
+                onClick={() => handleAnchorClick(item.id)}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className="flex items-center gap-2 text-[hsl(200_20%_59%)] hover:text-[hsl(200_20%_50%)] transition-all"
+              >
+                {showLabel ? (
+                  <span className="text-[10px] md:text-xs font-normal tracking-[0.1em] whitespace-nowrap uppercase">
+                    {item.label}
+                  </span>
+                ) : (
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(200_20%_59%)]" />
+                )}
+              </button>
+            );
+          })}
+        </nav>
+      )}
     </header>
   );
 };
