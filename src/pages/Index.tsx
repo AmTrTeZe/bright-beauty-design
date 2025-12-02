@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Logo from "@/components/Logo";
 import MenuItem from "@/components/MenuItem";
+import SplashScreen from "@/components/SplashScreen";
 import { Link } from "react-router-dom";
 
 const menuItems = [
@@ -12,8 +14,13 @@ const menuItems = [
 ];
 
 const Index = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
   return (
-    <div className="min-h-screen gradient-trademark flex flex-col">
+    <>
+      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+      
+      <div className="min-h-screen gradient-trademark flex flex-col">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10">
         <Logo variant="white" size="lg" />
@@ -57,7 +64,8 @@ const Index = () => {
           <div>BUSINESS</div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 };
 
