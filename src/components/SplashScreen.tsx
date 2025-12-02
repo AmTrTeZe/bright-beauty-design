@@ -6,56 +6,59 @@ interface SplashScreenProps {
 }
 
 const SplashScreen = ({ onComplete }: SplashScreenProps) => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [isFading, setIsFading] = useState(false);
+  const [phase, setPhase] = useState<'logo' | 'tagline' | 'slogan' | 'fadeout' | 'done'>('logo');
 
   useEffect(() => {
-    // Start fade out after 3 seconds
-    const fadeTimer = setTimeout(() => {
-      setIsFading(true);
-    }, 3000);
+    const timers = [
+      setTimeout(() => setPhase('tagline'), 800),
+      setTimeout(() => setPhase('slogan'), 1600),
+      setTimeout(() => setPhase('fadeout'), 3200),
+      setTimeout(() => {
+        setPhase('done');
+        onComplete();
+      }, 4200),
+    ];
 
-    // Complete and unmount after fade animation (3s + 1s fade)
-    const completeTimer = setTimeout(() => {
-      setIsVisible(false);
-      onComplete();
-    }, 4000);
-
-    return () => {
-      clearTimeout(fadeTimer);
-      clearTimeout(completeTimer);
-    };
+    return () => timers.forEach(clearTimeout);
   }, [onComplete]);
 
-  if (!isVisible) return null;
+  if (phase === 'done') return null;
 
   return (
     <div 
-      className={`fixed inset-0 z-[100] gradient-trademark flex items-center justify-center transition-opacity duration-1000 ${
-        isFading ? 'opacity-0' : 'opacity-100'
+      className={`fixed inset-0 z-[100] gradient-trademark flex items-center justify-center transition-opacity duration-1000 ease-out ${
+        phase === 'fadeout' ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      <div className="flex flex-col items-start px-8 md:px-16">
+      <div className="flex flex-col items-start px-8 md:px-16 max-w-3xl">
         {/* Logo */}
         <img 
           src={logoWhite} 
           alt="TRADEMARK" 
-          className="h-10 md:h-14 lg:h-16 w-auto mb-6 animate-fade-in"
-          style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
+          className={`h-10 md:h-14 lg:h-16 w-auto mb-6 transition-all duration-700 ease-out ${
+            phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+          style={{
+            opacity: phase === 'logo' ? 1 : 1,
+            transform: 'translateY(0)',
+            animation: 'slideUp 0.7s ease-out forwards'
+          }}
         />
         
         {/* Tagline */}
         <p 
-          className="text-white/80 text-xs md:text-sm lg:text-base font-extralight tracking-[0.2em] uppercase mb-8 animate-fade-in"
-          style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
+          className={`text-white/70 text-[10px] md:text-xs lg:text-sm font-extralight tracking-[0.15em] uppercase mb-8 transition-all duration-700 ease-out ${
+            phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+          }`}
         >
           BRAND ENGINEERING & BUSINESS EMPOWERMENT ADVISORY
         </p>
         
         {/* Brand Powers Business - aligned right */}
         <div 
-          className="self-end text-right text-white font-light tracking-[0.3em] text-sm md:text-base lg:text-lg leading-relaxed animate-fade-in"
-          style={{ animationDelay: '1.3s', animationFillMode: 'both' }}
+          className={`self-end text-right text-white/90 font-light tracking-[0.25em] text-xs md:text-sm lg:text-base leading-loose transition-all duration-700 ease-out ${
+            phase === 'logo' || phase === 'tagline' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+          }`}
         >
           <div>BRAND</div>
           <div>POWERS</div>
