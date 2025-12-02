@@ -14,13 +14,15 @@ const InteriorFooter = () => {
         <Link to="/contact" className="hover:opacity-70 transition-opacity">
           Contact
         </Link>
-        <span className="hidden lg:inline text-[hsl(200_20%_75%)]">|</span>
-        <span className="hidden lg:inline">Villa 25, rue 39, Lot. Laymoune 2 20190 Casablanca</span>
+        <span className="text-[hsl(200_20%_75%)]">|</span>
+        <span>Villa 25, rue 39, Lot. Laymoune 2 20190 Casablanca</span>
         <span className="text-[hsl(200_20%_75%)]">|</span>
         <span>©Trademark 2025</span>
       </div>
-      <div className="text-right text-[hsl(200_20%_50%)] font-normal tracking-wider text-[8px] md:text-[9px] leading-tight whitespace-nowrap">
-        <span>BRAND POWERS BUSINESS</span>
+      <div className="text-right text-[hsl(200_20%_50%)] font-normal tracking-wider text-[8px] md:text-[9px] leading-tight">
+        <div>BRAND</div>
+        <div>POWERS</div>
+        <div>BUSINESS</div>
       </div>
     </footer>
   );
