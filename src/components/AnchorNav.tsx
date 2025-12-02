@@ -21,7 +21,7 @@ const AnchorNav = ({ items, activeIndex }: AnchorNavProps) => {
   };
 
   return (
-    <nav className="fixed right-6 md:right-10 top-24 z-40 flex flex-col items-end gap-3">
+    <nav className="fixed right-6 md:right-10 top-16 z-40 flex flex-col items-end gap-2">
       {items.map((item, index) => {
         const isHovered = hoveredIndex === index;
         const isActive = activeIndex === index && hoveredIndex === null;
