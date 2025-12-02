@@ -35,7 +35,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="px-6 md:px-10 py-4 flex flex-row justify-between items-center">
-        <Logo size="sm" />
+        <Logo size="sm" variant="white" />
         
         <div className="flex items-center gap-3 text-foreground/70 text-[10px] md:text-xs font-normal whitespace-nowrap">
           <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
