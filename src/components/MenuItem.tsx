@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 
 interface MenuItemProps {
   word: string;
@@ -11,28 +11,33 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = useCallback(() => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setIsHovered(true);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setIsHovered(false);
-    }, 50);
-  };
+      timeoutRef.current = null;
+    }, 100);
+  }, []);
 
   return (
     <Link
       to={to}
-      className="group block"
+      className="group block py-2"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="flex items-center justify-center h-[50px] md:h-[60px] lg:h-[70px]">
-        <div className="flex items-center transition-all duration-300 ease-out">
+      <div className="flex items-center justify-center min-h-[40px] md:min-h-[50px] lg:min-h-[60px]">
+        <div className="flex items-center">
           {/* Main word */}
           <span 
             className={`
