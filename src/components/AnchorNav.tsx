@@ -21,7 +21,7 @@ const AnchorNav = ({ items, activeIndex }: AnchorNavProps) => {
   };
 
   return (
-    <nav className="fixed right-6 md:right-10 top-14 z-40 flex flex-col items-end gap-2">
+    <nav className="fixed right-6 md:right-10 top-14 z-40 flex flex-col items-end gap-3">
       {items.map((item, index) => {
         const isHovered = hoveredIndex === index;
         const isActive = activeIndex === index && hoveredIndex === null;
@@ -33,14 +33,14 @@ const AnchorNav = ({ items, activeIndex }: AnchorNavProps) => {
             onClick={() => handleClick(item.id)}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="flex items-center gap-2 text-[hsl(200_20%_59%)] hover:text-[hsl(200_20%_50%)] transition-all"
+            className="flex items-center gap-2 text-[hsl(200_20%_59%)] hover:text-[hsl(200_20%_50%)] transition-all min-h-[24px] min-w-[24px] justify-end"
           >
             {showLabel ? (
               <span className="text-[10px] md:text-xs font-normal tracking-[0.1em] whitespace-nowrap uppercase">
                 {item.label}
               </span>
             ) : (
-              <span className="w-1.5 h-1.5 rounded-full bg-[hsl(200_20%_59%)]" />
+              <span className="w-2 h-2 rounded-full bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)]" />
             )}
           </button>
         );
