@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { X, Settings } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 type CookiePreferences = {
   necessary: boolean;
@@ -66,27 +65,25 @@ const CookieConsent = () => {
               </p>
             </div>
             <div className="flex flex-wrap gap-3 shrink-0">
-              <Button
+              <button
                 onClick={refuseAll}
-                variant="outline"
-                className="text-xs tracking-wide border-[hsl(200_20%_75%)] text-[hsl(200_20%_50%)] hover:bg-[hsl(200_20%_95%)]"
+                className="px-4 py-2 text-xs tracking-wide border border-[hsl(200_20%_75%)] text-[hsl(200_20%_40%)] bg-white hover:bg-[hsl(200_20%_95%)] rounded-md transition-colors"
               >
                 Refuser
-              </Button>
-              <Button
+              </button>
+              <button
                 onClick={() => setShowSettings(true)}
-                variant="outline"
-                className="text-xs tracking-wide border-[hsl(200_20%_75%)] text-[hsl(200_20%_50%)] hover:bg-[hsl(200_20%_95%)]"
+                className="px-4 py-2 text-xs tracking-wide border border-[hsl(200_20%_75%)] text-[hsl(200_20%_40%)] bg-white hover:bg-[hsl(200_20%_95%)] rounded-md transition-colors flex items-center gap-1"
               >
-                <Settings className="w-3 h-3 mr-1" />
+                <Settings className="w-3 h-3" />
                 Personnaliser
-              </Button>
-              <Button
+              </button>
+              <button
                 onClick={acceptAll}
-                className="text-xs tracking-wide bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white"
+                className="px-4 py-2 text-xs tracking-wide bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white rounded-md transition-colors"
               >
                 Accepter tout
-              </Button>
+              </button>
             </div>
           </div>
         ) : (
@@ -162,19 +159,18 @@ const CookieConsent = () => {
             </div>
 
             <div className="flex justify-end gap-3 pt-2">
-              <Button
+              <button
                 onClick={refuseAll}
-                variant="outline"
-                className="text-xs tracking-wide border-[hsl(200_20%_75%)] text-[hsl(200_20%_50%)] hover:bg-[hsl(200_20%_95%)]"
+                className="px-4 py-2 text-xs tracking-wide border border-[hsl(200_20%_75%)] text-[hsl(200_20%_40%)] bg-white hover:bg-[hsl(200_20%_95%)] rounded-md transition-colors"
               >
                 Tout refuser
-              </Button>
-              <Button
+              </button>
+              <button
                 onClick={saveCustom}
-                className="text-xs tracking-wide bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white"
+                className="px-4 py-2 text-xs tracking-wide bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white rounded-md transition-colors"
               >
                 Enregistrer mes choix
-              </Button>
+              </button>
             </div>
 
             <p className="text-[hsl(200_20%_70%)] text-[10px] text-center">
