@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 interface MenuItemProps {
   word: string;
@@ -9,34 +9,58 @@ interface MenuItemProps {
 
 const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsHovered(false);
+    }, 50);
+  };
 
   return (
     <Link
       to={to}
-      className="group block text-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className="group block"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
-      <div className="flex items-center justify-center">
-        <span 
-          className={`
-            text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.15em] text-foreground/80 
-            transition-all duration-300 inline-block min-w-[120px] md:min-w-[160px] lg:min-w-[200px]
-            ${isHovered ? 'font-semibold text-foreground' : 'font-extralight'}
-          `}
-        >
-          {word}
-        </span>
-        
-        <span 
-          className={`
-            text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[0.15em] text-foreground/60
-            transition-all duration-500 ease-out whitespace-nowrap overflow-hidden font-extralight
-            ${isHovered ? 'opacity-100 max-w-[500px] ml-4' : 'opacity-0 max-w-0 ml-0'}
-          `}
-        >
-          | {secondWord}
-        </span>
+      <div className="relative flex items-center justify-center h-[50px] md:h-[60px] lg:h-[70px]">
+        {/* Container for both words - fixed positioning */}
+        <div className="flex items-center">
+          {/* Main word */}
+          <span 
+            className={`
+              text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.15em] text-foreground/80 
+              transition-all duration-300 ease-out
+              ${isHovered ? 'font-normal text-foreground' : 'font-extralight'}
+            `}
+            style={{ 
+              minWidth: '180px',
+              textAlign: 'center'
+            }}
+          >
+            {word}
+          </span>
+          
+          {/* Second word - always rendered, visibility controlled */}
+          <span 
+            className={`
+              text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[0.15em] text-foreground/60
+              transition-all duration-300 ease-out font-extralight whitespace-nowrap
+              ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 pointer-events-none'}
+            `}
+            style={{ marginLeft: '16px' }}
+          >
+            | {secondWord}
+          </span>
+        </div>
       </div>
     </Link>
   );
