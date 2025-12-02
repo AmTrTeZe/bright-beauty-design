@@ -13,18 +13,17 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
   return (
     <Link
       to={to}
-      className="group block"
+      className="group block text-center"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div 
-        className={`
-          flex items-center transition-all duration-500 ease-out
-          ${isHovered ? '-translate-x-8' : 'translate-x-0'}
-        `}
-      >
+      <div className="flex items-center justify-center transition-all duration-500 ease-out">
         <span 
-          className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light tracking-[0.5em] text-foreground/80 hover:text-foreground transition-colors duration-300"
+          className={`
+            text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.5em] text-foreground/80 
+            transition-all duration-300
+            ${isHovered ? 'font-medium text-foreground' : 'font-light'}
+          `}
         >
           {word.split('').join(' ')}
         </span>
@@ -32,8 +31,8 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
         <span 
           className={`
             text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light tracking-[0.4em] text-foreground/60
-            transition-all duration-500 ease-out whitespace-nowrap ml-8
-            ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}
+            transition-all duration-500 ease-out whitespace-nowrap overflow-hidden
+            ${isHovered ? 'opacity-100 max-w-[500px] ml-6' : 'opacity-0 max-w-0 ml-0'}
           `}
         >
           | {secondWord.split('').join(' ')}
