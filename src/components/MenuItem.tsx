@@ -17,12 +17,12 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex items-center justify-center transition-all duration-500 ease-out">
+      <div className="flex items-center justify-center">
         <span 
           className={`
             text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-[0.15em] text-foreground/80 
-            transition-all duration-300
-            ${isHovered ? 'font-medium text-foreground' : 'font-light'}
+            transition-all duration-300 inline-block min-w-[120px] md:min-w-[160px] lg:min-w-[200px]
+            ${isHovered ? 'font-semibold text-foreground' : 'font-extralight'}
           `}
         >
           {word}
@@ -30,9 +30,9 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
         
         <span 
           className={`
-            text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light tracking-[0.15em] text-foreground/60
+            text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[0.15em] text-foreground/60
             transition-all duration-500 ease-out whitespace-nowrap overflow-hidden
-            ${isHovered ? 'opacity-100 max-w-[500px] ml-4' : 'opacity-0 max-w-0 ml-0'}
+            ${isHovered ? 'font-semibold opacity-100 max-w-[500px] ml-4' : 'font-extralight opacity-0 max-w-0 ml-0'}
           `}
         >
           | {secondWord}
