@@ -11,7 +11,7 @@ const InteriorFooter = () => {
           Mentions Légales
         </Link>
         <span className="text-[hsl(200_20%_75%)]">|</span>
-        <Link to="/contact" className="hover:opacity-70 transition-opacity">
+        <Link to="/where" className="hover:opacity-70 transition-opacity">
           Contact
         </Link>
         <span className="text-[hsl(200_20%_75%)]">|</span>
