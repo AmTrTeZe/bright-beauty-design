@@ -25,8 +25,10 @@ const Index = () => {
       
       <div className="min-h-screen gradient-trademark flex flex-col">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10">
-        <Logo variant="white" size="lg" />
+      <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10 pointer-events-none">
+        <div className="pointer-events-auto">
+          <Logo variant="white" size="lg" />
+        </div>
       </header>
 
       {/* Menu - centered */}
