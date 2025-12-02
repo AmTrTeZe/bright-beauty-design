@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
-import AnchorNav from "@/components/AnchorNav";
 
 const anchorItems = [
   { id: "brand-fortification", label: "BRAND FORTIFICATION" },
@@ -34,8 +33,7 @@ const What = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <InteriorHeader title="WHAT" subtitle="PRACTICES" />
-      <AnchorNav items={anchorItems} activeIndex={activeSection} />
+      <InteriorHeader title="WHAT" subtitle="PRACTICES" anchorItems={anchorItems} activeAnchorIndex={activeSection} />
 
       {/* Main Content */}
       <main className="flex-1 pt-36">
@@ -44,7 +42,7 @@ const What = () => {
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase">
+              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify text-center">
                 LA MARQUE EST UN CAPITAL STRATÉGIQUE DE LONG TERME ET UN ACTIF OPÉRATIONNEL DE COURT TERME.
               </p>
             </div>
@@ -86,7 +84,7 @@ const What = () => {
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase">
+              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify text-center">
                 L'IMAGE D'UNE MARQUE SE CONSTRUIT À CHAQUE POINT DE CONTACT.
               </p>
             </div>
@@ -128,7 +126,7 @@ const What = () => {
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase">
+              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify text-center">
                 LA FORCE CRÉATIVE EST UNE FORCE CRÉATRICE.
               </p>
             </div>
