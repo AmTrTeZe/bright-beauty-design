@@ -35,7 +35,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="fixed bottom-0 left-0 right-0 p-6 md:p-10 flex justify-between items-end">
-        <div className="text-foreground/60 text-xs font-light tracking-wider">
+        <div className="text-foreground/60 text-xs font-normal tracking-wider">
           TRADEMARK™ | BRAND AS ASSET
         </div>
         <Tagline />

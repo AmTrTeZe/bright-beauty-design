@@ -1,110 +1,61 @@
-import Logo from "@/components/Logo";
-import Tagline from "@/components/Tagline";
-import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-const menuItems = [
-  { word: "WHY", to: "/why" },
-  { word: "WHAT", to: "/what" },
-  { word: "HOW", to: "/how" },
-  { word: "WHO", to: "/who" },
-  { word: "WITH", to: "/with" },
-  { word: "WHERE", to: "/where" },
-];
+import InteriorHeader from "@/components/InteriorHeader";
+import InteriorFooter from "@/components/InteriorFooter";
 
 const Why = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* White Section - Top */}
-      <section className="bg-white flex-1 px-8 md:px-16 lg:px-24 py-8">
-        {/* Header */}
-        <header className="flex justify-between items-center mb-16">
-          <Logo className="text-[hsl(200_20%_30%)]" />
-          <div className="flex items-center gap-8">
-            <div className="text-[hsl(200_20%_30%)] font-light text-sm md:text-base tracking-[0.3em]">
-              WHY | PURPOSE
-            </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="text-[hsl(200_20%_30%)] hover:opacity-70 transition-opacity">
-                  <Menu className="w-6 h-6" strokeWidth={1.5} />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="bg-white border-[hsl(200_20%_80%)]">
-                {menuItems.map((item) => (
-                  <DropdownMenuItem key={item.word} asChild>
-                    <Link 
-                      to={item.to} 
-                      className="text-[hsl(200_20%_30%)] font-light tracking-[0.2em] cursor-pointer"
-                    >
-                      {item.word}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        </header>
+    <div className="min-h-screen flex flex-col bg-white">
+      <InteriorHeader title="WHY" subtitle="PURPOSE" />
 
-        {/* Content */}
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Gray quote block */}
-          <div className="gradient-trademark p-8">
-            <p className="text-foreground text-sm md:text-base font-medium tracking-wide leading-relaxed uppercase">
-              La marque n'est pas qu'un signe de reconnaissance, c'est un vecteur de sens et un levier de performance.
+      {/* Main Content */}
+      <main className="flex-1 pt-20">
+        {/* Quote Block */}
+        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-8">
+          <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase max-w-4xl">
+            La marque n'est pas qu'un signe de reconnaissance, c'est un vecteur de sens et un levier de performance.
+          </p>
+        </div>
+
+        {/* White Content Block */}
+        <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
+          <div className="max-w-4xl">
+            <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              Dans un monde en constante transformation par une digitalisation accélérée
+              et des ruptures technologiques répétées, les modèles économiques sont challengés
+              et les modes opératoires reconsidérés, les médias sont saturés et les points de
+              contacts fragmentés, les consommateurs sont sur-sollicités par des messages
+              instantanés et des contenus rapidement renouvelés, la marque devient alors,
+              dans cette instabilité, plus que jamais un pilier, un bouclier, un levier.
             </p>
           </div>
-
-          {/* Paragraph text */}
-          <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-light tracking-wide text-justify">
-            Dans un monde en constante transformation par une digitalisation accélérée
-            et des ruptures technologiques répétées, les modèles économiques sont challengés
-            et les modes opératoires reconsidérés, les médias sont saturés et les points de
-            contacts fragmentés, les consommateurs sont sur-sollicités par des messages
-            instantanés et des contenus rapidement renouvelés, la marque devient alors,
-            dans cette instabilité, plus que jamais un pilier, un bouclier, un levier.
-          </p>
         </div>
-      </section>
 
-      {/* Dark Section - Bottom */}
-      <section className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 md:py-16">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-foreground text-sm md:text-base lg:text-lg font-semibold tracking-wider uppercase">
-            Brand Engineering & Business Empowerment
-          </h2>
-          
-          <p className="text-foreground/90 text-sm md:text-base leading-[2] font-light tracking-wide text-justify">
-            TRADEMARK™ constitue le maillon manquant entre les cabinets conseil en stratégie,
-            trop généralistes et les agences de communication, trop opérationnelles.
-            Un concentré d'expertises focalisées sur les champs Brand & Business,
-            avec pour ambition de transformer la marque en un véritable actif immatériel,
-            générateur de soft power pour l'image, créateur de hard power pour le business.
-          </p>
+        {/* Dark Section */}
+        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
+          <div className="max-w-4xl">
+            <h2 className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
+              Brand Engineering & Business Empowerment
+            </h2>
+            
+            <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
+              TRADEMARK™ constitue le maillon manquant entre les cabinets conseil en stratégie,
+              trop généralistes et les agences de communication, trop opérationnelles.
+              Un concentré d'expertises focalisées sur les champs Brand & Business,
+              avec pour ambition de transformer la marque en un véritable actif immatériel,
+              générateur de soft power pour l'image, créateur de hard power pour le business.
+            </p>
 
-          <p className="text-foreground/60 text-xs md:text-sm tracking-wider uppercase font-light border-t border-foreground/20 pt-4">
-            Brand Fortification / Market Activation / Business Acceleration
-          </p>
+            <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal border-t border-foreground/20 pt-4 mb-6">
+              Brand Fortification / Market Activation / Business Acceleration
+            </p>
 
-          <blockquote className="text-foreground/80 text-sm md:text-base italic font-light">
-            « Before you have a share of market, you must have a share of mind »
-          </blockquote>
+            <blockquote className="text-foreground/80 text-sm md:text-base italic font-normal">
+              « Before you have a share of market, you must have a share of mind »
+            </blockquote>
+          </div>
         </div>
-      </section>
+      </main>
 
-      {/* Footer */}
-      <footer className="gradient-trademark px-8 md:px-16 lg:px-24 py-6 flex justify-between items-end border-t border-foreground/10">
-        <div className="text-foreground/60 text-xs font-light tracking-wider">
-          TRADEMARK™ | BRAND AS ASSET
-        </div>
-        <Tagline />
-      </footer>
+      <InteriorFooter />
     </div>
   );
 };

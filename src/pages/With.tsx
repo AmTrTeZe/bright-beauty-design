@@ -1,36 +1,31 @@
-import Logo from "@/components/Logo";
-import Tagline from "@/components/Tagline";
+import InteriorHeader from "@/components/InteriorHeader";
+import InteriorFooter from "@/components/InteriorFooter";
 
 const With = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Header */}
-      <header className="gradient-trademark p-6 md:p-10 flex justify-between items-center">
-        <Logo />
-        <div className="text-foreground text-spaced text-sm md:text-lg tracking-[0.3em] font-extralight">
-          W I T H | E X P E R I E N C E
-        </div>
-      </header>
+    <div className="min-h-screen flex flex-col bg-white">
+      <InteriorHeader title="WITH" subtitle="EXPERIENCE" />
 
-      {/* Content */}
-      <section className="gradient-trademark flex-1 px-6 md:px-10 lg:px-20 py-16 flex items-center justify-center">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-foreground text-2xl md:text-4xl font-light tracking-wider mb-8">
+      {/* Main Content */}
+      <main className="flex-1 pt-20">
+        {/* Quote Block */}
+        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-8">
+          <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase max-w-4xl">
             EXPERIENCE
-          </h1>
-          <p className="text-foreground/70 text-sm md:text-base">
-            Contenu à venir...
           </p>
         </div>
-      </section>
 
-      {/* Footer */}
-      <footer className="gradient-trademark p-6 md:p-10 flex justify-between items-end">
-        <div className="text-foreground/60 text-xs font-extralight tracking-wider">
-          TRADEMARK™ | BRAND AS ASSET
+        {/* White Content Block */}
+        <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
+          <div className="max-w-4xl">
+            <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              Contenu à venir...
+            </p>
+          </div>
         </div>
-        <Tagline />
-      </footer>
+      </main>
+
+      <InteriorFooter />
     </div>
   );
 };
