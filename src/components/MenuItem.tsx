@@ -48,7 +48,7 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
           <div 
             className={`
               overflow-hidden transition-all duration-300 ease-out
-              ${isHovered ? 'max-w-[400px] opacity-100' : 'max-w-0 opacity-0'}
+              ${isHovered ? 'max-w-[500px] opacity-100' : 'max-w-0 opacity-0'}
             `}
           >
             <span 
