@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import Logo from "@/components/Logo";
 import MenuItem from "@/components/MenuItem";
 import SplashScreen from "@/components/SplashScreen";
@@ -14,7 +15,9 @@ const menuItems = [
 ];
 
 const Index = () => {
-  const [showSplash, setShowSplash] = useState(true);
+  const location = useLocation();
+  const skipSplash = location.state?.skipSplash === true;
+  const [showSplash, setShowSplash] = useState(!skipSplash);
 
   return (
     <>

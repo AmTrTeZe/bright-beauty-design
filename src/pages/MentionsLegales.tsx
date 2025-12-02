@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { X } from "lucide-react";
 import Logo from "@/components/Logo";
 import InteriorFooter from "@/components/InteriorFooter";
 
 const MentionsLegales = () => {
+  const navigate = useNavigate();
+
+  const handleClose = () => {
+    navigate("/", { state: { skipSplash: true } });
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* Header with close button */}
@@ -14,13 +20,13 @@ const MentionsLegales = () => {
           Mentions Légales
         </h1>
         
-        <Link 
-          to="/" 
+        <button 
+          onClick={handleClose}
           className="text-[hsl(200_20%_50%)] hover:text-[hsl(200_20%_30%)] transition-colors p-2"
           aria-label="Fermer"
         >
           <X className="w-6 h-6" strokeWidth={1} />
-        </Link>
+        </button>
       </header>
 
       {/* Main Content */}
