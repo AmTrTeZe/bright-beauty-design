@@ -38,9 +38,9 @@ const What = () => {
       <AnchorNav items={anchorItems} activeIndex={activeSection} />
 
       {/* Main Content */}
-      <main className="flex-1 pt-28">
+      <main className="flex-1 pt-36">
         {/* Section 1: Brand Fortification */}
-        <section id="brand-fortification" className="scroll-mt-32">
+        <section id="brand-fortification" className="scroll-mt-40">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
@@ -53,7 +53,7 @@ const What = () => {
           {/* Content Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
             <div className="bg-white py-12 max-w-4xl mx-auto">
-              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              <p className="text-[hsl(200_20%_59%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
                 Par sa capacité à encapsuler une valeur ajoutée multi-dimensionnelle la marque constitue l'un des biens les plus précieux de l'entreprise. Elle incarne l'identité et exprime la singularité. Elle développe l'attractivité, et soutient la compétitivité. Elle construit la fidélité, comme elle protège dans l'adversité. La marque est tout autant un actif stratégique de long terme, et un levier opérationnel de court terme, démultiplicateur d'influence et de performance.
               </p>
             </div>
@@ -82,7 +82,7 @@ const What = () => {
         </section>
 
         {/* Section 2: Market Activation */}
-        <section id="market-activation" className="scroll-mt-32">
+        <section id="market-activation" className="scroll-mt-40">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
@@ -95,7 +95,7 @@ const What = () => {
           {/* Content Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
             <div className="bg-white py-12 max-w-4xl mx-auto">
-              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              <p className="text-[hsl(200_20%_59%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
                 La spécification des cibles, la démultiplication des canaux, l'obsolescence rapide des contenus, la transformation de la communication en conversation, la diversification des métiers et la spécialisation des acteurs, constituent autant de risques pour la cohérence de la réflexion et la coordination de l'action. À la manière d'un tableau impressionniste qui se dessine par petites touches, la communication se transforme ainsi en une succession d'actes isolés déstructurés, au risque de générer une image composite brouillée, créant une déconnexion entre intention et perception.
               </p>
             </div>
@@ -124,7 +124,7 @@ const What = () => {
         </section>
 
         {/* Section 3: Business Acceleration */}
-        <section id="business-acceleration" className="scroll-mt-32">
+        <section id="business-acceleration" className="scroll-mt-40">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
@@ -137,7 +137,7 @@ const What = () => {
           {/* Content Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
             <div className="bg-white py-12 max-w-4xl mx-auto">
-              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              <p className="text-[hsl(200_20%_59%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
                 Le canal digital, avec ses outils de mesure de performance, data, metrics et autres analytics, a permis d'apporter un éclairage déterminant à la résolution de la sempiterelle question du lien entre créativité et efficacité. Mettant ainsi en lumière la corrélation désormais démontrée et quantifiée entre Brand Engagement et Business Transformation. Ainsi, la marque ne se contente plus d'être un exercice graphique esthétique, visant à apporter un supplément d'âme et tisser un lien émotionnel, elle est tout autant distinctive et expressive de l'identité, compétitive et productive de performance et de valeur.
               </p>
             </div>

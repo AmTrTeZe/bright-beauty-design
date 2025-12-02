@@ -4,27 +4,28 @@
 
 @layer base {
   :root {
-    /* Trademark color palette */
-    --background: 200 15% 60%;
-    --background-dark: 200 12% 45%;
+    /* Trademark color palette - #849CAA = hsl(200 20% 59%) */
+    --trademark-gray: 200 20% 59%;
+    --background: 200 20% 59%;
+    --background-dark: 200 20% 50%;
     --foreground: 0 0% 100%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 200 20% 59%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 200 20% 59%;
 
     --primary: 0 0% 100%;
-    --primary-foreground: 200 15% 60%;
+    --primary-foreground: 200 20% 59%;
 
-    --secondary: 200 12% 45%;
+    --secondary: 200 20% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 200 10% 70%;
+    --muted: 200 20% 70%;
     --muted-foreground: 0 0% 100%;
 
-    --accent: 200 15% 50%;
+    --accent: 200 20% 59%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -93,7 +94,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Geist', sans-serif;
   }
 }
 
@@ -103,6 +104,6 @@
   }
   
   .gradient-trademark {
-    background: linear-gradient(180deg, hsl(200 15% 65%) 0%, hsl(200 12% 50%) 100%);
+    background: linear-gradient(180deg, hsl(200 20% 65%) 0%, hsl(200 20% 55%) 100%);
   }
 }

@@ -33,14 +33,14 @@ const AnchorNav = ({ items, activeIndex }: AnchorNavProps) => {
             onClick={() => handleClick(item.id)}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="flex items-center gap-2 text-[hsl(200_20%_50%)] hover:text-[hsl(200_20%_40%)] transition-all"
+            className="flex items-center gap-2 text-[hsl(200_20%_59%)] hover:text-[hsl(200_20%_50%)] transition-all"
           >
             {showLabel ? (
               <span className="text-[10px] md:text-xs font-normal tracking-[0.1em] whitespace-nowrap uppercase">
                 {item.label}
               </span>
             ) : (
-              <span className="w-1.5 h-1.5 rounded-full bg-[hsl(200_20%_65%)]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[hsl(200_20%_59%)]" />
             )}
           </button>
         );
