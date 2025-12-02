@@ -91,7 +91,7 @@ const Where = () => {
                         <FormControl>
                           <Input
                             placeholder="NOM"
-                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)]"
+                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                             {...field}
                           />
                         </FormControl>
@@ -107,7 +107,7 @@ const Where = () => {
                         <FormControl>
                           <Input
                             placeholder="PRÉNOM"
-                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)]"
+                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                             {...field}
                           />
                         </FormControl>
@@ -126,7 +126,7 @@ const Where = () => {
                         <Input
                           type="email"
                           placeholder="EMAIL"
-                          className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)]"
+                          className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                           {...field}
                         />
                       </FormControl>
@@ -144,7 +144,7 @@ const Where = () => {
                         <Textarea
                           placeholder="MESSAGE"
                           rows={5}
-                          className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px]"
+                          className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px] focus:placeholder:opacity-0"
                           {...field}
                         />
                       </FormControl>
@@ -172,13 +172,19 @@ const Where = () => {
           <div className="max-w-4xl mx-auto">
             {/* Addresses */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div>
+              <div className="text-center">
+                <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
+                  Trademark Maroc
+                </h3>
                 <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                   Villa 25, rue 39, Lot. Laymoune 2<br />
                   20190 Casablanca
                 </p>
               </div>
-              <div>
+              <div className="text-center">
+                <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
+                  Trademark Côte d'Ivoire
+                </h3>
                 <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                   Lot 533, parcelle 222, II Plateaux Vallon<br />
                   Cocody Abidjan
@@ -187,13 +193,13 @@ const Where = () => {
             </div>
 
             {/* PDF Download Link */}
-            <div className="border-t border-foreground/20 pt-8">
+            <div className="border-t border-foreground/20 pt-8 text-center">
               <a
                 href="/documents/trademark-key-facts-figures.pdf"
                 download
-                className="inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-sm tracking-widest uppercase font-light transition-colors"
+                className="inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
               >
-                <Download className="w-4 h-4" />
+                <Download className="w-5 h-5" />
                 TRADEMARK KEY FACTS & FIGURES
               </a>
             </div>
