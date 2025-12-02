@@ -38,9 +38,9 @@ const What = () => {
       <AnchorNav items={anchorItems} activeIndex={activeSection} />
 
       {/* Main Content */}
-      <main className="flex-1 pt-24">
+      <main className="flex-1 pt-32">
         {/* Section 1: Brand Fortification */}
-        <section id="brand-fortification" className="scroll-mt-24">
+        <section id="brand-fortification" className="scroll-mt-32">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
@@ -82,7 +82,7 @@ const What = () => {
         </section>
 
         {/* Section 2: Market Activation */}
-        <section id="market-activation" className="scroll-mt-24">
+        <section id="market-activation" className="scroll-mt-32">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
@@ -124,7 +124,7 @@ const What = () => {
         </section>
 
         {/* Section 3: Business Acceleration */}
-        <section id="business-acceleration" className="scroll-mt-24">
+        <section id="business-acceleration" className="scroll-mt-32">
           {/* Quote Block - centered */}
           <div className="px-8 md:px-20 lg:px-32 mt-8">
             <div className="gradient-trademark p-8 max-w-4xl mx-auto">
