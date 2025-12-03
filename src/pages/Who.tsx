@@ -55,7 +55,7 @@ const Who = () => {
                 <img 
                   src={trademarkLogo} 
                   alt="TRADEMARK Brand Engineering" 
-                  className="h-6 md:h-8 object-contain"
+                  className="h-6 md:h-8 object-contain -ml-3"
                 />
               </div>
             </div>
