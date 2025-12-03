@@ -36,7 +36,7 @@ const Who = () => {
               </div>
               
               {/* Logos */}
-              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-4 mb-[60px]">
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-4 mb-[70px]">
                 <img 
                   src={havasGroup} 
                   alt="Havas Group" 
