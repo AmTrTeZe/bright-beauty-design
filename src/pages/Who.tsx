@@ -1,6 +1,7 @@
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
 import logoTrademark from "@/assets/logo-trademark.png";
+import nawfelPhoto from "@/assets/nawfel-bensari.png";
 
 const Who = () => {
   return (
@@ -17,16 +18,20 @@ const Who = () => {
         </div>
 
         {/* White Content Block - Photo and Logos */}
-        <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
+        <div className="bg-white px-8 md:px-16 lg:px-24 pt-12 pb-0 relative">
           <div className="max-w-5xl mx-auto">
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-              {/* Photo placeholder */}
-              <div className="w-40 h-48 bg-[hsl(200_20%_85%)] flex items-center justify-center">
-                <span className="text-[hsl(200_20%_50%)] text-xs text-center px-2">Photo</span>
+            <div className="flex flex-wrap items-end justify-center gap-8 md:gap-12">
+              {/* Photo - positioned to overlap with gray section */}
+              <div className="relative z-10 translate-y-12">
+                <img 
+                  src={nawfelPhoto} 
+                  alt="Nawfel Bensari" 
+                  className="w-40 md:w-48 h-auto object-contain"
+                />
               </div>
               
               {/* Logos */}
-              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-12">
                 <div className="text-[hsl(200_15%_45%)] text-center">
                   <div className="text-xl md:text-2xl font-light tracking-wider">HAVAS</div>
                   <div className="text-xs tracking-widest">GROUP</div>
@@ -50,7 +55,7 @@ const Who = () => {
         </div>
 
         {/* Gray Content Block - Bio */}
-        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-12">
+        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative">
           <div className="max-w-4xl">
             <h2 className="text-white text-base md:text-lg font-semibold tracking-wide mb-8">
               NAWFEL BENSARI – CHAIRMAN & SENIOR ADVISOR
