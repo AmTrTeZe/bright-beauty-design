@@ -1,5 +1,6 @@
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
+import SEO from "@/components/SEO";
 
 interface SectorData {
   title: string;
@@ -178,46 +179,55 @@ const sectors: SectorData[] = [
 
 const With = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <InteriorHeader title="WITH" subtitle="EXPERIENCE" />
+    <>
+      <SEO 
+        title="With - Experience"
+        description="Découvrez les marques prestigieuses accompagnées par TRADEMARK™: Coca-Cola, L'Oréal, Air France, BMCI, Renault et plus de 100 références dans 13 secteurs d'activité."
+        keywords="références clients, portfolio, marques, Coca-Cola, L'Oréal, Air France, BMCI, expérience, TRADEMARK"
+        canonicalUrl="https://trademark.ma/with"
+      />
+      
+      <div className="min-h-screen flex flex-col bg-white">
+        <InteriorHeader title="WITH" subtitle="EXPERIENCE" />
 
-      {/* Main Content */}
-      <main className="flex-1 pt-20">
-        {/* Sectors List */}
-        <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            {sectors.map((sector, index) => (
-              <div key={index}>
-                {/* Category Badge */}
-                <div className="inline-block gradient-trademark px-4 py-2 mb-3">
-                  <span className="text-white text-xs md:text-sm font-normal tracking-wider">
-                    {sector.title}
-                  </span>
-                </div>
-                {/* Brand Names */}
-                <p className="leading-relaxed">
-                  {sector.brands.map((brand, brandIndex) => (
-                    <span
-                      key={brandIndex}
-                      className={`text-sm md:text-base tracking-wide ${
-                        brand.bold
-                          ? "text-[hsl(200_15%_35%)] font-semibold"
-                          : "text-[hsl(200_15%_65%)] font-normal"
-                      }`}
-                    >
-                      {brand.name}
-                      {brandIndex < sector.brands.length - 1 && " "}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </main>
+        {/* Main Content */}
+        <main className="flex-1 pt-20">
+          {/* Sectors List */}
+          <section aria-label="Références clients par secteur" className="bg-white px-8 md:px-16 lg:px-24 py-12">
+            <div className="max-w-4xl mx-auto space-y-8">
+              {sectors.map((sector, index) => (
+                <article key={index}>
+                  {/* Category Badge */}
+                  <div className="inline-block gradient-trademark px-4 py-2 mb-3">
+                    <h2 className="text-white text-xs md:text-sm font-normal tracking-wider">
+                      {sector.title}
+                    </h2>
+                  </div>
+                  {/* Brand Names */}
+                  <p className="leading-relaxed">
+                    {sector.brands.map((brand, brandIndex) => (
+                      <span
+                        key={brandIndex}
+                        className={`text-sm md:text-base tracking-wide ${
+                          brand.bold
+                            ? "text-[hsl(200_15%_35%)] font-semibold"
+                            : "text-[hsl(200_15%_65%)] font-normal"
+                        }`}
+                      >
+                        {brand.name}
+                        {brandIndex < sector.brands.length - 1 && " "}
+                      </span>
+                    ))}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+        </main>
 
-      <InteriorFooter />
-    </div>
+        <InteriorFooter />
+      </div>
+    </>
   );
 };
 

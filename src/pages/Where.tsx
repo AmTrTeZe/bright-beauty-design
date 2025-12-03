@@ -4,6 +4,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
+import SEO from "@/components/SEO";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -71,26 +72,99 @@ const Where = () => {
     }
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "TRADEMARK",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "name": "Trademark Maroc",
+          "streetAddress": "Villa 25, rue 39, Lot. Laymoune 2",
+          "addressLocality": "Casablanca",
+          "postalCode": "20190",
+          "addressCountry": "MA"
+        },
+        {
+          "@type": "PostalAddress",
+          "name": "Trademark Côte d'Ivoire",
+          "streetAddress": "Lot 533, parcelle 222, II Plateaux Vallon",
+          "addressLocality": "Cocody Abidjan",
+          "addressCountry": "CI"
+        }
+      ]
+    }
+  };
+
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <InteriorHeader title="WHERE" subtitle="INFORMATION" />
+    <>
+      <SEO 
+        title="Where - Information & Contact"
+        description="Contactez TRADEMARK™ - Cabinet conseil en brand engineering. Bureaux à Casablanca (Maroc) et Abidjan (Côte d'Ivoire). Demandez un rendez-vous."
+        keywords="contact, Casablanca, Abidjan, Maroc, Côte d'Ivoire, adresse, formulaire contact, TRADEMARK"
+        canonicalUrl="https://trademark.ma/where"
+        structuredData={structuredData}
+      />
+      
+      <div className="min-h-screen flex flex-col bg-white">
+        <InteriorHeader title="WHERE" subtitle="INFORMATION" />
 
-      {/* Main Content */}
-      <main className="flex-1 pt-20">
-        {/* Contact Form Section */}
-        <div className="bg-white px-8 md:px-16 lg:px-24 py-12">
-          <div className="max-w-2xl mx-auto">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Main Content */}
+        <main className="flex-1 pt-20">
+          {/* Contact Form Section */}
+          <section aria-label="Formulaire de contact" className="bg-white px-8 md:px-16 lg:px-24 py-12">
+            <div className="max-w-2xl mx-auto">
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="nom"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormControl>
+                            <Input
+                              placeholder="NOM"
+                              aria-label="Nom"
+                              className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage className="text-xs" />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="prenom"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormControl>
+                            <Input
+                              placeholder="PRÉNOM"
+                              aria-label="Prénom"
+                              className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage className="text-xs" />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                  
                   <FormField
                     control={form.control}
-                    name="nom"
+                    name="email"
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
                           <Input
-                            placeholder="NOM"
+                            type="email"
+                            placeholder="EMAIL"
+                            aria-label="Email"
                             className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                             {...field}
                           />
@@ -99,15 +173,18 @@ const Where = () => {
                       </FormItem>
                     )}
                   />
+                  
                   <FormField
                     control={form.control}
-                    name="prenom"
+                    name="message"
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
-                          <Input
-                            placeholder="PRÉNOM"
-                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
+                          <Textarea
+                            placeholder="MESSAGE"
+                            aria-label="Message"
+                            rows={5}
+                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px] focus:placeholder:opacity-0"
                             {...field}
                           />
                         </FormControl>
@@ -115,100 +192,65 @@ const Where = () => {
                       </FormItem>
                     )}
                   />
-                </div>
-                
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          type="email"
-                          placeholder="EMAIL"
-                          className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage className="text-xs" />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Textarea
-                          placeholder="MESSAGE"
-                          rows={5}
-                          className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px] focus:placeholder:opacity-0"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage className="text-xs" />
-                    </FormItem>
-                  )}
-                />
 
-                <div className="pt-4">
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white px-8 py-2 text-sm tracking-widest uppercase font-light rounded-none"
-                  >
-                    {isSubmitting ? "ENVOI..." : "ENVOYER"}
-                  </Button>
-                </div>
-              </form>
-            </Form>
-          </div>
-        </div>
+                  <div className="pt-4">
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white px-8 py-2 text-sm tracking-widest uppercase font-light rounded-none"
+                    >
+                      {isSubmitting ? "ENVOI..." : "ENVOYER"}
+                    </Button>
+                  </div>
+                </form>
+              </Form>
+            </div>
+          </section>
 
-        {/* Addresses & PDF Section */}
-        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-12">
-          <div className="max-w-4xl mx-auto">
-            {/* Addresses */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="text-center">
-                <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                  Trademark Maroc
-                </h3>
-                <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
-                  Villa 25, rue 39, Lot. Laymoune 2<br />
-                  20190 Casablanca
-                </p>
+          {/* Addresses & PDF Section */}
+          <section aria-label="Nos adresses" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12">
+            <div className="max-w-4xl mx-auto">
+              {/* Addresses */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <address className="text-center not-italic">
+                  <h2 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
+                    Trademark Maroc
+                  </h2>
+                  <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
+                    Villa 25, rue 39, Lot. Laymoune 2<br />
+                    20190 Casablanca
+                  </p>
+                </address>
+                <address className="text-center not-italic">
+                  <h2 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
+                    Trademark Côte d'Ivoire
+                  </h2>
+                  <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
+                    Lot 533, parcelle 222, II Plateaux Vallon<br />
+                    Cocody Abidjan
+                  </p>
+                </address>
               </div>
-              <div className="text-center">
-                <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                  Trademark Côte d'Ivoire
-                </h3>
-                <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
-                  Lot 533, parcelle 222, II Plateaux Vallon<br />
-                  Cocody Abidjan
-                </p>
+
+              {/* PDF Download Link */}
+              <div className="border-t border-foreground/20 pt-8 text-center">
+                <a
+                  href="/Trademark_En_Bref.pdf"
+                  download
+                  className="group inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
+                  aria-label="Télécharger le document TRADEMARK Key Facts and Figures en PDF"
+                >
+                  <Download className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1 group-hover:animate-bounce" aria-hidden="true" />
+                  TRADEMARK KEY FACTS & FIGURES
+                </a>
               </div>
             </div>
+          </section>
+        </main>
 
-            {/* PDF Download Link */}
-            <div className="border-t border-foreground/20 pt-8 text-center">
-              <a
-                href="/Trademark_En_Bref.pdf"
-                download
-                className="group inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
-              >
-                <Download className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1 group-hover:animate-bounce" />
-                TRADEMARK KEY FACTS & FIGURES
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <InteriorFooter />
-    </div>
+        <InteriorFooter />
+      </div>
+    </>
   );
 };
 
