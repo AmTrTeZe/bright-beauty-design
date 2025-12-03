@@ -1,6 +1,7 @@
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
 import nawfelPhoto from "@/assets/nawfel-bensari.png";
+import havasGroup from "@/assets/havas-group.png";
 import publicisGroupe from "@/assets/publicis-groupe.png";
 import publicisMaroc from "@/assets/publicis-maroc.png";
 import trademarkLogo from "@/assets/trademark-logo.png";
@@ -35,11 +36,12 @@ const Who = () => {
               </div>
               
               {/* Logos */}
-              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-8">
-                <div className="text-[hsl(200_15%_45%)] text-center">
-                  <div className="text-xl md:text-2xl font-light tracking-wider">HAVAS</div>
-                  <div className="text-xs tracking-widest">GROUP</div>
-                </div>
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-4">
+                <img 
+                  src={havasGroup} 
+                  alt="Havas Group" 
+                  className="h-8 md:h-10 object-contain"
+                />
                 <img 
                   src={publicisGroupe} 
                   alt="Publicis Groupe" 
@@ -63,8 +65,9 @@ const Who = () => {
         {/* Gray Content Block - Bio */}
         <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-white text-base md:text-lg font-semibold tracking-wide mb-8">
-              NAWFEL BENSARI – CHAIRMAN & SENIOR ADVISOR
+            <h2 className="text-white text-base md:text-lg tracking-wide mb-8">
+              <span className="font-semibold">NAWFEL BENSARI</span>
+              <span className="font-light"> – CHAIRMAN & SENIOR ADVISOR</span>
             </h2>
             
             <div className="text-white text-sm md:text-base leading-[2] font-normal tracking-wide space-y-4">
