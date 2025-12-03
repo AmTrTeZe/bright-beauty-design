@@ -1,7 +1,9 @@
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
-import logoTrademark from "@/assets/logo-trademark.png";
 import nawfelPhoto from "@/assets/nawfel-bensari.png";
+import publicisGroupe from "@/assets/publicis-groupe.png";
+import publicisMaroc from "@/assets/publicis-maroc.png";
+import trademarkLogo from "@/assets/trademark-logo.png";
 
 const Who = () => {
   return (
@@ -10,44 +12,48 @@ const Who = () => {
 
       {/* Main Content */}
       <main className="flex-1 pt-20">
-        {/* Quote Block */}
-        <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-8">
-          <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase max-w-4xl">
-            30 ANS D'EXPÉRIENCE DE CONSULTING EN AGENCES DE COMMUNICATION & CABINETS CONSEIL
-          </p>
+        {/* Quote Block - Centered like other pages */}
+        <div className="bg-white flex justify-center px-8 md:px-16 lg:px-24 py-8">
+          <div className="gradient-trademark p-8 max-w-4xl">
+            <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify">
+              30 ANS D'EXPÉRIENCE DE CONSULTING EN AGENCES DE COMMUNICATION & CABINETS CONSEIL
+            </p>
+          </div>
         </div>
 
         {/* White Content Block - Photo and Logos */}
-        <div className="bg-white px-8 md:px-16 lg:px-24 pt-12 pb-0 relative">
-          <div className="max-w-5xl mx-auto">
+        <div className="bg-white px-8 md:px-16 lg:px-24 pt-8 pb-0 relative">
+          <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap items-end justify-center gap-8 md:gap-12">
-              {/* Photo - positioned to overlap with gray section */}
-              <div className="relative z-10 translate-y-12">
+              {/* Photo - bottom aligned with start of gray block */}
+              <div className="relative z-10 mb-[-1px]">
                 <img 
                   src={nawfelPhoto} 
                   alt="Nawfel Bensari" 
-                  className="w-40 md:w-48 h-auto object-contain"
+                  className="w-36 md:w-44 h-auto object-contain"
                 />
               </div>
               
               {/* Logos */}
-              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-12">
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-8">
                 <div className="text-[hsl(200_15%_45%)] text-center">
                   <div className="text-xl md:text-2xl font-light tracking-wider">HAVAS</div>
                   <div className="text-xs tracking-widest">GROUP</div>
                 </div>
-                <div className="text-[hsl(200_15%_45%)] text-center">
-                  <div className="text-lg md:text-xl font-light">PUBLICIS</div>
-                  <div className="text-xs font-semibold tracking-wider">GROUPE</div>
-                </div>
-                <div className="text-[hsl(200_15%_45%)] text-center">
-                  <div className="text-lg md:text-xl">PubliciS</div>
-                  <div className="text-[10px] tracking-wider">CONSEIL</div>
-                </div>
                 <img 
-                  src={logoTrademark} 
-                  alt="TRADEMARK Brand Engineering" 
+                  src={publicisGroupe} 
+                  alt="Publicis Groupe" 
+                  className="h-10 md:h-12 object-contain"
+                />
+                <img 
+                  src={publicisMaroc} 
+                  alt="Publicis Maroc" 
                   className="h-8 md:h-10 object-contain"
+                />
+                <img 
+                  src={trademarkLogo} 
+                  alt="TRADEMARK Brand Engineering" 
+                  className="h-6 md:h-8 object-contain"
                 />
               </div>
             </div>
@@ -56,7 +62,7 @@ const Who = () => {
 
         {/* Gray Content Block - Bio */}
         <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-white text-base md:text-lg font-semibold tracking-wide mb-8">
               NAWFEL BENSARI – CHAIRMAN & SENIOR ADVISOR
             </h2>
