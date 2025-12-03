@@ -195,11 +195,11 @@ const Where = () => {
             {/* PDF Download Link */}
             <div className="border-t border-foreground/20 pt-8 text-center">
               <a
-                href="/documents/trademark-key-facts-figures.pdf"
+                href="/Trademark_En_Bref.pdf"
                 download
-                className="inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
+                className="group inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
               >
-                <Download className="w-5 h-5" />
+                <Download className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1 group-hover:animate-bounce" />
                 TRADEMARK KEY FACTS & FIGURES
               </a>
             </div>
