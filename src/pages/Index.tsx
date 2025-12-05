@@ -4,7 +4,7 @@ import MenuItem from "@/components/MenuItem";
 import SplashScreen from "@/components/SplashScreen";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
-import logoSignatureWhite from "@/assets/logo-trademark-signature-white.png";
+import logoWhite from "@/assets/logo-trademark-white.png";
 
 const menuItems = [
   { word: "WHY", secondWord: "PURPOSE", to: "/why" },
@@ -57,7 +57,7 @@ const Index = () => {
           <div className="pointer-events-auto">
             <Link to="/" state={{ skipSplash: true }}>
               <img 
-                src={logoSignatureWhite} 
+                src={logoWhite} 
                 alt="TRADEMARK" 
                 className="h-[84px] md:h-[120px] w-auto"
               />
