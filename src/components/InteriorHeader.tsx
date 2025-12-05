@@ -43,7 +43,7 @@ const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }:
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white px-6 md:px-10 py-4">
       <div className="flex justify-between items-center">
-        <Logo />
+        <Logo variant="gray" />
         <div className="flex items-center gap-6">
           <div className="text-[hsl(200_20%_50%)] font-normal text-sm md:text-base tracking-[0.15em]">
             {title} | {subtitle}
