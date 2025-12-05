@@ -53,13 +53,15 @@ const MentionsLegales = () => {
                 </h3>
                 <div className="space-y-1">
                   <p><strong>Dénomination sociale :</strong> TRADEMARK™</p>
-                  <p><strong>Forme juridique :</strong> SARL (Société à Responsabilité Limitée)</p>
-                  <p><strong>Siège social :</strong> Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca, Maroc</p>
-                  <p><strong>Registre du Commerce et des Sociétés :</strong> Inscrite au RCS de Casablanca sous le numéro [insérez ici votre numéro RCS marocain – obligatoire]</p>
-                  <p><strong>Patente / Identifiant fiscal :</strong> [insérez votre IF ou ICE]</p>
-                  <p><strong>Capital social :</strong> [insérez le montant] Dirhams</p>
-                  <p><strong>Téléphone :</strong> [insérez votre numéro]</p>
-                  <p><strong>E-mail :</strong> contact@trademark.com</p>
+                  <p><strong>Forme juridique :</strong> SARLAU (Société à Responsabilité Limitée à Associé Unique)</p>
+                  <p><strong>Siège social :</strong> Rue Soumaya, Résidence Shahrazade 3, N° 22, 5ème étage - Palmiers 2000 Casablanca</p>
+                  <p><strong>Bureau et correspondance :</strong> Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca, Maroc</p>
+                  <p><strong>ICE :</strong> 001563660000042 - <strong>CNSS :</strong> 4266525 - <strong>TP :</strong> 34793631</p>
+                  <p><strong>Registre du Commerce :</strong> Inscrite au RC de Casablanca sous le numéro 315669</p>
+                  <p><strong>Patente / Identifiant fiscal :</strong> PT : 34793631 - ID : 15204322</p>
+                  <p><strong>Capital social :</strong> 170 000 Dirhams</p>
+                  <p><strong>Téléphone :</strong> +212(0)674010101</p>
+                  <p><strong>E-mail :</strong> contact@tmconseil.com</p>
                   <p><strong>Directeur de la publication :</strong> Monsieur Nawfel Bensari, Gérant</p>
                 </div>
               </section>
@@ -71,9 +73,10 @@ const MentionsLegales = () => {
                 </h3>
                 <p className="mb-2">Le site www.tmconseil.com est hébergé par :</p>
                 <div className="space-y-1">
-                  <p>Framer B.V.</p>
-                  <p>Rozengracht 207, 1016 LZ Amsterdam, Pays-Bas</p>
-                  <p>E-mail : contact@framer.com</p>
+                  <p>Genious</p>
+                  <p>Assif B N 290, Marrakech</p>
+                  <p>Email : contact@genious.net</p>
+                  <p>Téléphone : +212 524291141</p>
                 </div>
               </section>
 
@@ -110,7 +113,7 @@ const MentionsLegales = () => {
 
                 <h4 className="text-[hsl(200_20%_40%)] font-normal tracking-wide mb-3">4.2 Base légale</h4>
                 <p className="mb-6">
-                  Le traitement repose sur votre consentement (case à cocher obligatoire sur chaque formulaire) et, le cas échéant, sur l'exécution de mesures précontractuelles ou notre intérêt légitime (amélioration du site).
+                  Le traitement repose sur votre consentement et, le cas échéant, sur l'exécution de mesures précontractuelles ou notre intérêt légitime (amélioration du site).
                 </p>
 
                 <h4 className="text-[hsl(200_20%_40%)] font-normal tracking-wide mb-3">4.3 Destinataires des données</h4>
@@ -125,7 +128,7 @@ const MentionsLegales = () => {
                 <ul className="list-disc list-inside mb-2 space-y-1 pl-4">
                   <li>Données de contact (formulaire) : 3 ans à compter du dernier contact.</li>
                   <li>Données de candidature : 2 ans après le dernier contact.</li>
-                  <li>Cookies analytiques : 13 mois maximum.</li>
+                  <li>Cookies analytiques : 12 mois maximum.</li>
                 </ul>
                 <p className="mb-6">Au-delà, les données sont anonymisées ou supprimées.</p>
 
@@ -138,7 +141,7 @@ const MentionsLegales = () => {
                   <li>droit de définir des directives relatives au sort de vos données après votre décès.</li>
                 </ul>
                 <p className="mb-4">
-                  Pour exercer ces droits ou pour toute question, contactez-nous à : contact@trademark.com ou par courrier à l'adresse du siège social.
+                  Pour exercer ces droits ou pour toute question, contactez-nous à : contact@tmconseil.com ou par courrier à l'adresse du siège social.
                 </p>
                 <p className="mb-6">
                   Vous disposez également du droit d'introduire une réclamation auprès de la Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP) – Adresse : 6 bis, rue Sarraj, secteur 6, Hay Riad, Rabat – Site : www.cndp.ma
