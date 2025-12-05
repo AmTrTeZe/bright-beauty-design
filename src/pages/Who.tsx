@@ -46,11 +46,11 @@ const Who = () => {
           </section>
 
           {/* White Content Block - Photo and Logos */}
-          <section aria-label="Parcours professionnel" className="bg-white px-8 md:px-16 lg:px-24 pt-8 pb-0 relative">
+          <section aria-label="Parcours professionnel" className="bg-white px-8 md:px-16 lg:px-24 pt-8 relative">
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap items-end justify-center gap-8 md:gap-12">
                 {/* Photo - bottom aligned with start of gray block */}
-                <figure className="relative z-10 mb-[-1px]">
+                <figure className="relative z-10 translate-y-[1px]">
                   <img 
                     src={nawfelPhoto} 
                     alt="Nawfel Bensari - Chairman & Senior Advisor chez TRADEMARK" 
