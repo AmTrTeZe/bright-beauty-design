@@ -214,7 +214,7 @@ const Where = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <address className="text-center not-italic">
                   <h2 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                    Trademark Maroc
+                    TRADEMARK™ Maroc
                   </h2>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                     Villa 25, rue 39, Lot. Laymoune 2<br />
@@ -223,7 +223,7 @@ const Where = () => {
                 </address>
                 <address className="text-center not-italic">
                   <h2 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                    Trademark Côte d'Ivoire
+                    TRADEMARK™ Côte d'Ivoire
                   </h2>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                     Lot 533, parcelle 222, II Plateaux Vallon<br />
@@ -241,7 +241,7 @@ const Where = () => {
                   aria-label="Télécharger le document TRADEMARK Key Facts and Figures en PDF"
                 >
                   <Download className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1 group-hover:animate-bounce" aria-hidden="true" />
-                  TRADEMARK KEY FACTS & FIGURES
+                  TRADEMARK™ KEY FACTS & FIGURES
                 </a>
               </div>
             </div>

@@ -43,9 +43,9 @@ const How = () => {
               </h2>
               
               <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
-                Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK est structuré en écosystème ouvert, caractérisé par :
+                Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK™ est structuré en écosystème ouvert, caractérisé par :
                 <br /><br />
-                - Une équipe senior de consulting, «TRADEMARK TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,
+                - Une équipe senior de consulting, «TRADEMARK™ TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,
                 <br />
                 - Une approche holistique, par l'hybridation d'expertises multi-métiers qui permet de gérer l'ensemble des composantes de la problématique posée, de manière coordonnée et intégrée.
                 <br />
@@ -63,7 +63,7 @@ const How = () => {
               <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal mb-6">
                 BRAND, MARKETING & COMMUNICATION CENTRED / DIGITAL MINDED & TECH ORIENTED / BUSINESS FOCUSED & VALUE OBSESSED / HYBRID & AGILE / HOLISTIC & INTEGRATED / INNOVATIVE & COMPETITIVE / CLIENT CENTRIC & TAILOR MADE.
                 <br /><br />
-                TRADEMARK | AS OPEN ADDED VALUE
+                TRADEMARK™ | AS OPEN ADDED VALUE
               </p>
 
               <blockquote className="text-foreground/80 text-sm md:text-base italic font-normal">
