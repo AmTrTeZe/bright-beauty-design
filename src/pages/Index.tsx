@@ -79,6 +79,15 @@ const Index = () => {
           </nav>
         </main>
 
+        {/* Brand Powers Business - bottom right */}
+        <div className="px-6 md:px-10 pb-4 flex justify-end">
+          <div className="text-right text-foreground/80 text-xs md:text-sm font-extralight leading-tight tracking-wider">
+            <div>BRAND</div>
+            <div>POWERS</div>
+            <div>BUSINESS</div>
+          </div>
+        </div>
+
         {/* Footer */}
         <footer className="px-6 md:px-10 py-4 flex justify-center items-center">
           <div className="flex items-center gap-3 text-foreground/70 text-[10px] md:text-xs font-normal whitespace-nowrap">
