@@ -15,7 +15,7 @@ const InteriorFooter = () => {
           Contact
         </Link>
         <span className="text-[hsl(200_20%_75%)]">|</span>
-        <span>Villa 25, rue 39, Lotissement Laymoune 2 20190 Casablanca</span>
+        <span>Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca</span>
         <span className="text-[hsl(200_20%_75%)]">|</span>
         <span>©TRADEMARK™ 2025</span>
       </div>
