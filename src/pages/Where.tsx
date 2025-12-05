@@ -210,21 +210,26 @@ const Where = () => {
           {/* Addresses & PDF Section */}
           <section aria-label="Nos adresses" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12">
             <div className="max-w-4xl mx-auto">
+              {/* TRADEMARK Title */}
+              <h2 className="text-foreground text-xl md:text-2xl tracking-widest uppercase font-normal mb-8 text-center">
+                TRADEMARK™
+              </h2>
+              
               {/* Addresses */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <address className="text-center not-italic">
-                  <h2 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                    TRADEMARK™ Maroc
-                  </h2>
+                  <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
+                    Maroc / Siège
+                  </h3>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                     Villa 25, rue 39, Lot. Laymoune 2<br />
                     20190 Casablanca
                   </p>
                 </address>
                 <address className="text-center not-italic">
-                  <h2 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                    TRADEMARK™ Côte d'Ivoire
-                  </h2>
+                  <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
+                    Côte d'Ivoire
+                  </h3>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                     Lot 533, parcelle 222, II Plateaux Vallon<br />
                     Cocody Abidjan
