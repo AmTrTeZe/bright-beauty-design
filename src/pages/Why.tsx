@@ -59,9 +59,12 @@ const Why = () => {
                 Brand Fortification / Market Activation / Business Acceleration
               </p>
 
-              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light">
+              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light mb-8">
                 « Before you have a share of market, you must have a share of mind »
               </blockquote>
+              <p className="text-foreground/60 text-xs tracking-wider uppercase font-light">
+                TRADEMARK™ | BRAND AS ASSET
+              </p>
             </div>
           </section>
         </main>
