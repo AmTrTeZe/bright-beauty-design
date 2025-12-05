@@ -28,7 +28,7 @@ const SEO = ({
     "logo": "https://trademark.ma/logo-trademark.png",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Villa 25, rue 39, Lot. Laymoune 2",
+      "streetAddress": "Villa 25, rue 39, Lotissement Laymoune 2",
       "addressLocality": "Casablanca",
       "postalCode": "20190",
       "addressCountry": "MA"

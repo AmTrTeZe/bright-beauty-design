@@ -30,7 +30,7 @@ const Index = () => {
     "slogan": "Brand Powers Business",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Villa 25, rue 39, Lot. Laymoune 2",
+      "streetAddress": "Villa 25, rue 39, Lotissement Laymoune 2",
       "addressLocality": "Casablanca",
       "postalCode": "20190",
       "addressCountry": "MA"
@@ -99,7 +99,7 @@ const Index = () => {
               Contact
             </Link>
             <span className="text-foreground/40">|</span>
-            <address className="not-italic">Villa 25, rue 39, Lot. Laymoune 2 20190 Casablanca</address>
+            <address className="not-italic">Villa 25, rue 39, Lotissement Laymoune 2 20190 Casablanca</address>
             <span className="text-foreground/40">|</span>
             <span>©Trademark 2025</span>
           </div>
