@@ -11,11 +11,11 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
   useEffect(() => {
     const timers = [
       setTimeout(() => setPhase('hold'), 1200),
-      setTimeout(() => setPhase('fadeout'), 4000),
+      setTimeout(() => setPhase('fadeout'), 5500),
       setTimeout(() => {
         setPhase('done');
         onComplete();
-      }, 4800),
+      }, 6300),
     ];
 
     return () => timers.forEach(clearTimeout);
