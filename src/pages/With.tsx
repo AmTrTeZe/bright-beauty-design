@@ -209,7 +209,7 @@ const With = () => {
                       <span
                         key={brandIndex}
                         className={`text-sm md:text-base tracking-wide text-[#849aa9] ${
-                          brand.bold ? "font-bold" : "font-light"
+                          brand.bold ? "font-normal" : "font-light"
                         }`}
                       >
                         {brand.name}

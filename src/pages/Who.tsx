@@ -98,7 +98,7 @@ const Who = () => {
                 <span className="font-light"> – CHAIRMAN & SENIOR ADVISOR</span>
               </h2>
               
-              <div className="text-white text-sm md:text-base leading-[2] font-normal tracking-wide space-y-4">
+              <div className="text-white text-sm md:text-base leading-[1.8] font-light tracking-wide space-y-4">
                 <p>
                   › 10 ans à Paris au siège de leaders mondiaux du conseil en communication / Groupes HAVAS & PUBLICIS
                 </p>
@@ -126,7 +126,7 @@ const Who = () => {
                 </p>
               </div>
 
-              <p className="text-white text-sm md:text-base font-normal tracking-wide leading-relaxed mt-12 uppercase">
+              <p className="text-white text-sm md:text-base font-light tracking-wide leading-relaxed mt-12 uppercase">
                 ACCOMPAGNÉ D'UNE ÉQUIPE DE CONSULTANTS MULTIMÉTIERS EXPÉRIMENTÉS, COMPOSÉE SUR MESURE, SELON LES SPÉCIFICITÉS DE CHAQUE MISSION, À PARTIR D'UN ÉCOSYSTÈME ÉPROUVÉ.
               </p>
             </div>
