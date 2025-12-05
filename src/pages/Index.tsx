@@ -51,7 +51,7 @@ const Index = () => {
       
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
       
-      <div className="min-h-screen gradient-trademark flex flex-col">
+      <div className="min-h-screen gradient-trademark-home flex flex-col">
         {/* Header */}
         <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10 pointer-events-none">
           <div className="pointer-events-auto">
