@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoWhite from "@/assets/logo-trademark-white.png";
+import logoGray from "@/assets/logo-trademark-gray.jpeg";
 
 interface SplashScreenProps {
   onComplete: () => void;
@@ -26,14 +26,14 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
   return (
     <div 
-      className={`fixed inset-0 z-[100] gradient-trademark flex items-center justify-center transition-opacity duration-1000 ease-out ${
+      className={`fixed inset-0 z-[100] bg-white flex items-center justify-center transition-opacity duration-1000 ease-out ${
         phase === 'fadeout' ? 'opacity-0' : 'opacity-100'
       }`}
     >
       <div className="flex flex-col items-start px-8 md:px-16 max-w-3xl">
         {/* Logo */}
         <img 
-          src={logoWhite} 
+          src={logoGray} 
           alt="TRADEMARK" 
           className={`h-10 md:h-14 lg:h-16 w-auto mb-6 transition-all duration-700 ease-out ${
             phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
@@ -47,7 +47,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         
         {/* Tagline */}
         <p 
-          className={`text-white/70 text-[10px] md:text-xs lg:text-sm font-extralight tracking-[0.15em] uppercase mb-8 transition-all duration-700 ease-out ${
+          className={`text-[#849aa9] text-[10px] md:text-xs lg:text-sm font-extralight tracking-[0.15em] uppercase mb-8 transition-all duration-700 ease-out ${
             phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
         >
@@ -56,7 +56,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         
         {/* Brand Powers Business - aligned right */}
         <div 
-          className={`self-end text-right text-white/90 font-light tracking-[0.25em] text-xs md:text-sm lg:text-base leading-loose transition-all duration-700 ease-out ${
+          className={`self-end text-right text-[#849aa9] font-light tracking-[0.25em] text-xs md:text-sm lg:text-base leading-loose transition-all duration-700 ease-out ${
             phase === 'logo' || phase === 'tagline' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
         >
