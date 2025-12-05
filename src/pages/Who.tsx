@@ -91,7 +91,7 @@ const Who = () => {
           </section>
 
           {/* Gray Content Block - Bio */}
-          <section aria-label="Biographie" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative -mt-[1px]">
+          <section aria-label="Biographie" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative before:absolute before:top-[-2px] before:left-0 before:right-0 before:h-[4px] before:bg-[hsl(200_20%_59%)]">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-white text-base md:text-lg tracking-wide mb-8">
                 <span className="font-semibold">NAWFEL BENSARI</span>
