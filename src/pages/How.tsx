@@ -29,7 +29,7 @@ const How = () => {
           {/* White Content Block */}
           <section aria-label="Problématique" className="bg-white px-8 md:px-16 lg:px-24 py-12">
             <div className="max-w-4xl mx-auto">
-              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
                 Par la complexité grandissante des problématiques clients et des spécificités sectorielles et par la distinction croissante des disciplines et la spécialisation des acteurs, il est désormais communément admis qu'aucun cabinet conseil ou agence de communication ne peut disposer en interne du large spectre des compétences et des expertises exigées pour couvrir l'ensemble de la chaine de valeur. Ce qui serait, à l'évidence, utopique, tant d'un point de vue organisationnel que de coûts de structure. Alors quelle organisation pourrait associer la valeur ajoutée réclamée à la viabilité économique exigée ?
               </p>
             </div>
@@ -42,7 +42,7 @@ const How = () => {
                 L'intégration des métiers & L'hybridation des compétences
               </h2>
               
-              <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
+              <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
                 Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK™ est structuré en écosystème ouvert, caractérisé par :
                 <br /><br />
                 - Une équipe senior de consulting, «TRADEMARK™ TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,
@@ -56,17 +56,17 @@ const How = () => {
                 Soient autant de gages de pertinence, d'excellence et de confiance, d'agilité, de compétitivité et de rentabilité.
               </p>
 
-              <blockquote className="text-foreground/80 text-sm md:text-base italic font-normal mb-6">
+              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light mb-6">
                 « Faire que le résultat soit supérieur à la somme des parties »
               </blockquote>
 
-              <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal mb-6">
+              <p className="text-foreground/60 text-xs tracking-wider uppercase font-light mb-6">
                 BRAND, MARKETING & COMMUNICATION CENTRED / DIGITAL MINDED & TECH ORIENTED / BUSINESS FOCUSED & VALUE OBSESSED / HYBRID & AGILE / HOLISTIC & INTEGRATED / INNOVATIVE & COMPETITIVE / CLIENT CENTRIC & TAILOR MADE.
                 <br /><br />
                 TRADEMARK™ | AS OPEN ADDED VALUE
               </p>
 
-              <blockquote className="text-foreground/80 text-sm md:text-base italic font-normal">
+              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light">
                 « Seul on va plus vite. Ensemble on va plus loin »
               </blockquote>
             </div>

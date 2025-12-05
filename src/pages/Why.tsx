@@ -29,7 +29,7 @@ const Why = () => {
           {/* White Content Block */}
           <section aria-label="Contexte" className="bg-white px-8 md:px-16 lg:px-24 py-12">
             <div className="max-w-4xl mx-auto">
-              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[2] font-normal tracking-wide text-justify">
+              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
                 Dans un monde en constante transformation par une digitalisation accélérée
                 et des ruptures technologiques répétées, les modèles économiques sont challengés
                 et les modes opératoires reconsidérés, les médias sont saturés et les points de
@@ -47,7 +47,7 @@ const Why = () => {
                 Brand Engineering & Business Empowerment
               </h2>
               
-              <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
+              <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
                 TRADEMARK™ constitue le maillon manquant entre les cabinets conseil en stratégie,
                 trop généralistes et les agences de communication, trop opérationnelles.
                 Un concentré d'expertises focalisées sur les champs Brand & Business,
@@ -55,11 +55,11 @@ const Why = () => {
                 générateur de soft power pour l'image, créateur de hard power pour le business.
               </p>
 
-              <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal pt-4 mb-6">
+              <p className="text-foreground/60 text-xs tracking-wider uppercase font-light pt-4 mb-6">
                 Brand Fortification / Market Activation / Business Acceleration
               </p>
 
-              <blockquote className="text-foreground/80 text-sm md:text-base italic font-normal">
+              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light">
                 « Before you have a share of market, you must have a share of mind »
               </blockquote>
             </div>
