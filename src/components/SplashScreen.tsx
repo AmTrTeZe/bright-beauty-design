@@ -26,41 +26,43 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
   return (
     <div 
-      className={`fixed inset-0 z-[100] gradient-trademark flex flex-col items-center justify-center transition-opacity duration-1000 ease-out ${
+      className={`fixed inset-0 z-[100] gradient-trademark flex items-center justify-center transition-opacity duration-1000 ease-out ${
         phase === 'fadeout' ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      {/* Logo - centered */}
-      <img 
-        src={logoWhite} 
-        alt="TRADEMARK" 
-        className={`h-12 md:h-16 lg:h-20 w-auto mb-6 transition-all duration-700 ease-out ${
-          phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-        }`}
-        style={{
-          animation: 'slideUp 0.7s ease-out forwards'
-        }}
-      />
-      
-      {/* Tagline - centered, one line */}
-      <p 
-        className={`text-white/80 text-[9px] md:text-xs lg:text-sm font-light tracking-[0.15em] uppercase mb-10 transition-all duration-700 ease-out whitespace-nowrap ${
-          phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-        }`}
-      >
-        BRAND ENGINEERING & BUSINESS EMPOWERMENT ADVISORY
-      </p>
-      
-      {/* Brand Powers Business - aligned right */}
-      <div 
-        className={`absolute right-8 md:right-16 lg:right-24 text-right text-white/90 font-light tracking-[0.3em] text-xs md:text-sm lg:text-base leading-relaxed transition-all duration-700 ease-out ${
-          phase === 'logo' || phase === 'tagline' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-        }`}
-        style={{ top: '55%' }}
-      >
-        <div>BRAND</div>
-        <div>POWERS</div>
-        <div>BUSINESS</div>
+      {/* Content container - left aligned */}
+      <div className="flex flex-col items-start px-8 md:px-16 lg:px-24">
+        {/* Logo */}
+        <img 
+          src={logoWhite} 
+          alt="TRADEMARK" 
+          className={`h-12 md:h-16 lg:h-20 w-auto mb-6 transition-all duration-700 ease-out ${
+            phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+          style={{
+            animation: 'slideUp 0.7s ease-out forwards'
+          }}
+        />
+        
+        {/* Tagline - left aligned with logo */}
+        <p 
+          className={`text-white/80 text-[9px] md:text-xs lg:text-sm font-light tracking-[0.15em] uppercase mb-10 transition-all duration-700 ease-out whitespace-nowrap ${
+            phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+          }`}
+        >
+          BRAND ENGINEERING & BUSINESS EMPOWERMENT ADVISORY
+        </p>
+        
+        {/* Brand Powers Business - aligned right relative to tagline */}
+        <div 
+          className={`self-end text-right text-white/90 font-light tracking-[0.3em] text-xs md:text-sm lg:text-base leading-relaxed transition-all duration-700 ease-out ${
+            phase === 'logo' || phase === 'tagline' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+          }`}
+        >
+          <div>BRAND</div>
+          <div>POWERS</div>
+          <div>BUSINESS</div>
+        </div>
       </div>
     </div>
   );
