@@ -14,8 +14,8 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
   const isHomePage = location.pathname === "/";
   
   const sizeClasses = {
-    sm: "h-3.5 md:h-[18px]",
-    md: "h-[26px] md:h-8",
+    sm: "h-[18px] md:h-[23px]",
+    md: "h-[30px] md:h-[37px]",
     lg: "h-6 md:h-8"
   };
   
