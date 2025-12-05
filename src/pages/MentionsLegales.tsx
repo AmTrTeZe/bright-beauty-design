@@ -52,7 +52,7 @@ const MentionsLegales = () => {
                   1. Éditeur du site
                 </h3>
                 <div className="space-y-1">
-                  <p><strong>Dénomination sociale :</strong> TRADEMARK</p>
+                  <p><strong>Dénomination sociale :</strong> TRADEMARK™</p>
                   <p><strong>Forme juridique :</strong> SARL (Société à Responsabilité Limitée)</p>
                   <p><strong>Siège social :</strong> Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca, Maroc</p>
                   <p><strong>Registre du Commerce et des Sociétés :</strong> Inscrite au RCS de Casablanca sous le numéro [insérez ici votre numéro RCS marocain – obligatoire]</p>
@@ -83,10 +83,10 @@ const MentionsLegales = () => {
                   3. Propriété intellectuelle
                 </h3>
                 <p className="mb-4">
-                  L'ensemble du contenu du présent site (structure, design, textes, images, photographies, illustrations, logos, marques, vidéos, sons, etc.) est la propriété exclusive de TRADEMARK SARL ou de ses partenaires et est protégé par les lois marocaines et internationales relatives à la propriété intellectuelle (loi n° 2-00 relative aux droits d'auteur et droits voisins, loi n° 17-97 sur la protection de la propriété industrielle).
+                  L'ensemble du contenu du présent site (structure, design, textes, images, photographies, illustrations, logos, marques, vidéos, sons, etc.) est la propriété exclusive de TRADEMARK™ SARL ou de ses partenaires et est protégé par les lois marocaines et internationales relatives à la propriété intellectuelle (loi n° 2-00 relative aux droits d'auteur et droits voisins, loi n° 17-97 sur la protection de la propriété industrielle).
                 </p>
                 <p>
-                  Toute reproduction, représentation, modification, adaptation ou exploitation, totale ou partielle, du site ou de l'un quelconque de ses éléments, par quelque procédé que ce soit, est strictement interdite sans l'autorisation écrite préalable de TRADEMARK SARL et constituerait une contrefaçon sanctionnée pénalement.
+                  Toute reproduction, représentation, modification, adaptation ou exploitation, totale ou partielle, du site ou de l'un quelconque de ses éléments, par quelque procédé que ce soit, est strictement interdite sans l'autorisation écrite préalable de TRADEMARK™ SARL et constituerait une contrefaçon sanctionnée pénalement.
                 </p>
               </section>
 
@@ -96,7 +96,7 @@ const MentionsLegales = () => {
                   4. Données personnelles – Protection des données à caractère personnel
                 </h3>
                 <p className="mb-6">
-                  TRADEMARK SARL, en sa qualité de responsable de traitement, collecte et traite des données à caractère personnel dans le strict respect de la loi n° 09-08 promulguée par le Dahir n° 1-09-15 du 18 février 2009 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et des textes pris pour son application.
+                  TRADEMARK™ SARL, en sa qualité de responsable de traitement, collecte et traite des données à caractère personnel dans le strict respect de la loi n° 09-08 promulguée par le Dahir n° 1-09-15 du 18 février 2009 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et des textes pris pour son application.
                 </p>
 
                 <h4 className="text-[hsl(200_20%_40%)] font-normal tracking-wide mb-3">4.1 Finalités du traitement</h4>
@@ -115,7 +115,7 @@ const MentionsLegales = () => {
 
                 <h4 className="text-[hsl(200_20%_40%)] font-normal tracking-wide mb-3">4.3 Destinataires des données</h4>
                 <p className="mb-2">
-                  Seul le personnel habilité de TRADEMARK SARL et, le cas échéant, nos sous-traitants techniques (hébergeur, prestataires informatiques) liés par une obligation de confidentialité ont accès à vos données.
+                  Seul le personnel habilité de TRADEMARK™ SARL et, le cas échéant, nos sous-traitants techniques (hébergeur, prestataires informatiques) liés par une obligation de confidentialité ont accès à vos données.
                 </p>
                 <p className="mb-6">
                   Aucune donnée n'est transférée hors du Maroc sans garanties appropriées et sans votre consentement exprès.
@@ -175,10 +175,10 @@ const MentionsLegales = () => {
                   6. Responsabilité
                 </h3>
                 <p className="mb-4">
-                  TRADEMARK SARL met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site, mais ne peut garantir leur exhaustivité ni l'absence d'erreurs.
+                  TRADEMARK™ SARL met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site, mais ne peut garantir leur exhaustivité ni l'absence d'erreurs.
                 </p>
                 <p>
-                  TRADEMARK SARL ne saurait être tenue responsable des dommages directs ou indirects résultant de l'accès ou de l'utilisation du site, ni des interruptions ou dysfonctionnements liés à l'hébergeur ou à la connexion internet.
+                  TRADEMARK™ SARL ne saurait être tenue responsable des dommages directs ou indirects résultant de l'accès ou de l'utilisation du site, ni des interruptions ou dysfonctionnements liés à l'hébergeur ou à la connexion internet.
                 </p>
               </section>
 
@@ -188,7 +188,7 @@ const MentionsLegales = () => {
                   7. Liens hypertextes
                 </h3>
                 <p>
-                  Le site peut contenir des liens vers des sites tiers. TRADEMARK SARL n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu et à leurs pratiques en matière de protection des données.
+                  Le site peut contenir des liens vers des sites tiers. TRADEMARK™ SARL n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu et à leurs pratiques en matière de protection des données.
                 </p>
               </section>
 
