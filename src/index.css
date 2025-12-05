@@ -104,6 +104,6 @@
   }
   
   .gradient-trademark {
-    background: linear-gradient(180deg, hsl(204 18% 65%) 0%, hsl(204 18% 55%) 100%);
+    background-color: #849aa9;
   }
 }
