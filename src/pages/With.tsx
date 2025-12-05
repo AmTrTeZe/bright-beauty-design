@@ -36,7 +36,7 @@ const sectors: SectorData[] = [
       { name: "QANTAS", bold: true },
       { name: "ONMT", bold: false },
       { name: "CRT MARRAKECH", bold: true },
-      { name: "BAHIA MARRAKECH", bold: false },
+      { name: "BAHJA MARRAKECH", bold: false },
       { name: "PALMERAIE GROUP", bold: true },
       { name: "TERRE ESSENTIELLE", bold: false },
     ],
