@@ -56,7 +56,7 @@ const MentionsLegales = () => {
                   <p><strong>Forme juridique :</strong> SARLAU (Société à Responsabilité Limitée à Associé Unique)</p>
                   <p><strong>Siège social :</strong> Rue Soumaya, Résidence Shahrazade 3, N° 22, 5ème étage - Palmiers 2000 Casablanca</p>
                   <p><strong>Bureau et correspondance :</strong> Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca, Maroc</p>
-                  <p><strong>ICE :</strong> 001563660000042 - <strong>CNSS :</strong> 4266525 - <strong>TP :</strong> 34793631</p>
+                  <p><strong>ICE :</strong> 001563660000042 - <strong>CNSS :</strong> 4266525</p>
                   <p><strong>Registre du Commerce :</strong> Inscrite au RC de Casablanca sous le numéro 315669</p>
                   <p><strong>Patente / Identifiant fiscal :</strong> PT : 34793631 - ID : 15204322</p>
                   <p><strong>Capital social :</strong> 170 000 Dirhams</p>
