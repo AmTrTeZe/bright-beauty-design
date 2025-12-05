@@ -63,9 +63,6 @@ const How = () => {
                 TRADEMARK™ | AS OPEN ADDED VALUE
               </p>
 
-              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light">
-                « Seul on va plus vite. Ensemble on va plus loin »
-              </blockquote>
             </div>
           </section>
         </main>
