@@ -59,7 +59,7 @@ const Index = () => {
               <img 
                 src={logoSignatureWhite} 
                 alt="TRADEMARK" 
-                className="h-[67px] md:h-24 w-auto"
+                className="h-[84px] md:h-[120px] w-auto"
               />
             </Link>
           </div>
