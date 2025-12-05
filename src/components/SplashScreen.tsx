@@ -30,24 +30,25 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         phase === 'fadeout' ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      <div className="flex flex-col items-start px-8 md:px-16 max-w-3xl">
+      <div className="flex flex-col items-start px-8 md:px-16">
         {/* Logo */}
         <img 
           src={logoGray} 
           alt="TRADEMARK" 
-          className={`h-10 md:h-14 lg:h-16 w-auto mb-6 transition-all duration-700 ease-out ${
+          className={`h-10 md:h-14 lg:h-16 w-auto mb-4 transition-all duration-700 ease-out image-rendering-crisp ${
             phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
           style={{
             opacity: phase === 'logo' ? 1 : 1,
             transform: 'translateY(0)',
-            animation: 'slideUp 0.7s ease-out forwards'
+            animation: 'slideUp 0.7s ease-out forwards',
+            imageRendering: 'crisp-edges'
           }}
         />
         
-        {/* Tagline */}
+        {/* Tagline - aligned left with logo */}
         <p 
-          className={`text-[#849aa9] text-[10px] md:text-xs lg:text-sm font-extralight tracking-[0.15em] uppercase mb-8 transition-all duration-700 ease-out ${
+          className={`text-[#849aa9] text-[10px] md:text-xs lg:text-sm font-light tracking-[0.2em] uppercase mb-8 transition-all duration-700 ease-out text-left ${
             phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
         >
