@@ -235,7 +235,7 @@ const Where = () => {
               {/* PDF Download Link */}
               <div className="border-t border-foreground/20 pt-8 text-center">
                 <a
-                  href="/Trademark_En_Bref.pdf"
+                  href="/TRADEMARK_OVERVIEW.pdf"
                   download
                   className="group inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
                   aria-label="Télécharger le document TRADEMARK Key Facts and Figures en PDF"
