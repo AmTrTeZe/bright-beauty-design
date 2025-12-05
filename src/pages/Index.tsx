@@ -57,6 +57,9 @@ const Index = () => {
           <div className="pointer-events-auto">
             <Logo variant="white" size="lg" />
           </div>
+          <div className="pointer-events-auto">
+            <Logo variant="white" size="sm" />
+          </div>
         </header>
 
         {/* Menu - centered */}
@@ -74,9 +77,7 @@ const Index = () => {
         </main>
 
         {/* Footer */}
-        <footer className="px-6 md:px-10 py-4 flex flex-row justify-between items-center">
-          <Logo size="sm" variant="white" />
-          
+        <footer className="px-6 md:px-10 py-4 flex justify-center items-center">
           <div className="flex items-center gap-3 text-foreground/70 text-[10px] md:text-xs font-normal whitespace-nowrap">
             <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
               Mentions Légales
@@ -89,12 +90,6 @@ const Index = () => {
             <address className="not-italic">Villa 25, rue 39, Lot. Laymoune 2 20190 Casablanca</address>
             <span className="text-foreground/40">|</span>
             <span>©Trademark 2025</span>
-          </div>
-          
-          <div className="text-right text-foreground/70 font-normal tracking-wider text-[9px] md:text-[10px] leading-tight shrink-0">
-            <div>BRAND</div>
-            <div>POWERS</div>
-            <div>BUSINESS</div>
           </div>
         </footer>
       </div>
