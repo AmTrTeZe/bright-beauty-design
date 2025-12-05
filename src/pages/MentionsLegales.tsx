@@ -69,7 +69,7 @@ const MentionsLegales = () => {
                 <h3 className="text-[hsl(200_20%_35%)] text-base md:text-lg font-normal tracking-wide uppercase mb-4">
                   2. Hébergement
                 </h3>
-                <p className="mb-2">Le site www.trademark.ma (et/ou www.trademark.com) est hébergé par :</p>
+                <p className="mb-2">Le site www.tmconseil.com est hébergé par :</p>
                 <div className="space-y-1">
                   <p>Framer B.V.</p>
                   <p>Rozengracht 207, 1016 LZ Amsterdam, Pays-Bas</p>
