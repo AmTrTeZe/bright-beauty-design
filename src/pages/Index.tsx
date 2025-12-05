@@ -80,8 +80,8 @@ const Index = () => {
         </main>
 
         {/* Brand Powers Business - bottom right */}
-        <div className="fixed bottom-12 right-6 md:right-10 z-40">
-          <div className="text-right text-foreground/80 text-xs md:text-sm font-extralight leading-tight tracking-wider">
+        <div className="fixed bottom-12 right-[39px] md:right-[55px] z-40">
+          <div className="text-right text-foreground/80 text-[14px] md:text-[16px] font-extralight leading-tight tracking-wider">
             <div>BRAND</div>
             <div>POWERS</div>
             <div>BUSINESS</div>
