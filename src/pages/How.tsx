@@ -30,7 +30,7 @@ const How = () => {
           <section aria-label="Problématique" className="bg-white px-8 md:px-16 lg:px-24 py-12">
             <div className="max-w-4xl mx-auto">
               <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
-                Par la complexité grandissante des problématiques clients et des spécificités sectorielles et par la distinction croissante des disciplines et la spécialisation des acteurs, il est désormais communément admis qu'aucun cabinet conseil ou agence de communication ne peut disposer en interne du large spectre des compétences et des expertises exigées pour couvrir l'ensemble de la chaine de valeur. Ce qui serait, à l'évidence, utopique, tant d'un point de vue organisationnel que de coûts de structure. Alors quelle organisation pourrait associer la valeur ajoutée réclamée à la viabilité économique exigée ?
+                Par la complexité grandissante des problématiques clients et des spécificités sectorielles et par la distinction croissante des disciplines et la spécialisation des acteurs, il est désormais communément admis qu'aucun cabinet conseil ou agence de communication ne peut disposer en interne du large spectre des compétences et des expertises exigées pour couvrir l'ensemble de la chaine de valeur. Ce qui serait à l'évidence utopique, tant d'un point de vue organisationnel que de coûts de structure. Alors quelle organisation pourrait associer la valeur ajoutée réclamée à la viabilité économique exigée ?
               </p>
             </div>
           </section>
@@ -39,7 +39,7 @@ const How = () => {
           <section aria-label="Notre approche" className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
-                INTÉGRATION DES MÉTIERS ET HYBRIDATION DES COMPÉTENCES
+                INTÉGRATION DES MÉTIERS & HYBRIDATION DES COMPÉTENCES
               </h2>
               
               <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
