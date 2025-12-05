@@ -95,7 +95,7 @@ const sectors: SectorData[] = [
     ],
   },
   {
-    title: "TRANSPORT & ENERGY",
+    title: "AUTOMOTIVE, TRANSPORT & ENERGY",
     brands: [
       { name: "RENAULT", bold: true },
       { name: "DACIA", bold: false },
