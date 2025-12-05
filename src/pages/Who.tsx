@@ -81,7 +81,7 @@ const Who = () => {
                   />
                   <img 
                     src={trademarkLogo} 
-                    alt="Logo TRADEMARK - Cabinet conseil en Brand Engineering" 
+                    alt="Logo TRADEMARK™ - Cabinet conseil en Brand Engineering" 
                     className="h-6 md:h-8 object-contain -ml-3"
                     loading="lazy"
                   />
@@ -107,7 +107,7 @@ const Who = () => {
                   <span className="ml-3">Filiale du Groupe Publicis au Maroc & Hub régional Afrique francophone</span>
                 </p>
                 <p>
-                  › 10 ans d'entrepreneuriat : TRADEMARK - Brand Engineering<br />
+                  › 10 ans d'entrepreneuriat : TRADEMARK™ - Brand Engineering<br />
                   <span className="ml-3">Cabinet conseil en ingénierie de marque. Founder, Chairman & Senior Advisor</span>
                 </p>
                 <p>

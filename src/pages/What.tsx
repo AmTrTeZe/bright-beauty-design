@@ -85,7 +85,7 @@ const What = () => {
                   BRAND FORTIFICATION
                 </h2>
                 <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
-                  Comme pour un édifice, la qualité des fondations est essentielle à la construction d'une marque. Face à cet enjeu existentiel, le Cabinet TRADEMARK fait de sa mission de Brand Engineering, un acte fondateur déterminant de sa valeur ajoutée. Tant en phases de création, de consolidation, de réorientation ou encore de diversification, cette réflexion vise à définir/redéfinir les fondements tant stratégiques que créatifs de la marque, qui font son identité et sa singularité, son attractivité et sa compétitivité, garants de son succès sur la durée.
+                  Comme pour un édifice, la qualité des fondations est essentielle à la construction d'une marque. Face à cet enjeu existentiel, le Cabinet TRADEMARK™ fait de sa mission de Brand Engineering, un acte fondateur déterminant de sa valeur ajoutée. Tant en phases de création, de consolidation, de réorientation ou encore de diversification, cette réflexion vise à définir/redéfinir les fondements tant stratégiques que créatifs de la marque, qui font son identité et sa singularité, son attractivité et sa compétitivité, garants de son succès sur la durée.
                 </p>
                 <p className="text-foreground/70 text-xs md:text-sm tracking-wider uppercase font-normal mb-6">
                   BRAND ENGINEERING & PERSONAL LEADERSHIP BRAND AUDIT / COMPETITIVE ANALYSIS / BRAND POSITIONING / BRAND EQUITY / BRAND HIERARCHY / BRAND TAGLINE / BRAND IDENTITY / CREATIVE TERRITORY
@@ -94,7 +94,7 @@ const What = () => {
                   «You can't build a great building on weak foundations »
                 </blockquote>
                 <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal">
-                  TRADEMARK | BRAND AS FOUNDATION
+                  TRADEMARK™ | BRAND AS FOUNDATION
                 </p>
               </div>
             </div>
@@ -127,7 +127,7 @@ const What = () => {
                   MARKET ACTIVATION
                 </h2>
                 <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
-                  Pour chaque mission TRADEMARK mobilise des équipes pluridisciplinaires de consultants experts, gérant la mission selon une approche holistique, intégrée et coordonnée, assurant, l'orchestration optimale des composantes stratégiques, créatives, technologiques et opérationnelles, de la réflexion à l'implémentation. Un cadre stratégique, un territoire créatif et un dispositif d'activation, déployés sur l'ensemble des points de contact, dans les champs réel et virtuel, génèrent une expérience de marque globale, multicanale, garantissant pertinence et cohérence, influence et performance.
+                  Pour chaque mission TRADEMARK™ mobilise des équipes pluridisciplinaires de consultants experts, gérant la mission selon une approche holistique, intégrée et coordonnée, assurant, l'orchestration optimale des composantes stratégiques, créatives, technologiques et opérationnelles, de la réflexion à l'implémentation. Un cadre stratégique, un territoire créatif et un dispositif d'activation, déployés sur l'ensemble des points de contact, dans les champs réel et virtuel, génèrent une expérience de marque globale, multicanale, garantissant pertinence et cohérence, influence et performance.
                 </p>
                 <p className="text-foreground/70 text-xs md:text-sm tracking-wider uppercase font-normal mb-6">
                   MARKET INTELLIGENCE & CONSUMER RESEARCH / MARKETING OUTSOURCING / COMMUNICATION STEERING / CONTENT PRODUCING / STORYTELLING / SPACE DESIGN OMNICHANNEL COMMUNICATION STRATEGY / MEDIA PLANNING, BUYING & AIRING / VIDEO, AUDIO & PRINT PRODUCTION / INFLUENCE, PR & EVENT / CRISIS MANAGEMENT
@@ -136,7 +136,7 @@ const What = () => {
                   «La vision sans action est un rêve. L'action sans vision est un cauchemar.»
                 </blockquote>
                 <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal">
-                  TRADEMARK | BRAND AS EXPERIENCE
+                  TRADEMARK™ | BRAND AS EXPERIENCE
                 </p>
               </div>
             </div>
@@ -169,7 +169,7 @@ const What = () => {
                   BUSINESS ACCELERATION
                 </h2>
                 <p className="text-foreground/90 text-sm md:text-base leading-[2] font-normal tracking-wide text-justify mb-6">
-                  Le modèle propriétaire «Brand-To-Business» du cabinet TRADEMARK fonde sa philosophie et guide sa méthodologie. Une approche ROI Oriented assure la transformation de la force créative de la marque en une puissance effective de rayonnement et de développement, créatrice de valeur. Le Cabinet TRADEMARK met l'innovation au coeur de son approche et fait du facteur technologique un levier d'impact et de performance, à travers une démarche exploratoire de «Technology Scouting», destinée à identifier, cartographier, sourcer et activer, en mode «Plug and Play,» les Solutions Tech «Pain Point Killers» les plus avancées et éprouvées, en les transformant en véritable avantages compétitifs. Avec une avance technologique constamment alimentée par une veille constante auprès des écosystèmes internationaux d'innovation (Station F Paris, Campus Berlin, London Rocket Space, Dubai Tech Ecosystem …).
+                  Le modèle propriétaire «Brand-To-Business» du cabinet TRADEMARK™ fonde sa philosophie et guide sa méthodologie. Une approche ROI Oriented assure la transformation de la force créative de la marque en une puissance effective de rayonnement et de développement, créatrice de valeur. Le Cabinet TRADEMARK™ met l'innovation au coeur de son approche et fait du facteur technologique un levier d'impact et de performance, à travers une démarche exploratoire de «Technology Scouting», destinée à identifier, cartographier, sourcer et activer, en mode «Plug and Play,» les Solutions Tech «Pain Point Killers» les plus avancées et éprouvées, en les transformant en véritable avantages compétitifs. Avec une avance technologique constamment alimentée par une veille constante auprès des écosystèmes internationaux d'innovation (Station F Paris, Campus Berlin, London Rocket Space, Dubai Tech Ecosystem …).
                 </p>
                 <p className="text-foreground/70 text-xs md:text-sm tracking-wider uppercase font-normal mb-6">
                   DIGITAL MARKETING / e-COMMERCE CONSULTING / TECH PROVIDING
@@ -178,7 +178,7 @@ const What = () => {
                   « Pour gagner les clients que l'on n'a jamais eus, il faut faire ce que l'on n'a jamais fait »
                 </blockquote>
                 <p className="text-foreground/60 text-xs tracking-wider uppercase font-normal">
-                  TRADEMARK | BRAND AS LEVERAGE
+                  TRADEMARK™ | BRAND AS LEVERAGE
                 </p>
               </div>
             </div>
