@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const InteriorFooter = () => {
   return (
     <footer className="bg-white px-6 md:px-10 py-4 flex flex-row justify-between items-center border-t border-[hsl(200_20%_85%)]">
-      <Logo size="sm" />
+      <Logo size="sm" variant="gray" />
       
       <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[10px] md:text-xs font-normal whitespace-nowrap">
         <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">

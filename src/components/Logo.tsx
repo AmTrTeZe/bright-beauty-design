@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import logoImage from "@/assets/logo-trademark.png";
 import logoWhiteImage from "@/assets/logo-trademark-white.png";
+import logoGrayImage from "@/assets/logo-trademark-gray.jpeg";
 
 interface LogoProps {
   className?: string;
   size?: "sm" | "md" | "lg";
-  variant?: "default" | "white";
+  variant?: "default" | "white" | "gray";
 }
 
 const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) => {
@@ -18,7 +19,7 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
     lg: "h-6 md:h-8"
   };
   
-  const logoSrc = variant === "white" ? logoWhiteImage : logoImage;
+  const logoSrc = variant === "white" ? logoWhiteImage : variant === "gray" ? logoGrayImage : logoImage;
   
   // If already on home, just render the logo without link
   if (isHomePage) {
