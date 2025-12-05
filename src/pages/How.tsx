@@ -46,7 +46,7 @@ const How = () => {
                 <p className="mb-4">Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK™ est structuré en écosystème ouvert, caractérisé par :</p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex"><span className="mr-3">-</span><span>Une équipe senior de consulting, «TRADEMARK™ TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,</span></li>
-                  <li className="flex"><span className="mr-3">-</span><span>Une approche holistique, par l'hybridation d'expertises multi-métiers qui permet de gérer l'ensemble des composantes de la problématique posée, de manière coordonnée et intégrée.</span></li>
+                  <li className="flex"><span className="mr-3">-</span><span>Une approche holistique, par l'hybridation d'expertises multi-métiers qui permet de gérer l'ensemble des composantes de la problématique posée, de manière coordonnée et intégrée,</span></li>
                   <li className="flex"><span className="mr-3">-</span><span>Un Top Management impliqué de bout en bout de la mission, pour garantir la fluidité comme la valeur ajoutée,</span></li>
                   <li className="flex"><span className="mr-3">-</span><span>Une direction des opérations implantée à Casablanca, avec la possibilité d'intervenir depuis Paris, Abidjan ou encore Dubai, pour une imprégnation locale et une interface client facilitées ;</span></li>
                 </ul>
