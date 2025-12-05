@@ -46,11 +46,11 @@ const Who = () => {
           </section>
 
           {/* White Content Block - Photo and Logos */}
-          <section aria-label="Parcours professionnel" className="bg-white px-8 md:px-16 lg:px-24 pt-8 relative">
+          <section aria-label="Parcours professionnel" className="bg-white px-8 md:px-16 lg:px-24 pt-8 pb-0 relative border-b border-[#849aa9]">
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap items-end justify-center gap-8 md:gap-12">
                 {/* Photo - bottom aligned with start of gray block */}
-                <figure className="relative z-10 translate-y-[1px]">
+                <figure className="relative z-10 mb-[-1px]">
                   <img 
                     src={nawfelPhoto} 
                     alt="Nawfel Bensari - Chairman & Senior Advisor chez TRADEMARK" 
@@ -91,7 +91,7 @@ const Who = () => {
           </section>
 
           {/* Gray Content Block - Bio */}
-          <section aria-label="Biographie" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative before:absolute before:top-[-2px] before:left-0 before:right-0 before:h-[4px] before:bg-[hsl(200_20%_59%)]">
+          <section aria-label="Biographie" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-white text-base md:text-lg tracking-wide mb-8">
                 <span className="font-semibold">NAWFEL BENSARI</span>
