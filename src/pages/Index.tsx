@@ -4,7 +4,7 @@ import MenuItem from "@/components/MenuItem";
 import SplashScreen from "@/components/SplashScreen";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
-import logoSignatureWhite from "@/assets/logo-trademark-signature-white.png";
+import logoSignatureWhite from "@/assets/logo-trademark-home-white.png";
 
 const menuItems = [
   { word: "WHY", secondWord: "PURPOSE", to: "/why" },
