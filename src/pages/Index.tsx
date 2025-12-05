@@ -59,14 +59,14 @@ const Index = () => {
               <img 
                 src={logoSignatureWhite} 
                 alt="TRADEMARK" 
-                className="h-14 md:h-20 w-auto"
+                className="h-[67px] md:h-24 w-auto"
               />
             </Link>
           </div>
         </header>
 
         {/* Menu - centered */}
-        <main className="flex-1 flex items-center justify-center">
+        <main className="flex-1 flex items-center justify-center pt-5">
           <nav aria-label="Navigation principale" className="flex flex-col gap-3 md:gap-4">
             {menuItems.map((item) => (
               <MenuItem
