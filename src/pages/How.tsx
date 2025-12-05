@@ -38,8 +38,8 @@ const How = () => {
           {/* Dark Section */}
           <section aria-label="Notre approche" className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
-                L'intégration des métiers & L'hybridation des compétences
+              <h2 className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
+                INTÉGRATION DES MÉTIERS ET HYBRIDATION DES COMPÉTENCES
               </h2>
               
               <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">

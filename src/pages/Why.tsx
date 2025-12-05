@@ -43,7 +43,7 @@ const Why = () => {
           {/* Dark Section */}
           <section aria-label="Brand Engineering" className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
+              <h2 className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                 Brand Engineering & Business Empowerment
               </h2>
               

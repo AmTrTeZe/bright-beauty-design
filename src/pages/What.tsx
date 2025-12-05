@@ -81,7 +81,7 @@ const What = () => {
             {/* Dark Block - full width */}
             <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
               <div className="max-w-4xl mx-auto">
-                <h2 id="brand-fortification-title" className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
+                <h2 id="brand-fortification-title" className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                   BRAND FORTIFICATION
                 </h2>
                 <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
@@ -123,7 +123,7 @@ const What = () => {
             {/* Dark Block - full width */}
             <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
               <div className="max-w-4xl mx-auto">
-                <h2 id="market-activation-title" className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
+                <h2 id="market-activation-title" className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                   MARKET ACTIVATION
                 </h2>
                 <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
@@ -165,7 +165,7 @@ const What = () => {
             {/* Dark Block - full width */}
             <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
               <div className="max-w-4xl mx-auto">
-                <h2 id="business-acceleration-title" className="text-foreground text-sm md:text-base font-normal tracking-wider uppercase mb-6">
+                <h2 id="business-acceleration-title" className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                   BUSINESS ACCELERATION
                 </h2>
                 <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
