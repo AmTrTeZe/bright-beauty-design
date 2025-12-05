@@ -100,7 +100,8 @@ const Who = () => {
               
               <div className="text-white text-sm md:text-base leading-[1.8] font-light tracking-wide space-y-4">
                 <p>
-                  › 10 ans à Paris au siège de leaders mondiaux du conseil en communication / Groupes HAVAS & PUBLICIS
+                  › 10 ans à Paris au siège de leaders mondiaux du conseil en communication<br />
+                  <span className="ml-3">Groupes HAVAS & PUBLICIS</span>
                 </p>
                 <p>
                   › 10 ans de Présidence de PUBLICIS MAROC<br />
