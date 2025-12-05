@@ -60,11 +60,11 @@ const Who = () => {
                 </figure>
                 
                 {/* Logos */}
-                <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pb-4 mb-[70px]">
+                <div className="flex flex-wrap items-start justify-center gap-6 md:gap-10 pb-4 mb-[70px]">
                   <img 
                     src={havasGroup} 
                     alt="Logo Havas Group - Groupe de communication mondial" 
-                    className="h-8 md:h-10 object-contain"
+                    className="h-[29px] md:h-9 object-contain"
                     loading="lazy"
                   />
                   <img 
@@ -82,7 +82,7 @@ const Who = () => {
                   <img 
                     src={trademarkLogo} 
                     alt="Logo TRADEMARK™ - Cabinet conseil en Brand Engineering" 
-                    className="h-6 md:h-8 object-contain -ml-3"
+                    className="h-[26px] md:h-[35px] object-contain -ml-3"
                     loading="lazy"
                   />
                 </div>
