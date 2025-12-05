@@ -42,19 +42,16 @@ const How = () => {
                 INTÉGRATION DES MÉTIERS & HYBRIDATION DES COMPÉTENCES
               </h2>
               
-              <p className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
-                Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK™ est structuré en écosystème ouvert, caractérisé par :
-                <br /><br />
-                - Une équipe senior de consulting, «TRADEMARK™ TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,
-                <br />
-                - Une approche holistique, par l'hybridation d'expertises multi-métiers qui permet de gérer l'ensemble des composantes de la problématique posée, de manière coordonnée et intégrée.
-                <br />
-                - Un Top Management impliqué de bout en bout de la mission, pour garantir la fluidité comme la valeur ajoutée,
-                <br />
-                - Une direction des opérations implantée à Casablanca, avec la possibilité d'intervenir depuis Paris, Abidjan ou encore Dubai, pour une imprégnation locale et une interface client facilitées ;
-                <br /><br />
-                Soient autant de gages de pertinence, d'excellence et de confiance, d'agilité, de compétitivité et de rentabilité.
-              </p>
+              <div className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
+                <p className="mb-4">Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK™ est structuré en écosystème ouvert, caractérisé par :</p>
+                <ul className="space-y-2 mb-4">
+                  <li className="flex"><span className="mr-3">-</span><span>Une équipe senior de consulting, «TRADEMARK™ TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,</span></li>
+                  <li className="flex"><span className="mr-3">-</span><span>Une approche holistique, par l'hybridation d'expertises multi-métiers qui permet de gérer l'ensemble des composantes de la problématique posée, de manière coordonnée et intégrée.</span></li>
+                  <li className="flex"><span className="mr-3">-</span><span>Un Top Management impliqué de bout en bout de la mission, pour garantir la fluidité comme la valeur ajoutée,</span></li>
+                  <li className="flex"><span className="mr-3">-</span><span>Une direction des opérations implantée à Casablanca, avec la possibilité d'intervenir depuis Paris, Abidjan ou encore Dubai, pour une imprégnation locale et une interface client facilitées ;</span></li>
+                </ul>
+                <p>Soient autant de gages de pertinence, d'excellence et de confiance, d'agilité, de compétitivité et de rentabilité.</p>
+              </div>
 
               <blockquote className="text-foreground/80 text-sm md:text-base italic font-light mb-6">
                 « Faire que le résultat soit supérieur à la somme des parties »
