@@ -82,7 +82,7 @@ const Where = () => {
         {
           "@type": "PostalAddress",
           "name": "Trademark Maroc",
-          "streetAddress": "Villa 25, rue 39, Lot. Laymoune 2",
+          "streetAddress": "Villa 25, rue 39, Lotissement Laymoune 2",
           "addressLocality": "Casablanca",
           "postalCode": "20190",
           "addressCountry": "MA"
@@ -222,7 +222,7 @@ const Where = () => {
                     Maroc / Siège
                   </h3>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
-                    Villa 25, rue 39, Lot. Laymoune 2<br />
+                    Villa 25, rue 39, Lotissement Laymoune 2<br />
                     20190 Casablanca
                   </p>
                 </address>
