@@ -130,7 +130,7 @@ const What = () => {
                   Pour chaque mission TRADEMARK™ mobilise des équipes pluridisciplinaires de consultants experts, gérant la mission selon une approche holistique, intégrée et coordonnée, assurant, l'orchestration optimale des composantes stratégiques, créatives, technologiques et opérationnelles, de la réflexion à l'implémentation. Un cadre stratégique, un territoire créatif et un dispositif d'activation, déployés sur l'ensemble des points de contact, dans les champs réel et virtuel, génèrent une expérience de marque globale, multicanale, garantissant pertinence et cohérence, influence et performance.
                 </p>
                 <p className="text-foreground/70 text-xs md:text-sm tracking-wider uppercase font-light mb-6">
-                  MARKET INTELLIGENCE & CONSUMER RESEARCH / MARKETING OUTSOURCING / COMMUNICATION STEERING / CONTENT PRODUCING / STORYTELLING / SPACE DESIGN / OMNICHANNEL COMMUNICATION STRATEGY / MEDIA PLANNING, BUYING & AIRING / VIDEO, AUDIO & PRINT PRODUCTION / INFLUENCE, PR & EVENT / CRISIS MANAGEMENT
+                  MARKET INTELLIGENCE / CONSUMER RESEARCH / MARKETING OUTSOURCING/ COMMUNICATION STEERING / CRISIS MANAGEMENT / OMNICHANNEL STRATEGY / STORYTELLING / CONTENT PRODUCING / MEDIA PLANNING, BUYING & AIRING /PR & INFLUENCE/ EVENT / SPACE DESIGN.
                 </p>
                 <blockquote className="text-foreground/80 text-sm md:text-base italic font-light mb-8">
                   «La vision sans action est un rêve. L'action sans vision est un cauchemar.»
