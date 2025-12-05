@@ -208,10 +208,8 @@ const With = () => {
                     {sector.brands.map((brand, brandIndex) => (
                       <span
                         key={brandIndex}
-                        className={`text-sm md:text-base tracking-wide ${
-                          brand.bold
-                            ? "text-[hsl(200_15%_35%)] font-semibold"
-                            : "text-[hsl(200_15%_65%)] font-normal"
+                        className={`text-sm md:text-base tracking-wide text-gray ${
+                          brand.bold ? "font-bold" : "font-light"
                         }`}
                       >
                         {brand.name}
