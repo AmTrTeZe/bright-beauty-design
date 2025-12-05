@@ -30,13 +30,13 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         phase === 'fadeout' ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      {/* Content container - left aligned */}
+      {/* Content container */}
       <div className="flex flex-col items-start px-8 md:px-16 lg:px-24">
         {/* Logo */}
         <img 
           src={logoWhite} 
           alt="TRADEMARK" 
-          className={`h-12 md:h-16 lg:h-20 w-auto mb-6 transition-all duration-700 ease-out ${
+          className={`h-12 md:h-16 lg:h-20 w-auto mb-6 transition-all duration-700 ease-out self-start ${
             phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
           style={{
@@ -46,14 +46,14 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         
         {/* Tagline - left aligned with logo */}
         <p 
-          className={`text-white/80 text-[9px] md:text-xs lg:text-sm font-light tracking-[0.15em] uppercase mb-10 transition-all duration-700 ease-out whitespace-nowrap ${
+          className={`text-white/80 text-[9px] md:text-xs lg:text-sm font-light tracking-[0.15em] uppercase mb-10 transition-all duration-700 ease-out whitespace-nowrap self-start ${
             phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
         >
           BRAND ENGINEERING & BUSINESS EMPOWERMENT ADVISORY
         </p>
         
-        {/* Brand Powers Business - aligned right relative to tagline */}
+        {/* Brand Powers Business - aligned right */}
         <div 
           className={`self-end text-right text-white/90 font-light tracking-[0.3em] text-xs md:text-sm lg:text-base leading-relaxed transition-all duration-700 ease-out ${
             phase === 'logo' || phase === 'tagline' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
