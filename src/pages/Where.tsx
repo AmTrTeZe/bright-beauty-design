@@ -235,13 +235,13 @@ const Where = () => {
               {/* PDF Download Link */}
               <div className="border-t border-foreground/20 pt-8 text-center">
                 <a
-                  href="/TRADEMARK_OVERVIEW.pdf"
+                  href="/Trademark_En_Bref.pdf"
                   download
                   className="group inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
-                  aria-label="Télécharger le document TRADEMARK Key Facts and Figures en PDF"
+                  aria-label="Télécharger le document TRADEMARK En Bref en PDF"
                 >
                   <Download className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1 group-hover:animate-bounce" aria-hidden="true" />
-                  TRADEMARK™ KEY FACTS & FIGURES
+                  TRADEMARK™ EN BREF
                 </a>
               </div>
             </div>
