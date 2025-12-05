@@ -17,7 +17,7 @@ const InteriorFooter = () => {
         <span className="text-[hsl(200_20%_75%)]">|</span>
         <span>Villa 25, rue 39, Lot. Laymoune 2 20190 Casablanca</span>
         <span className="text-[hsl(200_20%_75%)]">|</span>
-        <span>©Trademark 2025</span>
+        <span>©TRADEMARK™ 2025</span>
       </div>
       
       <div className="text-right text-[hsl(200_20%_50%)] font-normal tracking-wider text-[9px] md:text-[10px] leading-tight shrink-0">

@@ -27,7 +27,7 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
       <div className={`${className}`}>
         <img 
           src={logoSrc} 
-          alt="TRADEMARK" 
+          alt="TRADEMARK™" 
           className={`${sizeClasses[size]} w-auto`}
         />
       </div>
@@ -42,7 +42,7 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
     >
       <img 
         src={logoSrc} 
-        alt="TRADEMARK" 
+        alt="TRADEMARK™" 
         className={`${sizeClasses[size]} w-auto`}
       />
     </Link>
