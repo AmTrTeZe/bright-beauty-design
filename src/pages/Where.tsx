@@ -211,7 +211,7 @@ const Where = () => {
           <section aria-label="Nos adresses" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12">
             <div className="max-w-4xl mx-auto">
               {/* TRADEMARK Title */}
-              <h2 className="text-foreground text-xl md:text-2xl tracking-widest uppercase font-normal mb-8 text-center">
+              <h2 className="text-foreground text-xl md:text-2xl tracking-widest uppercase font-light mb-8 text-center">
                 TRADEMARK™
               </h2>
               
