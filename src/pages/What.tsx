@@ -88,7 +88,7 @@ const What = () => {
                   Comme pour un édifice, la qualité des fondations est essentielle à la construction d'une marque. Face à cet enjeu existentiel, le Cabinet TRADEMARK™ fait de sa mission de Brand Engineering, un acte fondateur déterminant de sa valeur ajoutée. Tant en phases de création, de consolidation, de réorientation ou encore de diversification, cette réflexion vise à définir/redéfinir les fondements tant stratégiques que créatifs de la marque, qui font son identité et sa singularité, son attractivité et sa compétitivité, garants de son succès sur la durée.
                 </p>
                 <p className="text-foreground/70 text-xs md:text-sm tracking-wider uppercase font-light mb-6">
-                  BRAND ENGINEERING & PERSONAL LEADERSHIP BRAND AUDIT / COMPETITIVE ANALYSIS / BRAND POSITIONING / BRAND EQUITY / BRAND HIERARCHY / BRAND TAGLINE / BRAND IDENTITY / CREATIVE TERRITORY
+                  BRAND ENGINEERING & PERSONAL LEADERSHIP / BRAND AUDIT / COMPETITIVE ANALYSIS / BRAND POSITIONING / BRAND EQUITY / BRAND HIERARCHY / BRAND TAGLINE / BRAND IDENTITY / CREATIVE TERRITORY
                 </p>
                 <blockquote className="text-foreground/80 text-sm md:text-base italic font-light mb-8">
                   «You can't build a great building on weak foundations »
