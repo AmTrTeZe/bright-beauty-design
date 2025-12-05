@@ -80,7 +80,7 @@ const Index = () => {
         </main>
 
         {/* Brand Powers Business - bottom right */}
-        <div className="px-6 md:px-10 pb-4 flex justify-end">
+        <div className="fixed bottom-12 right-6 md:right-10 z-40">
           <div className="text-right text-foreground/80 text-xs md:text-sm font-extralight leading-tight tracking-wider">
             <div>BRAND</div>
             <div>POWERS</div>
@@ -89,7 +89,7 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <footer className="px-6 md:px-10 py-4 flex justify-center items-center">
+        <footer className="fixed bottom-0 left-0 right-0 px-6 md:px-10 py-3 flex justify-center items-center bg-transparent">
           <div className="flex items-center gap-3 text-foreground/70 text-[10px] md:text-xs font-normal whitespace-nowrap">
             <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
               Mentions Légales
