@@ -31,29 +31,28 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       }`}
     >
       <div className="flex flex-col items-start px-8 md:px-16">
-        {/* Logo */}
-        <img 
-          src={logoGray} 
-          alt="TRADEMARK" 
-          className={`h-10 md:h-14 lg:h-16 w-auto mb-4 transition-all duration-700 ease-out image-rendering-crisp ${
-            phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-          style={{
-            opacity: phase === 'logo' ? 1 : 1,
-            transform: 'translateY(0)',
-            animation: 'slideUp 0.7s ease-out forwards',
-            imageRendering: 'crisp-edges'
-          }}
-        />
-        
-        {/* Tagline - aligned left with logo */}
-        <p 
-          className={`text-[#849aa9] text-[10px] md:text-xs lg:text-sm font-light tracking-[0.2em] uppercase mb-8 transition-all duration-700 ease-out text-left ${
-            phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
-          }`}
-        >
-          BRAND ENGINEERING & BUSINESS EMPOWERMENT ADVISORY
-        </p>
+        {/* Logo and Tagline container - tagline constrained to logo width */}
+        <div className="flex flex-col items-start">
+          <img 
+            src={logoGray} 
+            alt="TRADEMARK" 
+            className={`h-10 md:h-14 lg:h-16 w-auto mb-4 transition-all duration-700 ease-out ${
+              phase !== 'logo' || phase === 'logo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+            style={{
+              animation: 'slideUp 0.7s ease-out forwards'
+            }}
+          />
+          
+          {/* Tagline - constrained to logo width */}
+          <p 
+            className={`text-[#849aa9] text-[8px] md:text-[10px] lg:text-xs font-light tracking-[0.1em] uppercase mb-8 transition-all duration-700 ease-out text-left max-w-[200px] md:max-w-[280px] lg:max-w-[320px] leading-relaxed ${
+              phase === 'logo' ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+            }`}
+          >
+            BRAND ENGINEERING & BUSINESS EMPOWERMENT ADVISORY
+          </p>
+        </div>
         
         {/* Brand Powers Business - aligned right */}
         <div 
