@@ -117,7 +117,8 @@ const Who = () => {
                 </p>
                 <p>
                   › Speaker & Jury Palmarès<br />
-                  <span className="ml-3">Les Impériales - Casablanca Conference, African Cristal Festival, World Tourism Day - International Day of Happiness</span>
+                  <span className="ml-3">Les Impériales - Casablanca Conference, African Cristal Festival,</span><br />
+                  <span className="ml-3">World Tourism Day - International Day of Happiness</span>
                 </p>
                 <p>
                   › Prix & Distinctions<br />
