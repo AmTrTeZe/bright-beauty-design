@@ -211,9 +211,14 @@ const Where = () => {
           <section aria-label="Nos adresses" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12">
             <div className="max-w-4xl mx-auto">
               {/* TRADEMARK Title */}
-              <h2 className="text-foreground text-xl md:text-2xl tracking-widest uppercase font-light mb-8 text-center">
-                TRADEMARK™
-              </h2>
+              <div className="text-center mb-8">
+                <h2 className="text-foreground text-xl md:text-2xl tracking-widest uppercase font-light mb-2">
+                  TRADEMARK™
+                </h2>
+                <p className="text-foreground text-sm tracking-wider font-light">
+                  Nawfel Bensari | n.bensari@tmconseil.com | +212 (0)674010101
+                </p>
+              </div>
               
               {/* Addresses */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
