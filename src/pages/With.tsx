@@ -90,9 +90,7 @@ const sectors: SectorData[] = [
       { name: "SAHAM ASSISTANCE", bold: false },
       { name: "MONDIAL ASSISTANCE", bold: true },
       { name: "ISAAF ASSISTANCE", bold: false },
-      { name: "SAHAM ASSISTANCE", bold: true },
-      { name: "BEASSUR", bold: false },
-      { name: "MARSH", bold: true },
+      { name: "BEASSUR MARSH", bold: true },
     ],
   },
   {
