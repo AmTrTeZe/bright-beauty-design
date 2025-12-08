@@ -102,7 +102,7 @@ const Index = () => {
           <div className="flex items-center gap-3 text-foreground/70 text-[11px] md:text-sm font-normal whitespace-nowrap">
             <button 
               onClick={switchLanguage}
-              className="hover:opacity-70 transition-opacity"
+              className="hover:opacity-70 transition-opacity font-medium"
             >
               {langButton}
             </button>

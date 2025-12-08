@@ -24,7 +24,7 @@ const InteriorFooter = () => {
         <div className="flex justify-center items-center gap-x-2 text-[hsl(200_20%_50%)] text-[10px] font-light">
           <button 
             onClick={switchLanguage}
-            className="hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-opacity font-medium"
           >
             {langButton}
           </button>
@@ -48,7 +48,7 @@ const InteriorFooter = () => {
         <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[11px] lg:text-sm font-light whitespace-nowrap">
           <button 
             onClick={switchLanguage}
-            className="hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-opacity font-medium"
           >
             {langButton}
           </button>
