@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { X, Settings } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 type CookiePreferences = {
   necessary: boolean;
@@ -17,6 +18,9 @@ const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>(defaultPreferences);
+  const { language } = useLanguage();
+
+  const isEnglish = language === "en";
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
@@ -49,6 +53,42 @@ const CookieConsent = () => {
 
   if (!isVisible) return null;
 
+  // Translations
+  const t = {
+    title: isEnglish ? "Cookie Management" : "Gestion des cookies",
+    description: isEnglish 
+      ? "This site uses cookies to improve your experience, analyze traffic and personalize content. In accordance with Law 09-08 and CNDP recommendations, you can accept, refuse or customize your choices."
+      : "Ce site utilise des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le contenu. Conformément à la loi 09-08 et aux recommandations de la CNDP, vous pouvez accepter, refuser ou personnaliser vos choix.",
+    refuse: isEnglish ? "Refuse" : "Refuser",
+    customize: isEnglish ? "Customize" : "Personnaliser",
+    acceptAll: isEnglish ? "Accept all" : "Accepter tout",
+    customizeTitle: isEnglish ? "Customize your preferences" : "Personnaliser vos préférences",
+    necessaryCookies: isEnglish ? "Strictly necessary cookies" : "Cookies strictement nécessaires",
+    necessaryDesc: isEnglish 
+      ? "Essential for the website to function. They cannot be disabled."
+      : "Indispensables au fonctionnement du site. Ils ne peuvent pas être désactivés.",
+    alwaysActive: isEnglish ? "Always active" : "Toujours actif",
+    analyticsCookies: isEnglish ? "Analytics cookies" : "Cookies analytiques",
+    analyticsDesc: isEnglish 
+      ? "Allow measuring website audience via Google Analytics (anonymized IP). Duration: 13 months maximum."
+      : "Permettent de mesurer l'audience du site via Google Analytics (IP anonymisé). Durée : 13 mois maximum.",
+    functionalCookies: isEnglish ? "Functional and performance cookies" : "Cookies fonctionnels et de performance",
+    functionalDesc: isEnglish 
+      ? "Improve user experience and website performance."
+      : "Améliorent l'expérience utilisateur et les performances du site.",
+    refuseAll: isEnglish ? "Refuse all" : "Tout refuser",
+    saveChoices: isEnglish ? "Save my choices" : "Enregistrer mes choix",
+    moreInfo: isEnglish 
+      ? "For more information, see our"
+      : "Pour plus d'informations, consultez notre",
+    privacyPolicy: isEnglish ? "Privacy Policy" : "Politique de confidentialité",
+    modifyAnytime: isEnglish 
+      ? "You can change your choices at any time."
+      : "Vous pouvez modifier vos choix à tout moment.",
+  };
+
+  const privacyLink = isEnglish ? "/en/legal-notice" : "/mentions-legales";
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-t border-[hsl(200_20%_85%)] shadow-lg">
       <div className="max-w-6xl mx-auto px-6 py-6">
@@ -57,11 +97,10 @@ const CookieConsent = () => {
           <div className="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
             <div className="flex-1">
               <h3 className="text-[hsl(200_20%_30%)] text-sm font-normal tracking-wide uppercase mb-2">
-                Gestion des cookies
+                {t.title}
               </h3>
               <p className="text-[hsl(200_20%_50%)] text-xs md:text-sm leading-relaxed">
-                Ce site utilise des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le contenu. 
-                Conformément à la loi 09-08 et aux recommandations de la CNDP, vous pouvez accepter, refuser ou personnaliser vos choix.
+                {t.description}
               </p>
             </div>
             <div className="flex flex-wrap gap-3 shrink-0">
@@ -69,20 +108,20 @@ const CookieConsent = () => {
                 onClick={refuseAll}
                 className="px-4 py-2 text-xs tracking-wide border border-[hsl(200_20%_75%)] text-[hsl(200_20%_40%)] bg-white hover:bg-[hsl(200_20%_95%)] rounded-md transition-colors"
               >
-                Refuser
+                {t.refuse}
               </button>
               <button
                 onClick={() => setShowSettings(true)}
                 className="px-4 py-2 text-xs tracking-wide border border-[hsl(200_20%_75%)] text-[hsl(200_20%_40%)] bg-white hover:bg-[hsl(200_20%_95%)] rounded-md transition-colors flex items-center gap-1"
               >
                 <Settings className="w-3 h-3" />
-                Personnaliser
+                {t.customize}
               </button>
               <button
                 onClick={acceptAll}
                 className="px-4 py-2 text-xs tracking-wide bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white rounded-md transition-colors"
               >
-                Accepter tout
+                {t.acceptAll}
               </button>
             </div>
           </div>
@@ -91,7 +130,7 @@ const CookieConsent = () => {
           <div className="space-y-6">
             <div className="flex justify-between items-center">
               <h3 className="text-[hsl(200_20%_30%)] text-sm font-normal tracking-wide uppercase">
-                Personnaliser vos préférences
+                {t.customizeTitle}
               </h3>
               <button
                 onClick={() => setShowSettings(false)}
@@ -112,13 +151,13 @@ const CookieConsent = () => {
                 />
                 <div className="flex-1">
                   <p className="text-[hsl(200_20%_35%)] text-sm font-normal">
-                    Cookies strictement nécessaires
+                    {t.necessaryCookies}
                   </p>
                   <p className="text-[hsl(200_20%_60%)] text-xs mt-1">
-                    Indispensables au fonctionnement du site. Ils ne peuvent pas être désactivés.
+                    {t.necessaryDesc}
                   </p>
                 </div>
-                <span className="text-[hsl(200_20%_70%)] text-xs">Toujours actif</span>
+                <span className="text-[hsl(200_20%_70%)] text-xs">{t.alwaysActive}</span>
               </div>
 
               {/* Analytics Cookies */}
@@ -131,10 +170,10 @@ const CookieConsent = () => {
                 />
                 <div className="flex-1">
                   <p className="text-[hsl(200_20%_35%)] text-sm font-normal">
-                    Cookies analytiques
+                    {t.analyticsCookies}
                   </p>
                   <p className="text-[hsl(200_20%_60%)] text-xs mt-1">
-                    Permettent de mesurer l'audience du site via Google Analytics (IP anonymisé). Durée : 13 mois maximum.
+                    {t.analyticsDesc}
                   </p>
                 </div>
               </div>
@@ -149,10 +188,10 @@ const CookieConsent = () => {
                 />
                 <div className="flex-1">
                   <p className="text-[hsl(200_20%_35%)] text-sm font-normal">
-                    Cookies fonctionnels et de performance
+                    {t.functionalCookies}
                   </p>
                   <p className="text-[hsl(200_20%_60%)] text-xs mt-1">
-                    Améliorent l'expérience utilisateur et les performances du site.
+                    {t.functionalDesc}
                   </p>
                 </div>
               </div>
@@ -163,22 +202,22 @@ const CookieConsent = () => {
                 onClick={refuseAll}
                 className="px-4 py-2 text-xs tracking-wide border border-[hsl(200_20%_75%)] text-[hsl(200_20%_40%)] bg-white hover:bg-[hsl(200_20%_95%)] rounded-md transition-colors"
               >
-                Tout refuser
+                {t.refuseAll}
               </button>
               <button
                 onClick={saveCustom}
                 className="px-4 py-2 text-xs tracking-wide bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white rounded-md transition-colors"
               >
-                Enregistrer mes choix
+                {t.saveChoices}
               </button>
             </div>
 
             <p className="text-[hsl(200_20%_70%)] text-[10px] text-center">
-              Pour plus d'informations, consultez notre{" "}
-              <a href="/mentions-legales" className="underline hover:text-[hsl(200_20%_50%)]">
-                Politique de confidentialité
+              {t.moreInfo}{" "}
+              <a href={privacyLink} className="underline hover:text-[hsl(200_20%_50%)]">
+                {t.privacyPolicy}
               </a>
-              . Vous pouvez modifier vos choix à tout moment.
+              . {t.modifyAnytime}
             </p>
           </div>
         )}

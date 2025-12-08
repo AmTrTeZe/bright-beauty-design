@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import logoImage from "@/assets/logo-trademark.png";
 import logoWhiteImage from "@/assets/logo-trademark-white.png";
 import logoGrayImage from "@/assets/logo-trademark-gray.jpeg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface LogoProps {
   className?: string;
@@ -11,7 +12,10 @@ interface LogoProps {
 
 const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  const { language } = useLanguage();
+  
+  const isHomePage = location.pathname === "/" || location.pathname === "/en";
+  const homeLink = language === "en" ? "/en" : "/";
   
   const sizeClasses = {
     sm: "h-7 md:h-[35px]",
@@ -38,7 +42,7 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
   
   return (
     <Link 
-      to="/" 
+      to={homeLink} 
       state={{ skipSplash: true }}
       className={`${className} hover:opacity-80 transition-opacity`}
     >
