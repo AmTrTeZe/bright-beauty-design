@@ -25,11 +25,33 @@ const getLanguageFromPath = (pathname: string): Language | null => {
   return null; // No language prefix means French
 };
 
+// Detect language from country using ipapi.co (free, no registration required)
+const detectCountryLanguage = async (): Promise<Language | null> => {
+  try {
+    const response = await fetch("https://ipapi.co/json/", { 
+      signal: AbortSignal.timeout(3000) // 3 second timeout
+    });
+    if (!response.ok) return null;
+    
+    const data = await response.json();
+    const countryCode = data.country_code;
+    
+    // English-speaking countries
+    const englishCountries = ["US", "GB", "CA", "AU", "NZ", "IE", "ZA", "NG", "GH", "KE"];
+    if (englishCountries.includes(countryCode)) return "en";
+    
+    // French-speaking countries (default to French for Morocco, Ivory Coast, etc.)
+    return "fr";
+  } catch {
+    return null; // Fallback if API fails
+  }
+};
+
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
   
-  // Determine initial language from URL or browser
+  // Determine initial language from URL or localStorage
   const getInitialLanguage = (): Language => {
     const urlLang = getLanguageFromPath(location.pathname);
     if (urlLang) return urlLang;
@@ -38,11 +60,31 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     const savedLang = localStorage.getItem("trademark-language") as Language;
     if (savedLang === "en" || savedLang === "fr") return savedLang;
     
-    // Detect from browser
+    // Fallback to browser language (IP detection will update if different)
     return detectBrowserLanguage() === "en" ? "en" : "fr";
   };
 
   const [language, setLanguageState] = useState<Language>(getInitialLanguage);
+
+  // IP-based country detection on first load (only if no saved preference)
+  useEffect(() => {
+    const savedLang = localStorage.getItem("trademark-language");
+    const urlLang = getLanguageFromPath(location.pathname);
+    
+    // Only detect by IP if no saved preference and no URL language
+    if (!savedLang && !urlLang) {
+      detectCountryLanguage().then((detectedLang) => {
+        if (detectedLang && detectedLang !== language) {
+          setLanguageState(detectedLang);
+          localStorage.setItem("trademark-language", detectedLang);
+          // Navigate to English version if detected
+          if (detectedLang === "en" && location.pathname === "/") {
+            navigate("/en", { replace: true });
+          }
+        }
+      });
+    }
+  }, []); // Only run on mount
 
   // Sync language with URL on navigation
   useEffect(() => {
