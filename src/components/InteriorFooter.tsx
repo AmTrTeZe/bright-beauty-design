@@ -1,13 +1,33 @@
 import Logo from "@/components/Logo";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const InteriorFooter = () => {
   const { language, t, switchLanguage } = useLanguage();
+  const location = useLocation();
+  const navigate = useNavigate();
   
   const mentionsPath = language === "en" ? "/en/legal-notice" : "/mentions-legales";
   const contactPath = language === "en" ? "/en/where" : "/where";
   const langButton = language === "fr" ? "EN" : "FR";
+
+  // Handle language switch specifically for legal pages
+  const handleLanguageSwitch = () => {
+    const currentPath = location.pathname;
+    
+    // Check if we're on legal pages
+    if (currentPath === "/mentions-legales") {
+      navigate("/en/legal-notice", { state: { skipSplash: true } });
+      return;
+    }
+    if (currentPath === "/en/legal-notice") {
+      navigate("/mentions-legales", { state: { skipSplash: true } });
+      return;
+    }
+    
+    // Default behavior for other pages
+    switchLanguage();
+  };
 
   return (
     <footer className="bg-white px-4 md:px-10 py-4 border-t border-[hsl(200_20%_85%)]">
@@ -23,7 +43,7 @@ const InteriorFooter = () => {
         </div>
         <div className="flex justify-center items-center gap-x-2 text-[hsl(200_20%_50%)] text-[10px] font-light">
           <button 
-            onClick={switchLanguage}
+            onClick={handleLanguageSwitch}
             className="hover:opacity-70 transition-opacity font-medium"
           >
             {langButton}
@@ -47,7 +67,7 @@ const InteriorFooter = () => {
         
         <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[11px] lg:text-sm font-light whitespace-nowrap">
           <button 
-            onClick={switchLanguage}
+            onClick={handleLanguageSwitch}
             className="hover:opacity-70 transition-opacity font-medium"
           >
             {langButton}
