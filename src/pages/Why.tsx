@@ -27,7 +27,7 @@ const Why = () => {
           </section>
 
           {/* White Content Block */}
-          <section aria-label="Contexte" className="bg-white px-8 md:px-16 lg:px-24 py-12">
+          <section aria-label="Contexte" className="bg-white px-8 md:px-20 lg:px-32 py-12">
             <div className="max-w-4xl mx-auto">
               <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
                 Dans un monde en constante transformation par une digitalisation accélérée
@@ -41,7 +41,7 @@ const Why = () => {
           </section>
 
           {/* Dark Section */}
-          <section aria-label="Brand Engineering" className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
+          <section aria-label="Brand Engineering" className="gradient-trademark px-8 md:px-20 lg:px-32 py-10">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                 Brand Engineering & Business Empowerment

@@ -79,7 +79,7 @@ const What = () => {
             </div>
 
             {/* Dark Block - full width */}
-            <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
+            <div className="gradient-trademark px-8 md:px-20 lg:px-32 py-10">
               <div className="max-w-4xl mx-auto">
                 <h2 id="brand-fortification-title" className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                   BRAND FORTIFICATION
@@ -121,7 +121,7 @@ const What = () => {
             </div>
 
             {/* Dark Block - full width */}
-            <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
+            <div className="gradient-trademark px-8 md:px-20 lg:px-32 py-10">
               <div className="max-w-4xl mx-auto">
                 <h2 id="market-activation-title" className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                   MARKET ACTIVATION
@@ -163,7 +163,7 @@ const What = () => {
             </div>
 
             {/* Dark Block - full width */}
-            <div className="gradient-trademark px-8 md:px-16 lg:px-24 py-10">
+            <div className="gradient-trademark px-8 md:px-20 lg:px-32 py-10">
               <div className="max-w-4xl mx-auto">
                 <h2 id="business-acceleration-title" className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
                   BUSINESS ACCELERATION
