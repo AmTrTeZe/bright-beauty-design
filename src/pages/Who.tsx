@@ -82,7 +82,7 @@ const Who = () => {
                   <img 
                     src={trademarkLogo} 
                     alt="Logo TRADEMARK™ - Cabinet conseil en Brand Engineering" 
-                    className="h-[26px] md:h-[35px] object-contain -ml-3"
+                    className="h-[29px] md:h-[39px] object-contain -ml-3 -mt-[5px]"
                     loading="lazy"
                   />
                 </div>
