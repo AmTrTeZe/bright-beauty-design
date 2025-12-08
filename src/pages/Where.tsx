@@ -11,19 +11,22 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Download } from "lucide-react";
-
-const contactSchema = z.object({
-  nom: z.string().trim().min(1, "Le nom est requis").max(100),
-  prenom: z.string().trim().min(1, "Le prénom est requis").max(100),
-  email: z.string().trim().email("Email invalide").max(255),
-  message: z.string().trim().min(1, "Le message est requis").max(2000),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Where = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { language, t } = useLanguage();
+  const prefix = language === "en" ? "/en" : "";
+
+  const contactSchema = z.object({
+    nom: z.string().trim().min(1, t("where.form.nomRequired")).max(100),
+    prenom: z.string().trim().min(1, t("where.form.prenomRequired")).max(100),
+    email: z.string().trim().email(t("where.form.emailInvalid")).max(255),
+    message: z.string().trim().min(1, t("where.form.messageRequired")).max(2000),
+  });
+
+  type ContactFormData = z.infer<typeof contactSchema>;
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
@@ -54,8 +57,8 @@ const Where = () => {
 
       if (response.ok) {
         toast({
-          title: "Message envoyé",
-          description: "Nous vous répondrons dans les plus brefs délais.",
+          title: t("where.form.successTitle"),
+          description: t("where.form.successDesc"),
         });
         form.reset();
       } else {
@@ -63,8 +66,8 @@ const Where = () => {
       }
     } catch (error) {
       toast({
-        title: "Erreur",
-        description: "Une erreur est survenue. Veuillez réessayer.",
+        title: t("where.form.errorTitle"),
+        description: t("where.form.errorDesc"),
         variant: "destructive",
       });
     } finally {
@@ -98,13 +101,15 @@ const Where = () => {
     }
   };
 
+  const pdfFile = language === "en" ? "/TRADEMARK_OVERVIEW.pdf" : "/Trademark_En_Bref.pdf";
+
   return (
     <>
       <SEO 
-        title="Where - Information & Contact"
-        description="Contactez TRADEMARK™ - Cabinet conseil en brand engineering. Bureaux à Casablanca (Maroc) et Abidjan (Côte d'Ivoire). Demandez un rendez-vous."
+        title={t("seo.where.title")}
+        description={t("seo.where.description")}
         keywords="contact, Casablanca, Abidjan, Maroc, Côte d'Ivoire, adresse, formulaire contact, TRADEMARK"
-        canonicalUrl="https://trademark.ma/where"
+        canonicalUrl={`https://trademark.ma${prefix}/where`}
         structuredData={structuredData}
       />
       
@@ -126,8 +131,8 @@ const Where = () => {
                         <FormItem>
                           <FormControl>
                             <Input
-                              placeholder="NOM"
-                              aria-label="Nom"
+                              placeholder={t("where.form.nom")}
+                              aria-label={t("where.form.nom")}
                               className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                               {...field}
                             />
@@ -143,8 +148,8 @@ const Where = () => {
                         <FormItem>
                           <FormControl>
                             <Input
-                              placeholder="PRÉNOM"
-                              aria-label="Prénom"
+                              placeholder={t("where.form.prenom")}
+                              aria-label={t("where.form.prenom")}
                               className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                               {...field}
                             />
@@ -163,8 +168,8 @@ const Where = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="EMAIL"
-                            aria-label="Email"
+                            placeholder={t("where.form.email")}
+                            aria-label={t("where.form.email")}
                             className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                             {...field}
                           />
@@ -181,8 +186,8 @@ const Where = () => {
                       <FormItem>
                         <FormControl>
                           <Textarea
-                            placeholder="MESSAGE"
-                            aria-label="Message"
+                            placeholder={t("where.form.message")}
+                            aria-label={t("where.form.message")}
                             rows={5}
                             className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px] focus:placeholder:opacity-0"
                             {...field}
@@ -199,7 +204,7 @@ const Where = () => {
                       disabled={isSubmitting}
                       className="bg-[hsl(200_20%_59%)] hover:bg-[hsl(200_20%_50%)] text-white px-8 py-2 text-sm tracking-widest uppercase font-light rounded-none"
                     >
-                      {isSubmitting ? "ENVOI..." : "ENVOYER"}
+                      {isSubmitting ? t("where.form.submitting") : t("where.form.submit")}
                     </Button>
                   </div>
                 </form>
@@ -224,7 +229,7 @@ const Where = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <address className="text-center not-italic">
                   <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                    Maroc / Siège
+                    {t("where.maroc")}
                   </h3>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                     Villa 25, rue 39, Lotissement Laymoune 2<br />
@@ -233,7 +238,7 @@ const Where = () => {
                 </address>
                 <address className="text-center not-italic">
                   <h3 className="text-foreground text-sm tracking-widest uppercase font-normal mb-4">
-                    Côte d'Ivoire
+                    {t("where.coteDivoire")}
                   </h3>
                   <p className="text-foreground/80 text-sm leading-relaxed font-light tracking-wide">
                     Lot 533, parcelle 222, II Plateaux Vallon<br />
@@ -245,13 +250,13 @@ const Where = () => {
               {/* PDF Download Link */}
               <div className="border-t border-foreground/20 pt-8 text-center">
                 <a
-                  href="/Trademark_En_Bref.pdf"
+                  href={pdfFile}
                   download
                   className="group inline-flex items-center gap-3 text-foreground/80 hover:text-foreground text-base tracking-widest uppercase font-light transition-colors"
-                  aria-label="Télécharger le document TRADEMARK En Bref en PDF"
+                  aria-label={language === "en" ? "Download TRADEMARK Overview PDF" : "Télécharger le document TRADEMARK En Bref en PDF"}
                 >
                   <Download className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1 group-hover:animate-bounce" aria-hidden="true" />
-                  TRADEMARK™ EN BREF
+                  {t("where.download")}
                 </a>
               </div>
             </div>
