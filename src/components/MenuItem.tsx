@@ -49,10 +49,13 @@ const MenuItem = ({ word, secondWord, to }: MenuItemProps) => {
             {word}
           </span>
           
-          {/* Second word - width animates from 0 */}
+          {/* Second word - always visible on mobile, animated on desktop */}
+          <span className="md:hidden text-xl tracking-[0.15em] text-foreground/60 font-extralight whitespace-nowrap pl-3">
+            | {secondWord}
+          </span>
           <div 
             className={`
-              overflow-hidden transition-all duration-300 ease-out
+              hidden md:block overflow-hidden transition-all duration-300 ease-out
               ${isHovered ? 'max-w-[500px] opacity-100' : 'max-w-0 opacity-0'}
             `}
           >
