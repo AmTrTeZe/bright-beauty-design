@@ -23,7 +23,7 @@ const InteriorFooter = () => {
             Contact
           </Link>
           <span className="text-[hsl(200_20%_75%)]">|</span>
-          <span>©TRADEMARK™ 2025</span>
+          <span>©TRADEMARK™</span>
         </div>
         <div className="text-[hsl(200_20%_50%)] text-[8px] font-light">
           Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca
@@ -46,7 +46,7 @@ const InteriorFooter = () => {
           <span className="hidden lg:inline">Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca</span>
           <span className="lg:hidden">Casablanca</span>
           <span className="text-[hsl(200_20%_75%)]">|</span>
-          <span>©TRADEMARK™ 2025</span>
+          <span>©TRADEMARK™</span>
         </div>
         
         <div className="text-right text-[hsl(200_20%_50%)] font-light tracking-wider text-[9px] lg:text-[10px] leading-tight shrink-0">
