@@ -58,7 +58,7 @@ const MentionsLegales = () => {
                   <p><strong>Bureau et correspondance :</strong> Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca, Maroc</p>
                   <p><strong>ICE :</strong> 001563660000042 - <strong>CNSS :</strong> 4266525</p>
                   <p><strong>Registre du Commerce :</strong> Inscrite au RC de Casablanca sous le numéro 315669</p>
-                  <p><strong>Patente / Identifiant fiscal :</strong> PT : 34793631 - ID : 15204322</p>
+                  <p><strong>Patente :</strong> 34793631 - <strong>Identifiant Fiscal :</strong> 15204322</p>
                   <p><strong>Capital social :</strong> 170 000 Dirhams</p>
                   <p><strong>Téléphone :</strong> +212(0)674010101</p>
                   <p><strong>E-mail :</strong> contact@tmconseil.com</p>
