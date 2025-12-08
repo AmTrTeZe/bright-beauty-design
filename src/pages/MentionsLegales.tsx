@@ -23,7 +23,7 @@ const MentionsLegales = () => {
       <div className="min-h-screen flex flex-col bg-white">
         {/* Header with close button */}
         <header className="fixed top-0 left-0 right-0 z-50 bg-white px-6 md:px-10 py-4 flex justify-between items-center border-b border-[hsl(200_20%_90%)]">
-          <Logo size="sm" />
+          <Logo size="sm" variant="gray" />
           
           <h1 className="text-[hsl(200_20%_50%)] text-xs md:text-sm font-light tracking-[0.2em] uppercase">
             Mentions Légales
