@@ -66,7 +66,7 @@ const Index = () => {
         </header>
 
         {/* Menu - centered */}
-        <main className="flex-1 flex items-center justify-center pt-[60px] pb-[140px] md:pt-[15px] md:pb-0">
+        <main className="flex-1 flex items-center justify-center pt-[60px] pb-[155px] md:pt-[15px] md:pb-0">
           <nav aria-label="Navigation principale" className="flex flex-col gap-3 md:gap-4">
             {menuItems.map((item) => (
               <MenuItem
