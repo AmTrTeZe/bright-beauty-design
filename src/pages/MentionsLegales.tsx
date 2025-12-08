@@ -186,8 +186,8 @@ const MentionsLegales = () => {
                 </h3>
                 <p className="mb-4">
                   {language === "en" 
-                    ? "This site uses cookies and similar technologies."
-                    : "Ce site utilise des cookies et technologies similaires."
+                    ? <>This site uses cookies and similar technologies. You can change your preferences by clicking <button onClick={() => { localStorage.removeItem("cookie-consent"); window.location.reload(); }} className="underline hover:no-underline cursor-pointer">here</button>.</>
+                    : <>Ce site utilise des cookies et technologies similaires. Vous pouvez modifier vos préférences en cliquant <button onClick={() => { localStorage.removeItem("cookie-consent"); window.location.reload(); }} className="underline hover:no-underline cursor-pointer">ici</button>.</>
                   }
                 </p>
               </section>
