@@ -14,7 +14,7 @@ const InteriorFooter = () => {
             <div>BUSINESS</div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[hsl(200_20%_50%)] text-[10px] font-light">
+        <div className="flex justify-center items-center gap-x-2 text-[hsl(200_20%_50%)] text-[10px] font-light">
           <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
             MENTIONS LÉGALES
           </Link>
