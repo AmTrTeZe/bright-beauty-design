@@ -92,16 +92,14 @@ const Index = () => {
         <footer className="fixed bottom-0 left-0 right-0 px-6 md:px-10 py-3 flex justify-center items-center bg-transparent">
           <div className="flex items-center gap-3 text-foreground/70 text-[10px] md:text-xs font-normal whitespace-nowrap">
             <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
-              Mentions Légales
+              MENTIONS LÉGALES
             </Link>
             <span className="text-foreground/40">|</span>
             <Link to="/contact" className="hover:opacity-70 transition-opacity">
-              Contact
+              CONTACT
             </Link>
             <span className="text-foreground/40">|</span>
-            <address className="not-italic">Villa 25, rue 39, Lotissement Laymoune 2 20190 Casablanca</address>
-            <span className="text-foreground/40">|</span>
-            <span>©Trademark 2025</span>
+            <span>©Trademark</span>
           </div>
         </footer>
       </div>
