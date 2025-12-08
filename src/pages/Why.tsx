@@ -1,15 +1,19 @@
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
 import SEO from "@/components/SEO";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Why = () => {
+  const { language, t } = useLanguage();
+  const prefix = language === "en" ? "/en" : "";
+
   return (
     <>
       <SEO 
-        title="Why - Purpose"
-        description="Découvrez pourquoi la marque est un capital stratégique de long terme et un actif opérationnel de court terme. TRADEMARK™ - Brand Engineering & Business Empowerment."
+        title={t("seo.why.title")}
+        description={t("seo.why.description")}
         keywords="pourquoi marque, capital stratégique, actif opérationnel, brand engineering, TRADEMARK, stratégie marque"
-        canonicalUrl="https://trademark.ma/why"
+        canonicalUrl={`https://trademark.ma${prefix}/why`}
       />
       
       <div className="min-h-screen flex flex-col bg-white">
@@ -21,7 +25,7 @@ const Why = () => {
           <section aria-label="Citation principale" className="px-8 md:px-20 lg:px-32">
             <div className="gradient-trademark py-4 px-8 max-w-4xl mx-auto flex justify-center">
               <p className="text-foreground text-base md:text-lg font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
-                La marque n'est pas qu'un signe de reconnaissance, c'est un vecteur de sens et un levier de performance.
+                {t("why.quote")}
               </p>
             </div>
           </section>
@@ -30,12 +34,7 @@ const Why = () => {
           <section aria-label="Contexte" className="bg-white px-8 md:px-20 lg:px-32 py-12">
             <div className="max-w-4xl mx-auto">
               <p className="text-[hsl(200_15%_45%)] text-base md:text-lg leading-[1.8] font-light tracking-wide text-justify">
-                Dans un monde en constante transformation par une digitalisation accélérée
-                et des ruptures technologiques répétées, les modèles économiques sont challengés
-                et les modes opératoires reconsidérés, les médias sont saturés et les points de
-                contacts fragmentés, les consommateurs sont sur-sollicités par des messages
-                instantanés et des contenus rapidement renouvelés, la marque devient alors,
-                dans cette instabilité, plus que jamais un pilier, un bouclier, un levier.
+                {t("why.context")}
               </p>
             </div>
           </section>
@@ -44,27 +43,23 @@ const Why = () => {
           <section aria-label="Brand Engineering" className="gradient-trademark px-8 md:px-20 lg:px-32 py-10">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-foreground text-xl md:text-2xl font-normal tracking-wider uppercase mb-6">
-                Brand Engineering & Business Empowerment
+                {t("why.sectionTitle")}
               </h2>
               
               <p className="text-foreground/90 text-base md:text-lg leading-[1.8] font-light tracking-wide text-justify mb-6">
-                TRADEMARK™ constitue le maillon manquant entre les cabinets conseil en stratégie,
-                trop généralistes et les agences de communication, trop opérationnelles.
-                Un concentré d'expertises focalisées sur les champs Brand & Business,
-                avec pour ambition de transformer la marque en un véritable actif immatériel,
-                générateur de soft power pour l'image, créateur de hard power pour le business.
+                {t("why.sectionText")}
               </p>
 
               <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-6">
-                « Before you have a share of market, you must have a share of mind »
+                {t("why.blockquote")}
               </blockquote>
 
               <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
-                Brand Fortification / Market Activation / Business Acceleration
+                {t("why.practices")}
               </p>
 
               <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
-                TRADEMARK™ | BRAND AS ASSET
+                {t("why.tagline")}
               </p>
             </div>
           </section>

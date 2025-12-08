@@ -6,8 +6,12 @@ import havasGroup from "@/assets/havas-group.png";
 import publicisGroupe from "@/assets/publicis-groupe.png";
 import publicisMaroc from "@/assets/publicis-maroc.png";
 import trademarkLogo from "@/assets/logo-trademark-gray.jpeg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Who = () => {
+  const { language, t } = useLanguage();
+  const prefix = language === "en" ? "/en" : "";
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -17,17 +21,19 @@ const Who = () => {
       "@type": "Organization",
       "name": "TRADEMARK"
     },
-    "description": "30 ans d'expérience de consulting en agences de communication & cabinets conseil",
+    "description": language === "fr" 
+      ? "30 ans d'expérience de consulting en agences de communication & cabinets conseil"
+      : "30 years of consulting experience in communication agencies & consulting firms",
     "alumniOf": ["Havas Group", "Publicis Groupe", "Publicis Maroc"]
   };
 
   return (
     <>
       <SEO 
-        title="Who - Expertise"
-        description="Nawfel Bensari, Chairman & Senior Advisor - 30 ans d'expérience en consulting communication. Ex-Président Publicis Maroc, expert en brand engineering."
+        title={t("seo.who.title")}
+        description={t("seo.who.description")}
         keywords="Nawfel Bensari, expertise, consulting, Publicis Maroc, Havas, brand engineering, senior advisor, TRADEMARK"
-        canonicalUrl="https://trademark.ma/who"
+        canonicalUrl={`https://trademark.ma${prefix}/who`}
         structuredData={structuredData}
       />
       
@@ -40,7 +46,7 @@ const Who = () => {
           <section aria-label="Citation principale" className="bg-white flex justify-center px-8 md:px-20 lg:px-32 py-8">
             <div className="gradient-trademark py-4 px-8 max-w-4xl">
               <p className="text-foreground text-base md:text-lg font-normal tracking-wide leading-relaxed uppercase text-justify">
-                30 ANS D'EXPÉRIENCE DE CONSULTING EN AGENCES DE COMMUNICATION & CABINETS CONSEIL
+                {t("who.quote")}
               </p>
             </div>
           </section>
@@ -94,44 +100,43 @@ const Who = () => {
           <section aria-label="Biographie" className="gradient-trademark px-8 md:px-20 lg:px-32 py-12 relative">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-white text-lg md:text-xl tracking-wide mb-8">
-                <span className="font-semibold">NAWFEL BENSARI</span>
-                <span className="font-light"> – CHAIRMAN & SENIOR ADVISOR</span>
+                <span className="font-semibold">{t("who.name")}</span>
+                <span className="font-light"> – {t("who.title")}</span>
               </h2>
               
               <div className="text-white text-base md:text-lg leading-[1.8] font-light tracking-wide space-y-4">
                 <p>
-                  › 10 ans à Paris au siège de leaders mondiaux du conseil en communication<br />
-                  <span className="ml-3">Groupes HAVAS & PUBLICIS</span>
+                  › {t("who.exp1_title")}<br />
+                  <span className="ml-3">{t("who.exp1_detail")}</span>
                 </p>
                 <p>
-                  › 10 ans de Présidence de PUBLICIS MAROC<br />
-                  <span className="ml-3">Filiale du Groupe Publicis au Maroc & Hub régional Afrique francophone</span>
+                  › {t("who.exp2_title")}<br />
+                  <span className="ml-3">{t("who.exp2_detail")}</span>
                 </p>
                 <p>
-                  › 10 ans d'entrepreneuriat : TRADEMARK™<br />
-                  <span className="ml-3">Cabinet Conseil en Brand Engineering & Business Empowerment.</span><br />
-                  <span className="ml-3">Founder, Chairman & Senior Advisor</span>
+                  › {t("who.exp3_title")}<br />
+                  <span className="ml-3">{t("who.exp3_detail1")}</span><br />
+                  <span className="ml-3">{t("who.exp3_detail2")}</span>
                 </p>
                 <p>
-                  › 5 ans en tant que Vice-Président de l'UACC<br />
-                  <span className="ml-3">Union des Agences Conseil en Communication (2 mandats)</span>
+                  › {t("who.exp4_title")}<br />
+                  <span className="ml-3">{t("who.exp4_detail")}</span>
                 </p>
                 <p>
-                  › Speaker & Jury Palmarès<br />
-                  <span className="ml-3">Les Impériales - Casablanca Conference, African Cristal Festival,</span><br />
-                  <span className="ml-3">World Tourism Day - International Day of Happiness</span>
+                  › {t("who.exp5_title")}<br />
+                  <span className="ml-3">{t("who.exp5_detail")}</span>
                 </p>
                 <p>
-                  › Prix & Distinctions<br />
-                  <span className="ml-3">Grand Prix de la Publicité / Air France, ONMT</span><br />
-                  <span className="ml-3">Festival de New York / Club Med</span><br />
-                  <span className="ml-3">African Cristal Festival / Thé Fandy</span><br />
-                  <span className="ml-3">Top Com Award / BMCI Groupe BNP Paribas</span>
+                  › {t("who.exp6_title")}<br />
+                  <span className="ml-3">{t("who.exp6_detail1")}</span><br />
+                  <span className="ml-3">{t("who.exp6_detail2")}</span><br />
+                  <span className="ml-3">{t("who.exp6_detail3")}</span><br />
+                  <span className="ml-3">{t("who.exp6_detail4")}</span>
                 </p>
               </div>
 
               <p className="text-white text-base md:text-lg font-light tracking-wide leading-relaxed mt-12 uppercase">
-                PILOTANT UNE ÉQUIPE DE CONSULTANTS MULTIMÉTIERS EXPÉRIMENTÉS, COMPOSÉE SUR MESURE, SELON LES SPÉCIFICITÉS DE CHAQUE MISSION, À PARTIR D'UN ÉCOSYSTÈME ÉPROUVÉ.
+                {t("who.conclusion")}
               </p>
             </div>
           </section>

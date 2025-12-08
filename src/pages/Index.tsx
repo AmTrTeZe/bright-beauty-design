@@ -1,30 +1,37 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import MenuItem from "@/components/MenuItem";
 import SplashScreen from "@/components/SplashScreen";
 import SEO from "@/components/SEO";
-import { Link } from "react-router-dom";
 import logoSignatureWhite from "@/assets/logo-trademark-home-white.png";
-
-const menuItems = [
-  { word: "WHY", secondWord: "PURPOSE", to: "/why" },
-  { word: "WHAT", secondWord: "PRACTICES", to: "/what" },
-  { word: "HOW", secondWord: "PROCESS", to: "/how" },
-  { word: "WHO", secondWord: "EXPERTISE", to: "/who" },
-  { word: "WITH", secondWord: "EXPERIENCE", to: "/with" },
-  { word: "WHERE", secondWord: "INFORMATION", to: "/where" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
   const location = useLocation();
   const skipSplash = location.state?.skipSplash === true;
   const [showSplash, setShowSplash] = useState(!skipSplash);
+  const { language, t, switchLanguage } = useLanguage();
+
+  const prefix = language === "en" ? "/en" : "";
+  const langButton = language === "fr" ? "EN" : "FR";
+  const mentionsPath = language === "en" ? "/en/legal-notice" : "/mentions-legales";
+
+  const menuItems = [
+    { word: t("menu.why.word"), secondWord: t("menu.why.secondWord"), to: `${prefix}/why` },
+    { word: t("menu.what.word"), secondWord: t("menu.what.secondWord"), to: `${prefix}/what` },
+    { word: t("menu.how.word"), secondWord: t("menu.how.secondWord"), to: `${prefix}/how` },
+    { word: t("menu.who.word"), secondWord: t("menu.who.secondWord"), to: `${prefix}/who` },
+    { word: t("menu.with.word"), secondWord: t("menu.with.secondWord"), to: `${prefix}/with` },
+    { word: t("menu.where.word"), secondWord: t("menu.where.secondWord"), to: `${prefix}/where` },
+  ];
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "TRADEMARK",
-    "description": "Cabinet conseil en ingénierie de marque - Brand Engineering & Business Empowerment Advisory",
+    "description": language === "fr" 
+      ? "Cabinet conseil en ingénierie de marque - Brand Engineering & Business Empowerment Advisory"
+      : "Brand engineering consulting firm - Brand Engineering & Business Empowerment Advisory",
     "url": "https://trademark.ma",
     "logo": "https://trademark.ma/logo-trademark.png",
     "slogan": "Brand Powers Business",
@@ -35,17 +42,19 @@ const Index = () => {
       "postalCode": "20190",
       "addressCountry": "MA"
     },
-    "areaServed": ["Maroc", "Côte d'Ivoire", "Afrique francophone"],
-    "serviceType": ["Brand Engineering", "Business Empowerment", "Conseil en stratégie de marque"]
+    "areaServed": language === "fr" 
+      ? ["Maroc", "Côte d'Ivoire", "Afrique francophone"]
+      : ["Morocco", "Ivory Coast", "French-speaking Africa"],
+    "serviceType": ["Brand Engineering", "Business Empowerment", language === "fr" ? "Conseil en stratégie de marque" : "Brand strategy consulting"]
   };
 
   return (
     <>
       <SEO 
-        title="Accueil - Brand Powers Business"
-        description="TRADEMARK™ - Cabinet conseil en ingénierie de marque. Brand Engineering & Business Empowerment. La marque comme vecteur de sens et levier de performance à Casablanca, Maroc."
+        title={t("seo.home.title")}
+        description={t("seo.home.description")}
         keywords="brand engineering, conseil en marque, stratégie de marque, business empowerment, TRADEMARK, Casablanca, Maroc, Afrique, branding"
-        canonicalUrl="https://trademark.ma/"
+        canonicalUrl={`https://trademark.ma${prefix}/`}
         structuredData={structuredData}
       />
       
@@ -55,7 +64,7 @@ const Index = () => {
         {/* Header */}
         <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 md:p-10 pointer-events-none">
           <div className="pointer-events-auto">
-            <Link to="/" state={{ skipSplash: true }}>
+            <Link to={prefix || "/"} state={{ skipSplash: true }}>
               <img 
                 src={logoSignatureWhite} 
                 alt="TRADEMARK" 
@@ -82,24 +91,31 @@ const Index = () => {
         {/* Brand Powers Business - bottom right */}
         <div className="fixed bottom-12 right-[39px] md:right-[55px] z-40">
           <div className="text-right text-foreground/80 text-[14px] md:text-[16px] font-extralight leading-tight tracking-wider">
-            <div>BRAND</div>
-            <div>POWERS</div>
-            <div>BUSINESS</div>
+            <div>{t("brand.line1")}</div>
+            <div>{t("brand.line2")}</div>
+            <div>{t("brand.line3")}</div>
           </div>
         </div>
 
         {/* Footer */}
         <footer className="fixed bottom-0 left-0 right-0 px-6 md:px-10 py-3 flex justify-center items-center bg-transparent">
           <div className="flex items-center gap-3 text-foreground/70 text-[11px] md:text-sm font-normal whitespace-nowrap">
-            <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
-              MENTIONS LÉGALES
+            <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
+              {t("nav.mentionsLegales")}
             </Link>
             <span className="text-foreground/40">|</span>
-            <Link to="/contact" className="hover:opacity-70 transition-opacity">
-              CONTACT
+            <Link to={`${prefix}/where`} className="hover:opacity-70 transition-opacity">
+              {t("nav.contact")}
             </Link>
             <span className="text-foreground/40">|</span>
-            <span>©TRADEMARK™</span>
+            <button 
+              onClick={switchLanguage}
+              className="hover:opacity-70 transition-opacity font-medium"
+            >
+              {langButton}
+            </button>
+            <span className="text-foreground/40">|</span>
+            <span>{t("nav.copyright")}</span>
           </div>
         </footer>
       </div>
