@@ -32,7 +32,7 @@ const InteriorFooter = () => {
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <button 
             onClick={switchLanguage}
-            className="hover:opacity-70 transition-opacity font-medium"
+            className="hover:opacity-70 transition-opacity"
           >
             {langButton}
           </button>
@@ -56,7 +56,7 @@ const InteriorFooter = () => {
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <button 
             onClick={switchLanguage}
-            className="hover:opacity-70 transition-opacity font-medium"
+            className="hover:opacity-70 transition-opacity"
           >
             {langButton}
           </button>
