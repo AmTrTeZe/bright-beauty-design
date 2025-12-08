@@ -207,7 +207,7 @@ const MentionsLegales = () => {
 
               {/* Date */}
               <p className="text-center text-[hsl(200_20%_60%)] text-sm pt-8 border-t border-[hsl(200_20%_90%)]">
-                Date de dernière mise à jour : 2 décembre 2025
+                Date de dernière mise à jour : décembre 2025
               </p>
             </div>
           </article>
