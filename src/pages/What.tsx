@@ -91,7 +91,7 @@ const What = () => {
                   «You can't build a great building on weak foundations »
                 </blockquote>
                 <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
-                  BRAND ENGINEERING / PERSONAL LEADERSHIP/ COMPETITVE ANALYSIS / BRAND AUDIT / BRAND POSITIONING / BRAND EQUITY / BRAND HIERARCHY / BRAND TAGLINE / BRAND IDENTITY / BRAND CREATIVE TERRITORY.
+                  BRAND ENGINEERING / PERSONAL LEADERSHIP / COMPETITVE ANALYSIS / BRAND AUDIT / BRAND POSITIONING / BRAND EQUITY / BRAND HIERARCHY / BRAND TAGLINE / BRAND IDENTITY / BRAND CREATIVE TERRITORY.
                 </p>
                 <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
                   TRADEMARK™ | BRAND AS FOUNDATION
@@ -133,7 +133,7 @@ const What = () => {
                   «La vision sans action est un rêve. L'action sans vision est un cauchemar.»
                 </blockquote>
                 <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
-                  MARKET INTELLIGENCE / CONSUMER RESEARCH / MARKETING OUTSOURCING/ COMMUNICATION STEERING / CRISIS MANAGEMENT / OMNICHANNEL STRATEGY / STORYTELLING / CONTENT PRODUCING / MEDIA PLANNING, BUYING & AIRING /PR & INFLUENCE/ EVENT / SPACE DESIGN.
+                  MARKET INTELLIGENCE / CONSUMER RESEARCH / MARKETING OUTSOURCING / COMMUNICATION STEERING / CRISIS MANAGEMENT / OMNICHANNEL STRATEGY / BRAND STORYTELLING / CONTENT PRODUCING / MEDIA PLANNING, BUYING & AIRING /PR & INFLUENCE/ EVENT / SPACE DESIGN.
                 </p>
                 <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
                   TRADEMARK™ | BRAND AS EXPERIENCE
