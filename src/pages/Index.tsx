@@ -100,20 +100,20 @@ const Index = () => {
         {/* Footer */}
         <footer className="fixed bottom-0 left-0 right-0 px-6 md:px-10 py-3 flex justify-center items-center bg-transparent">
           <div className="flex items-center gap-3 text-foreground/70 text-[11px] md:text-sm font-normal whitespace-nowrap">
-            <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
-              {t("nav.mentionsLegales")}
-            </Link>
+            <button 
+              onClick={switchLanguage}
+              className="hover:opacity-70 transition-opacity"
+            >
+              {langButton}
+            </button>
             <span className="text-foreground/40">|</span>
             <Link to={`${prefix}/where`} className="hover:opacity-70 transition-opacity">
               {t("nav.contact")}
             </Link>
             <span className="text-foreground/40">|</span>
-            <button 
-              onClick={switchLanguage}
-              className="hover:opacity-70 transition-opacity font-medium"
-            >
-              {langButton}
-            </button>
+            <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
+              {t("nav.mentionsLegales")}
+            </Link>
             <span className="text-foreground/40">|</span>
             <span>{t("nav.copyright")}</span>
           </div>
