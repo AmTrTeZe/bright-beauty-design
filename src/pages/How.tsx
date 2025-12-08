@@ -20,7 +20,7 @@ const How = () => {
           {/* Quote Block */}
           <section aria-label="Citation principale" className="px-8 md:px-20 lg:px-32">
             <div className="gradient-trademark py-4 px-8 max-w-4xl mx-auto flex justify-center">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
+              <p className="text-foreground text-base md:text-lg font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                 Plus qu'une organisation en circuit fermé, un écosystème décloisonné.
               </p>
             </div>
@@ -29,7 +29,7 @@ const How = () => {
           {/* White Content Block */}
           <section aria-label="Problématique" className="bg-white px-8 md:px-20 lg:px-32 py-12">
             <div className="max-w-4xl mx-auto">
-              <p className="text-[hsl(200_15%_45%)] text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify">
+              <p className="text-[hsl(200_15%_45%)] text-base md:text-lg leading-[1.8] font-light tracking-wide text-justify">
                 Par la complexité grandissante des problématiques clients et des spécificités sectorielles et par la distinction croissante des disciplines et la spécialisation des acteurs, il est désormais communément admis qu'aucun cabinet conseil ou agence de communication ne peut disposer en interne du large spectre des compétences et des expertises exigées pour couvrir l'ensemble de la chaine de valeur. Ce qui serait à l'évidence utopique, tant d'un point de vue organisationnel que de coûts de structure. Alors quelle organisation pourrait associer la valeur ajoutée réclamée à la viabilité économique exigée ?
               </p>
             </div>
@@ -38,11 +38,11 @@ const How = () => {
           {/* Dark Section */}
           <section aria-label="Notre approche" className="gradient-trademark px-8 md:px-20 lg:px-32 py-10">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-foreground text-lg md:text-xl font-normal tracking-wider uppercase mb-6">
+              <h2 className="text-foreground text-xl md:text-2xl font-normal tracking-wider uppercase mb-6">
                 INTÉGRATION DES MÉTIERS & HYBRIDATION DES COMPÉTENCES
               </h2>
               
-              <div className="text-foreground/90 text-sm md:text-base leading-[1.8] font-light tracking-wide text-justify mb-6">
+              <div className="text-foreground/90 text-base md:text-lg leading-[1.8] font-light tracking-wide text-justify mb-6">
                 <p className="mb-4">Plutôt qu'une organisation limitée à ses ressources internes, le cabinet TRADEMARK™ est structuré en écosystème ouvert, caractérisé par :</p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex"><span className="mr-3">-</span><span>Une équipe senior de consulting, «TRADEMARK™ TALENT TEAM», configurée sur mesure selon le périmètre de chaque mission,</span></li>
@@ -53,7 +53,7 @@ const How = () => {
                 <p>Soient autant de gages de pertinence, d'excellence et de confiance, d'agilité, de compétitivité et de rentabilité.</p>
               </div>
 
-              <blockquote className="text-foreground/80 text-sm md:text-base italic font-light mb-6">
+              <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-6">
                 « Faire que le résultat soit supérieur à la somme des parties »
               </blockquote>
 
