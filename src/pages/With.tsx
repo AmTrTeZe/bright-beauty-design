@@ -142,10 +142,11 @@ const sectors: SectorData[] = [
   {
     title: "SERVICES, OFFSHORING & CONSULTING",
     brands: [
-      { name: "VEOLIA", bold: true },
-      { name: "INTELCIA", bold: false },
-      { name: "UGGC LAW FIRM", bold: true },
-      { name: "MENAPS", bold: false },
+      { name: "SAHAM GROUP", bold: true },
+      { name: "VEOLIA", bold: false },
+      { name: "INTELCIA", bold: true },
+      { name: "UGGC LAW FIRM", bold: false },
+      { name: "MENAPS", bold: true },
     ],
   },
   {
