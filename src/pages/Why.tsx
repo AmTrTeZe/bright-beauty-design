@@ -59,11 +59,11 @@ const Why = () => {
                 « Before you have a share of market, you must have a share of mind »
               </blockquote>
 
-              <p className="text-foreground/70 text-sm md:text-base tracking-wider uppercase font-light mb-6">
+              <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
                 Brand Fortification / Market Activation / Business Acceleration
               </p>
 
-              <p className="text-foreground/60 text-sm tracking-wider uppercase font-light">
+              <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
                 TRADEMARK™ | BRAND AS ASSET
               </p>
             </div>
