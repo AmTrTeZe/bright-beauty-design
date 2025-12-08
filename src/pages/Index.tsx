@@ -90,7 +90,7 @@ const Index = () => {
 
         {/* Footer */}
         <footer className="fixed bottom-0 left-0 right-0 px-6 md:px-10 py-3 flex justify-center items-center bg-transparent">
-          <div className="flex items-center gap-3 text-foreground/70 text-[10px] md:text-xs font-normal whitespace-nowrap">
+          <div className="flex items-center gap-3 text-foreground/70 text-[11px] md:text-sm font-normal whitespace-nowrap">
             <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
               MENTIONS LÉGALES
             </Link>
