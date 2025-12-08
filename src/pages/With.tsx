@@ -193,7 +193,7 @@ const With = () => {
         {/* Main Content */}
         <main className="flex-1 pt-20">
           {/* Sectors List */}
-          <section aria-label="Références clients par secteur" className="bg-white px-8 md:px-16 lg:px-24 py-12">
+          <section aria-label="Références clients par secteur" className="bg-white px-8 md:px-20 lg:px-32 py-12">
             <div className="max-w-4xl mx-auto space-y-8">
               {sectors.map((sector, index) => (
                 <article key={index}>

@@ -37,7 +37,7 @@ const Who = () => {
         {/* Main Content */}
         <main className="flex-1 pt-20">
           {/* Quote Block - Centered like other pages */}
-          <section aria-label="Citation principale" className="bg-white flex justify-center px-8 md:px-16 lg:px-24 py-8">
+          <section aria-label="Citation principale" className="bg-white flex justify-center px-8 md:px-20 lg:px-32 py-8">
             <div className="gradient-trademark p-8 max-w-4xl">
               <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify">
                 30 ANS D'EXPÉRIENCE DE CONSULTING EN AGENCES DE COMMUNICATION & CABINETS CONSEIL
@@ -46,7 +46,7 @@ const Who = () => {
           </section>
 
           {/* White Content Block - Photo and Logos */}
-          <section aria-label="Parcours professionnel" className="bg-white px-8 md:px-16 lg:px-24 pt-8 pb-0 relative">
+          <section aria-label="Parcours professionnel" className="bg-white px-8 md:px-20 lg:px-32 pt-8 pb-0 relative">
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap items-end justify-center gap-8 md:gap-12">
                 {/* Photo - bottom aligned with start of gray block */}
@@ -91,7 +91,7 @@ const Who = () => {
           </section>
 
           {/* Gray Content Block - Bio */}
-          <section aria-label="Biographie" className="gradient-trademark px-8 md:px-16 lg:px-24 py-12 relative">
+          <section aria-label="Biographie" className="gradient-trademark px-8 md:px-20 lg:px-32 py-12 relative">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-white text-base md:text-lg tracking-wide mb-8">
                 <span className="font-semibold">NAWFEL BENSARI</span>
