@@ -88,10 +88,10 @@ const sectors: SectorData[] = [
       { name: "CNIA SAADA", bold: false },
       { name: "SAHAM ASSURANCE", bold: true },
       { name: "MONDIAL ASSISTANCE", bold: false },
-      { name: "ISAAF ASSISTANCE", bold: false },
-      { name: "SAHAM ASSISTANCE", bold: true },
+      { name: "ISAAF ASSISTANCE", bold: true },
+      { name: "SAHAM ASSISTANCE", bold: false },
       { name: "BEASSUR", bold: false },
-      { name: "MARSH", bold: true },
+      { name: "MARSH", bold: false },
     ],
   },
   {
