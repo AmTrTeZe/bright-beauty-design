@@ -124,7 +124,8 @@ const Who = () => {
                 <p>
                   › Prix & Distinctions<br />
                   <span className="ml-3">Grand Prix de la Publicité / Air France, ONMT</span><br />
-                  <span className="ml-3">Festival de New York / Club Med, Cristal Festival / Thé Fandy</span><br />
+                  <span className="ml-3">Festival de New York / Club Med</span><br />
+                  <span className="ml-3">African Cristal Festival / Thé Fandy</span><br />
                   <span className="ml-3">Top Com Award / BMCI Groupe BNP Paribas</span>
                 </p>
               </div>
