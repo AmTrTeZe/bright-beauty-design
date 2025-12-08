@@ -45,7 +45,7 @@ const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }:
       <div className="flex justify-between items-center">
         <Logo variant="gray" size="sm" />
         <div className="flex items-center gap-3 md:gap-6">
-          <div className="hidden sm:block text-[hsl(200_20%_50%)] font-normal text-xs md:text-base tracking-[0.15em]">
+          <div className="text-[hsl(200_20%_50%)] font-normal text-[10px] sm:text-xs md:text-base tracking-[0.15em]">
             {title} | {subtitle}
           </div>
           <DropdownMenu>
