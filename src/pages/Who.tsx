@@ -39,7 +39,7 @@ const Who = () => {
           {/* Quote Block - Centered like other pages */}
           <section aria-label="Citation principale" className="bg-white flex justify-center px-8 md:px-20 lg:px-32 py-8">
             <div className="gradient-trademark py-4 px-8 max-w-4xl">
-              <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify">
+              <p className="text-foreground text-base md:text-lg font-normal tracking-wide leading-relaxed uppercase text-justify">
                 30 ANS D'EXPÉRIENCE DE CONSULTING EN AGENCES DE COMMUNICATION & CABINETS CONSEIL
               </p>
             </div>
@@ -93,12 +93,12 @@ const Who = () => {
           {/* Gray Content Block - Bio */}
           <section aria-label="Biographie" className="gradient-trademark px-8 md:px-20 lg:px-32 py-12 relative">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-white text-base md:text-lg tracking-wide mb-8">
+              <h2 className="text-white text-lg md:text-xl tracking-wide mb-8">
                 <span className="font-semibold">NAWFEL BENSARI</span>
                 <span className="font-light"> – CHAIRMAN & SENIOR ADVISOR</span>
               </h2>
               
-              <div className="text-white text-sm md:text-base leading-[1.8] font-light tracking-wide space-y-4">
+              <div className="text-white text-base md:text-lg leading-[1.8] font-light tracking-wide space-y-4">
                 <p>
                   › 10 ans à Paris au siège de leaders mondiaux du conseil en communication<br />
                   <span className="ml-3">Groupes HAVAS & PUBLICIS</span>
@@ -128,7 +128,7 @@ const Who = () => {
                 </p>
               </div>
 
-              <p className="text-white text-sm md:text-base font-light tracking-wide leading-relaxed mt-12 uppercase">
+              <p className="text-white text-base md:text-lg font-light tracking-wide leading-relaxed mt-12 uppercase">
                 ACCOMPAGNÉ D'UNE ÉQUIPE DE CONSULTANTS MULTIMÉTIERS EXPÉRIMENTÉS, COMPOSÉE SUR MESURE, SELON LES SPÉCIFICITÉS DE CHAQUE MISSION, À PARTIR D'UN ÉCOSYSTÈME ÉPROUVÉ.
               </p>
             </div>
