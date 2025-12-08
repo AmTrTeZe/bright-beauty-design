@@ -62,7 +62,7 @@ const MentionsLegales = () => {
                   <p><strong>Capital social :</strong> 170 000 Dirhams</p>
                   <p><strong>Téléphone :</strong> +212(0)674010101</p>
                   <p><strong>E-mail :</strong> contact@tmconseil.com</p>
-                  <p><strong>Directeur de la publication :</strong> Monsieur Nawfel Bensari, Gérant</p>
+                  <p><strong>Directeur de la publication :</strong> Nawfel Bensari, Gérant</p>
                 </div>
               </section>
 
