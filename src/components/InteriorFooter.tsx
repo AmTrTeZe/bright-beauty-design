@@ -16,11 +16,11 @@ const InteriorFooter = () => {
         </div>
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[hsl(200_20%_50%)] text-[9px] font-light">
           <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
-            Mentions Légales
+            MENTIONS LÉGALES
           </Link>
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <Link to="/where" className="hover:opacity-70 transition-opacity">
-            Contact
+            CONTACT
           </Link>
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <span>©TRADEMARK™</span>
@@ -36,15 +36,12 @@ const InteriorFooter = () => {
         
         <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[10px] lg:text-xs font-light whitespace-nowrap">
           <Link to="/mentions-legales" className="hover:opacity-70 transition-opacity">
-            Mentions Légales
+            MENTIONS LÉGALES
           </Link>
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <Link to="/where" className="hover:opacity-70 transition-opacity">
-            Contact
+            CONTACT
           </Link>
-          <span className="text-[hsl(200_20%_75%)]">|</span>
-          <span className="hidden lg:inline">Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca</span>
-          <span className="lg:hidden">Casablanca</span>
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <span>©TRADEMARK™</span>
         </div>
