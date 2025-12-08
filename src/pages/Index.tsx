@@ -99,7 +99,7 @@ const Index = () => {
               CONTACT
             </Link>
             <span className="text-foreground/40">|</span>
-            <span>©Trademark</span>
+            <span>©TRADEMARK™</span>
           </div>
         </footer>
       </div>
