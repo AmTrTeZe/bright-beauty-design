@@ -1,6 +1,7 @@
 import InteriorHeader from "@/components/InteriorHeader";
 import InteriorFooter from "@/components/InteriorFooter";
 import SEO from "@/components/SEO";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface SectorData {
   title: string;
@@ -177,13 +178,36 @@ const sectors: SectorData[] = [
 ];
 
 const With = () => {
+  const { language } = useLanguage();
+
+  const content = {
+    fr: {
+      seo: {
+        title: "With - Experience",
+        description: "Découvrez les marques prestigieuses accompagnées par TRADEMARK™: Coca-Cola, L'Oréal, Air France, BMCI, Renault et plus de 100 références dans 13 secteurs d'activité.",
+        keywords: "références clients, portfolio, marques, Coca-Cola, L'Oréal, Air France, BMCI, expérience, TRADEMARK",
+      },
+      ariaLabel: "Références clients par secteur",
+    },
+    en: {
+      seo: {
+        title: "With - Experience",
+        description: "Discover the prestigious brands supported by TRADEMARK™: Coca-Cola, L'Oréal, Air France, BMCI, Renault and more than 100 references in 13 business sectors.",
+        keywords: "client references, portfolio, brands, Coca-Cola, L'Oréal, Air France, BMCI, experience, TRADEMARK",
+      },
+      ariaLabel: "Client references by sector",
+    },
+  };
+
+  const t = content[language];
+
   return (
     <>
       <SEO 
-        title="With - Experience"
-        description="Découvrez les marques prestigieuses accompagnées par TRADEMARK™: Coca-Cola, L'Oréal, Air France, BMCI, Renault et plus de 100 références dans 13 secteurs d'activité."
-        keywords="références clients, portfolio, marques, Coca-Cola, L'Oréal, Air France, BMCI, expérience, TRADEMARK"
-        canonicalUrl="https://trademark.ma/with"
+        title={t.seo.title}
+        description={t.seo.description}
+        keywords={t.seo.keywords}
+        canonicalUrl={`https://trademark.ma${language === 'en' ? '/en' : ''}/with`}
       />
       
       <div className="min-h-screen flex flex-col bg-white">
@@ -192,7 +216,7 @@ const With = () => {
         {/* Main Content */}
         <main className="flex-1 pt-20">
           {/* Sectors List */}
-          <section aria-label="Références clients par secteur" className="bg-white px-8 md:px-20 lg:px-32 py-12">
+          <section aria-label={t.ariaLabel} className="bg-white px-8 md:px-20 lg:px-32 py-12">
             <div className="max-w-4xl mx-auto space-y-8">
               {sectors.map((sector, index) => (
                 <article key={index}>
