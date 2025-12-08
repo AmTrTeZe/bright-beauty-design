@@ -115,7 +115,7 @@ const What = () => {
             <div className="px-8 md:px-20 lg:px-32">
               <div className="bg-white py-12 max-w-4xl mx-auto">
                 <p className="text-[hsl(200_20%_59%)] text-base md:text-lg leading-[1.8] font-light tracking-wide text-justify">
-                  La communication devenue conversation, se caractérise désormais par la spécification des communautés et la qualification des cibles, la démultiplication des canaux et l'obsolescence rapide des contenus, la diversification des métiers et la spécialisation des acteurs. A la manière d'un tableau impressionniste qui se dessine par petites touches successives, la communication risque de se transformer en une succession d'actes isolés déstructurés, risquant de générer une image composite brouillée, source de déconnexion entre réflexion et action, intention et perception.
+                  La communication devenue conversation, se caractérise désormais par la spécification des communautés et la qualification des cibles, la démultiplication des canaux et l'obsolescence rapide des contenus, la diversification des métiers et la spécialisation des acteurs. A la manière d'un tableau impressionniste qui se dessine par petites touches successives, la communication risque de se transformer en une succession d'actes isolés déstructurés, risquant de générer une image composite brouillée, source de déconnexion entre réflexion et action, intention et perception. Un déficit de cohérence qui à l'évidence devient un frein à la performance.
                 </p>
               </div>
             </div>
