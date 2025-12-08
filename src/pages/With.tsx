@@ -112,9 +112,8 @@ const sectors: SectorData[] = [
       { name: "MINISTERE DE L'INDUSTRIE", bold: false },
       { name: "MINISTERE DE LA CULTURE", bold: true },
       { name: "OCP", bold: false },
-      { name: "SAHAM GROUP", bold: true },
-      { name: "TANGER MED", bold: false },
-      { name: "CGEM", bold: true },
+      { name: "TANGER MED", bold: true },
+      { name: "CGEM", bold: false },
     ],
   },
   {
