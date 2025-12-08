@@ -25,10 +25,12 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
   if (isHomePage) {
     return (
       <div className={`${className}`}>
-        <img 
+      <img 
           src={logoSrc} 
           alt="TRADEMARK™" 
           className={`${sizeClasses[size]} w-auto`}
+          loading="eager"
+          decoding="sync"
         />
       </div>
     );
@@ -44,6 +46,8 @@ const Logo = ({ className = "", size = "md", variant = "default" }: LogoProps) =
         src={logoSrc} 
         alt="TRADEMARK™" 
         className={`${sizeClasses[size]} w-auto`}
+        loading="eager"
+        decoding="sync"
       />
     </Link>
   );
