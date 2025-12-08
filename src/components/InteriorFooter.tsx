@@ -22,20 +22,20 @@ const InteriorFooter = () => {
           </div>
         </div>
         <div className="flex justify-center items-center gap-x-2 text-[hsl(200_20%_50%)] text-[10px] font-light">
-          <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
-            {t("nav.mentionsLegales")}
-          </Link>
-          <span className="text-[hsl(200_20%_75%)]">|</span>
-          <Link to={contactPath} className="hover:opacity-70 transition-opacity">
-            {t("nav.contact")}
-          </Link>
-          <span className="text-[hsl(200_20%_75%)]">|</span>
           <button 
             onClick={switchLanguage}
             className="hover:opacity-70 transition-opacity"
           >
             {langButton}
           </button>
+          <span className="text-[hsl(200_20%_75%)]">|</span>
+          <Link to={contactPath} className="hover:opacity-70 transition-opacity">
+            {t("nav.contact")}
+          </Link>
+          <span className="text-[hsl(200_20%_75%)]">|</span>
+          <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
+            {t("nav.mentionsLegales")}
+          </Link>
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <span>{t("nav.copyright")}</span>
         </div>
@@ -46,20 +46,20 @@ const InteriorFooter = () => {
         <Logo size="sm" variant="gray" />
         
         <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[11px] lg:text-sm font-light whitespace-nowrap">
-          <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
-            {t("nav.mentionsLegales")}
-          </Link>
-          <span className="text-[hsl(200_20%_75%)]">|</span>
-          <Link to={contactPath} className="hover:opacity-70 transition-opacity">
-            {t("nav.contact")}
-          </Link>
-          <span className="text-[hsl(200_20%_75%)]">|</span>
           <button 
             onClick={switchLanguage}
             className="hover:opacity-70 transition-opacity"
           >
             {langButton}
           </button>
+          <span className="text-[hsl(200_20%_75%)]">|</span>
+          <Link to={contactPath} className="hover:opacity-70 transition-opacity">
+            {t("nav.contact")}
+          </Link>
+          <span className="text-[hsl(200_20%_75%)]">|</span>
+          <Link to={mentionsPath} className="hover:opacity-70 transition-opacity">
+            {t("nav.mentionsLegales")}
+          </Link>
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <span>{t("nav.copyright")}</span>
         </div>
