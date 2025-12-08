@@ -25,9 +25,6 @@ const InteriorFooter = () => {
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <span>©TRADEMARK™</span>
         </div>
-        <div className="text-[hsl(200_20%_50%)] text-[9px] font-light">
-          Villa 25, rue 39, Lotissement Laymoune 2, 20190 Casablanca
-        </div>
       </div>
       
       {/* Desktop layout */}
