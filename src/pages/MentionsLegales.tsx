@@ -165,7 +165,7 @@ const MentionsLegales = () => {
                   <li><strong>Cookies fonctionnels et de performance :</strong> pour améliorer l'expérience utilisateur.</li>
                 </ul>
                 <p className="mb-4">
-                  Un bandeau de consentement apparaît dès votre arrivée sur le site. Vous pouvez accepter, refuser.
+                  Un bandeau de consentement apparaît dès votre arrivée sur le site. Vous pouvez accepter ou refuser.
                 </p>
                 <p>
                   Pour plus de détails, consultez notre Politique complète des cookies (accessible via le bandeau ou le footer).
