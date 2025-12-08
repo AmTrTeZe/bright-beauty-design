@@ -41,16 +41,16 @@ const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }:
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white px-6 md:px-10 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white px-4 md:px-10 py-3 md:py-4">
       <div className="flex justify-between items-center">
-        <Logo variant="gray" />
-        <div className="flex items-center gap-6">
-          <div className="text-[hsl(200_20%_50%)] font-normal text-sm md:text-base tracking-[0.15em]">
+        <Logo variant="gray" size="sm" />
+        <div className="flex items-center gap-3 md:gap-6">
+          <div className="hidden sm:block text-[hsl(200_20%_50%)] font-normal text-xs md:text-base tracking-[0.15em]">
             {title} | {subtitle}
           </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="text-[hsl(200_20%_50%)] hover:opacity-70 transition-opacity">
+              <button className="text-[hsl(200_20%_50%)] hover:opacity-70 transition-opacity p-1">
                 <Menu className="w-6 h-6" strokeWidth={1.5} />
               </button>
             </DropdownMenuTrigger>
