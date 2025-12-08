@@ -38,7 +38,7 @@ const Who = () => {
         <main className="flex-1 pt-20">
           {/* Quote Block - Centered like other pages */}
           <section aria-label="Citation principale" className="bg-white flex justify-center px-8 md:px-20 lg:px-32 py-8">
-            <div className="gradient-trademark p-8 max-w-4xl">
+            <div className="gradient-trademark py-4 px-8 max-w-4xl">
               <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify">
                 30 ANS D'EXPÉRIENCE DE CONSULTING EN AGENCES DE COMMUNICATION & CABINETS CONSEIL
               </p>

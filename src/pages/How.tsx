@@ -19,7 +19,7 @@ const How = () => {
         <main className="flex-1 pt-20">
           {/* Quote Block */}
           <section aria-label="Citation principale" className="px-8 md:px-20 lg:px-32">
-            <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+            <div className="gradient-trademark py-4 px-8 max-w-4xl mx-auto flex justify-center">
               <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                 Plus qu'une organisation en circuit fermé, un écosystème décloisonné.
               </p>

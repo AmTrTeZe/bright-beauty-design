@@ -62,7 +62,7 @@ const What = () => {
           <section id="brand-fortification" className="scroll-mt-40" aria-labelledby="brand-fortification-title">
             {/* Quote Block - centered */}
             <div className="px-8 md:px-20 lg:px-32">
-              <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+              <div className="gradient-trademark py-4 px-8 max-w-4xl mx-auto flex justify-center">
                 <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                   LA MARQUE EST UN CAPITAL STRATÉGIQUE DE LONG TERME ET UN ACTIF OPÉRATIONNEL DE COURT TERME.
                 </p>
@@ -104,7 +104,7 @@ const What = () => {
           <section id="market-activation" className="scroll-mt-40" aria-labelledby="market-activation-title">
             {/* Quote Block - centered */}
             <div className="px-8 md:px-20 lg:px-32 mt-8">
-              <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+              <div className="gradient-trademark py-4 px-8 max-w-4xl mx-auto flex justify-center">
                 <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                   L'EXPÉRIENCE DE MARQUE SE CONSTRUIT À CHAQUE POINT DE CONTACT.
                 </p>
@@ -146,7 +146,7 @@ const What = () => {
           <section id="business-acceleration" className="scroll-mt-40" aria-labelledby="business-acceleration-title">
             {/* Quote Block - centered */}
             <div className="px-8 md:px-20 lg:px-32 mt-8">
-              <div className="gradient-trademark p-8 max-w-4xl mx-auto flex justify-center">
+              <div className="gradient-trademark py-4 px-8 max-w-4xl mx-auto flex justify-center">
                 <p className="text-foreground text-sm md:text-base font-normal tracking-wide leading-relaxed uppercase text-justify max-w-2xl">
                   L'INNOVATION TRANSFORME LA FORCE CRÉATIVE EN AVANCE COMPÉTITIVE.
                 </p>
