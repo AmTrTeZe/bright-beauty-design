@@ -108,8 +108,9 @@ const Who = () => {
                   <span className="ml-3">Filiale du Groupe Publicis au Maroc & Hub régional Afrique francophone</span>
                 </p>
                 <p>
-                  › 10 ans d'entrepreneuriat : TRADEMARK™ - Brand Engineering<br />
-                  <span className="ml-3">Cabinet conseil en ingénierie de marque. Founder, Chairman & Senior Advisor</span>
+                  › 10 ans d'entrepreneuriat : TRADEMARK™<br />
+                  <span className="ml-3">Cabinet Conseil en Brand Engineering & Business Empowerment.</span><br />
+                  <span className="ml-3">Founder, Chairman & Senior Advisor</span>
                 </p>
                 <p>
                   › 5 ans en tant que Vice-Président de l'UACC<br />
