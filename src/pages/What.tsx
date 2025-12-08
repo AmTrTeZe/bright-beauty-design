@@ -157,7 +157,7 @@ const What = () => {
             <div className="px-8 md:px-20 lg:px-32">
               <div className="bg-white py-12 max-w-4xl mx-auto">
                 <p className="text-[hsl(200_20%_59%)] text-base md:text-lg leading-[1.8] font-light tracking-wide text-justify">
-                  Les outils de mesure de performance du canal digital : data, metrics et autres analytics, permettent désormais de mettre en lumière la corrélation avérée et quantifiée entre créativité et efficacité et ainsi entre Brand Engagement et Business Transformation. Plus qu'un simple exercice graphique esthétique, qui dote l'entreprise d'un signe de reconnaissance et d'un supplément d'âme, la marque est tout autant une expression distinctive d'identité, comme une source productive de performance et de valeur.
+                  Les outils de mesure de performance du canal digital : data, metrics et autres analytics, permettent désormais de mettre en lumière la corrélation avérée et quantifiée entre créativité et efficacité et ainsi entre Brand Engagement et Business Transformation. Plus qu'un simple exercice graphique esthétique, qui dote l'entreprise d'un signe de reconnaissance, la marque est tout autant une expression distinctive d'identité génératrice d'un véritable supplément d'âme, comme une source productive de performance et de valeur.
                 </p>
               </div>
             </div>
