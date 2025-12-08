@@ -5,7 +5,7 @@ import nawfelPhoto from "@/assets/nawfel-bensari-2.png";
 import havasGroup from "@/assets/havas-group.png";
 import publicisGroupe from "@/assets/publicis-groupe.png";
 import publicisMaroc from "@/assets/publicis-maroc.png";
-import trademarkLogo from "@/assets/trademark-logo.png";
+import trademarkLogo from "@/assets/logo-trademark-gray.jpeg";
 
 const Who = () => {
   const structuredData = {
