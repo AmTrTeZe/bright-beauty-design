@@ -57,9 +57,11 @@ const How = () => {
                 « Faire que le résultat soit supérieur à la somme des parties »
               </blockquote>
 
-              <p className="text-foreground/60 text-xs tracking-wider uppercase font-light mb-6">
+              <p className="text-foreground/70 text-sm md:text-base tracking-wider uppercase font-light mb-6">
                 BRAND, MARKETING & COMMUNICATION CENTRED / DIGITAL MINDED & TECH ORIENTED / BUSINESS FOCUSED & VALUE OBSESSED / HYBRID & AGILE / HOLISTIC & INTEGRATED / INNOVATIVE & COMPETITIVE / CLIENT CENTRIC & TAILOR MADE.
-                <br /><br />
+              </p>
+
+              <p className="text-foreground/60 text-sm tracking-wider uppercase font-light">
                 TRADEMARK™ | AS OPEN ADDED VALUE
               </p>
 

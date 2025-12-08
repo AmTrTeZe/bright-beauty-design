@@ -55,14 +55,15 @@ const Why = () => {
                 générateur de soft power pour l'image, créateur de hard power pour le business.
               </p>
 
-              <p className="text-foreground/60 text-xs tracking-wider uppercase font-light pt-4 mb-6">
+              <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-6">
+                « Before you have a share of market, you must have a share of mind »
+              </blockquote>
+
+              <p className="text-foreground/70 text-sm md:text-base tracking-wider uppercase font-light mb-6">
                 Brand Fortification / Market Activation / Business Acceleration
               </p>
 
-              <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-8">
-                « Before you have a share of market, you must have a share of mind »
-              </blockquote>
-              <p className="text-foreground/60 text-xs tracking-wider uppercase font-light">
+              <p className="text-foreground/60 text-sm tracking-wider uppercase font-light">
                 TRADEMARK™ | BRAND AS ASSET
               </p>
             </div>
