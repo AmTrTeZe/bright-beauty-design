@@ -90,10 +90,10 @@ const What = () => {
                 <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-6">
                   «You can't build a great building on weak foundations »
                 </blockquote>
-                <p className="text-foreground/70 text-sm md:text-base tracking-wider uppercase font-light mb-6">
+                <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
                   BRAND ENGINEERING / PERSONAL LEADERSHIP/ COMPETITVE ANALYSIS / BRAND AUDIT / BRAND POSITIONING / BRAND EQUITY / BRAND HIERARCHY / BRAND TAGLINE / BRAND IDENTITY / BRAND CREATIVE TERRITORY.
                 </p>
-                <p className="text-foreground/60 text-sm tracking-wider uppercase font-light">
+                <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
                   TRADEMARK™ | BRAND AS FOUNDATION
                 </p>
               </div>
@@ -132,10 +132,10 @@ const What = () => {
                 <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-6">
                   «La vision sans action est un rêve. L'action sans vision est un cauchemar.»
                 </blockquote>
-                <p className="text-foreground/70 text-sm md:text-base tracking-wider uppercase font-light mb-6">
+                <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
                   MARKET INTELLIGENCE / CONSUMER RESEARCH / MARKETING OUTSOURCING/ COMMUNICATION STEERING / CRISIS MANAGEMENT / OMNICHANNEL STRATEGY / STORYTELLING / CONTENT PRODUCING / MEDIA PLANNING, BUYING & AIRING /PR & INFLUENCE/ EVENT / SPACE DESIGN.
                 </p>
-                <p className="text-foreground/60 text-sm tracking-wider uppercase font-light">
+                <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
                   TRADEMARK™ | BRAND AS EXPERIENCE
                 </p>
               </div>
@@ -174,10 +174,10 @@ const What = () => {
                 <blockquote className="text-foreground/80 text-base md:text-lg italic font-light mb-6">
                   « Pour gagner les clients que l'on n'a jamais eus, il faut faire ce que l'on n'a jamais fait »
                 </blockquote>
-                <p className="text-foreground/70 text-sm md:text-base tracking-wider uppercase font-light mb-6">
+                <p className="text-sm md:text-base tracking-wider uppercase font-light mb-6" style={{ color: '#BFCCD3' }}>
                   DIGITAL MARKETING / e-COMMERCE CONSULTING / TECH PROVIDING
                 </p>
-                <p className="text-foreground/60 text-sm tracking-wider uppercase font-light">
+                <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
                   TRADEMARK™ | BRAND AS LEVERAGE
                 </p>
               </div>
