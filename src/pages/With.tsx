@@ -85,7 +85,7 @@ const sectors: SectorData[] = [
       { name: "CETELEM", bold: false },
       { name: "EQDOM", bold: true },
       { name: "AXA", bold: false },
-      { name: "LA MONDIAL", bold: true },
+      { name: "LA MONDIALE", bold: true },
       { name: "CNIA SAADA", bold: false },
       { name: "SAHAM ASSURANCE", bold: true },
       { name: "SAHAM ASSISTANCE", bold: false },
@@ -242,6 +242,11 @@ const With = () => {
                   </p>
                 </article>
               ))}
+
+              {/* Tagline */}
+              <p className="text-sm md:text-base tracking-wider uppercase font-light mt-8" style={{ color: '#849aa9' }}>
+                TRADEMARK™ | AS CLIENTS TRUST
+              </p>
             </div>
           </section>
         </main>

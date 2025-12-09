@@ -135,8 +135,11 @@ const Who = () => {
                 </p>
               </div>
 
-              <p className="text-white text-base md:text-lg font-light tracking-wide leading-relaxed mt-12 uppercase">
+              <p className="text-sm md:text-base tracking-wider uppercase font-light mt-12 mb-6" style={{ color: '#BFCCD3' }}>
                 {t("who.conclusion")}
+              </p>
+              <p className="text-sm md:text-base tracking-wider uppercase font-light" style={{ color: '#BFCCD3' }}>
+                {t("who.tagline")}
               </p>
             </div>
           </section>
