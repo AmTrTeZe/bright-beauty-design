@@ -101,7 +101,7 @@ const Where = () => {
     }
   };
 
-  const pdfFile = language === "en" ? "/TRADEMARK_OVERVIEW.pdf" : "/Trademark_En_Bref.pdf";
+  const pdfFile = language === "en" ? "/Trademark_At_A_Glance.pdf" : "/Trademark_En_Bref.pdf";
 
   return (
     <>
