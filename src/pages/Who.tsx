@@ -124,7 +124,8 @@ const Who = () => {
                 </p>
                 <p>
                   › {t("who.exp5_title")}<br />
-                  <span className="ml-3">{t("who.exp5_detail")}</span>
+                  <span className="ml-3">Les Impériales - Casablanca Conference, African Cristal Festival,</span><br />
+                  <span className="ml-3">World Tourism Day - International Day of Happiness</span>
                 </p>
                 <p>
                   › {t("who.exp6_title")}<br />
