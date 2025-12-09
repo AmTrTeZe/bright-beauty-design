@@ -13,7 +13,7 @@ const Index = () => {
   const { language, t, switchLanguage } = useLanguage();
 
   const prefix = language === "en" ? "/en" : "";
-  const langButton = language === "fr" ? "EN" : "FR";
+  
   const mentionsPath = language === "en" ? "/en/legal-notice" : "/mentions-legales";
 
   const menuItems = [
@@ -100,12 +100,29 @@ const Index = () => {
         {/* Footer */}
         <footer className="fixed bottom-0 left-0 right-0 px-6 md:px-10 py-3 flex justify-center items-center bg-transparent">
           <div className="flex items-center gap-3 text-foreground/70 text-[11px] md:text-sm font-normal whitespace-nowrap">
-            <button 
-              onClick={switchLanguage}
-              className="hover:opacity-70 transition-opacity font-medium"
-            >
-              {langButton}
-            </button>
+            {language === "fr" ? (
+              <div className="flex items-center gap-1">
+                <span className="underline">FR</span>
+                <span>/</span>
+                <button 
+                  onClick={switchLanguage}
+                  className="hover:font-medium transition-all"
+                >
+                  EN
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-1">
+                <span className="underline">EN</span>
+                <span>/</span>
+                <button 
+                  onClick={switchLanguage}
+                  className="hover:font-medium transition-all"
+                >
+                  FR
+                </button>
+              </div>
+            )}
             <span className="text-foreground/40">|</span>
             <Link to={`${prefix}/where`} className="hover:opacity-70 transition-opacity">
               {t("nav.contact")}
