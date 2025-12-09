@@ -8,14 +8,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const menuItems = [
-  { word: "WHY", to: "/why" },
-  { word: "WHAT", to: "/what" },
-  { word: "HOW", to: "/how" },
-  { word: "WHO", to: "/who" },
-  { word: "WITH", to: "/with" },
-  { word: "WHERE", to: "/where" },
+  { word: "WHY", path: "why" },
+  { word: "WHAT", path: "what" },
+  { word: "HOW", path: "how" },
+  { word: "WHO", path: "who" },
+  { word: "WITH", path: "with" },
+  { word: "WHERE", path: "where" },
 ];
 
 interface AnchorItem {
@@ -32,6 +33,8 @@ interface InteriorHeaderProps {
 
 const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }: InteriorHeaderProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { language } = useLanguage();
+  const prefix = language === "en" ? "/en" : "";
 
   const handleAnchorClick = (id: string) => {
     const element = document.getElementById(id);
@@ -58,7 +61,7 @@ const InteriorHeader = ({ title, subtitle, anchorItems, activeAnchorIndex = 0 }:
               {menuItems.map((item) => (
                 <DropdownMenuItem key={item.word} asChild>
                   <Link 
-                    to={item.to} 
+                    to={`${prefix}/${item.path}`} 
                     className="text-[hsl(200_20%_50%)] font-normal tracking-[0.15em] cursor-pointer"
                   >
                     {item.word}
