@@ -9,7 +9,6 @@ const InteriorFooter = () => {
   
   const mentionsPath = language === "en" ? "/en/legal-notice" : "/mentions-legales";
   const contactPath = language === "en" ? "/en/where" : "/where";
-  const langButton = language === "fr" ? "EN" : "FR";
 
   // Handle language switch specifically for legal pages
   const handleLanguageSwitch = () => {
@@ -42,12 +41,29 @@ const InteriorFooter = () => {
           </div>
         </div>
         <div className="flex justify-center items-center gap-x-2 text-[hsl(200_20%_50%)] text-[10px] font-light">
-          <button 
-            onClick={handleLanguageSwitch}
-            className="hover:opacity-70 transition-opacity font-medium"
-          >
-            {langButton}
-          </button>
+          {language === "fr" ? (
+            <div className="flex items-center gap-1">
+              <span className="underline">FR</span>
+              <span>/</span>
+              <button 
+                onClick={handleLanguageSwitch}
+                className="hover:font-medium transition-all"
+              >
+                EN
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-1">
+              <span className="underline">EN</span>
+              <span>/</span>
+              <button 
+                onClick={handleLanguageSwitch}
+                className="hover:font-medium transition-all"
+              >
+                FR
+              </button>
+            </div>
+          )}
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <Link to={contactPath} className="hover:opacity-70 transition-opacity">
             {t("nav.contact")}
@@ -66,12 +82,29 @@ const InteriorFooter = () => {
         <Logo size="sm" variant="gray" />
         
         <div className="flex items-center gap-3 text-[hsl(200_20%_50%)] text-[11px] lg:text-sm font-light whitespace-nowrap">
-          <button 
-            onClick={handleLanguageSwitch}
-            className="hover:opacity-70 transition-opacity font-medium"
-          >
-            {langButton}
-          </button>
+          {language === "fr" ? (
+            <div className="flex items-center gap-1">
+              <span className="underline">FR</span>
+              <span>/</span>
+              <button 
+                onClick={handleLanguageSwitch}
+                className="hover:font-medium transition-all"
+              >
+                EN
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-1">
+              <span className="underline">EN</span>
+              <span>/</span>
+              <button 
+                onClick={handleLanguageSwitch}
+                className="hover:font-medium transition-all"
+              >
+                FR
+              </button>
+            </div>
+          )}
           <span className="text-[hsl(200_20%_75%)]">|</span>
           <Link to={contactPath} className="hover:opacity-70 transition-opacity">
             {t("nav.contact")}
