@@ -412,7 +412,7 @@ const translations: Record<Language, any> = {
       },
       maroc: "Morocco / Headquarters",
       coteDivoire: "Ivory Coast",
-      download: "TRADEMARK™ OVERVIEW",
+      download: "TRADEMARK™ AT A GLANCE",
     },
     mentionsLegales: {
       title: "Legal Notice",
