@@ -420,7 +420,7 @@ const translations: Record<Language, any> = {
       title: "Legal Notice",
       subtitle: "Legal Notice & Privacy Policy",
       closeLabel: "Close and return to home",
-      lastUpdate: "Last updated: December 2025",
+      lastUpdate: "Last update: December 2025",
     },
   },
 };
