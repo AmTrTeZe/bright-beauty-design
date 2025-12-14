@@ -96,9 +96,10 @@ Date: " . date('d/m/Y H:i:s') . "
 IP: " . $_SERVER['REMOTE_ADDR'] . "
 ";
 
-$headers = "From: $email\r\n";
+$from_email = "contact@tmconseil.com";
+$headers = "From: $from_email\r\n";
 $headers .= "Reply-To: $email\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
+$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 // Send email
