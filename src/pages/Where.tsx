@@ -133,7 +133,7 @@ const Where = () => {
                             <Input
                               placeholder={t("where.form.nom")}
                               aria-label={t("where.form.nom")}
-                              className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
+                              className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase text-black placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                               {...field}
                             />
                           </FormControl>
@@ -150,7 +150,7 @@ const Where = () => {
                             <Input
                               placeholder={t("where.form.prenom")}
                               aria-label={t("where.form.prenom")}
-                              className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
+                              className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase text-black placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                               {...field}
                             />
                           </FormControl>
@@ -170,7 +170,7 @@ const Where = () => {
                             type="email"
                             placeholder={t("where.form.email")}
                             aria-label={t("where.form.email")}
-                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
+                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase text-black placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] focus:placeholder:opacity-0"
                             {...field}
                           />
                         </FormControl>
@@ -189,7 +189,7 @@ const Where = () => {
                             placeholder={t("where.form.message")}
                             aria-label={t("where.form.message")}
                             rows={5}
-                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px] focus:placeholder:opacity-0"
+                            className="border-0 border-b border-[hsl(200_15%_75%)] rounded-none bg-transparent px-0 py-3 text-sm tracking-wider uppercase text-black placeholder:text-[hsl(200_15%_65%)] placeholder:font-light focus-visible:ring-0 focus-visible:border-[hsl(200_20%_59%)] resize-none min-h-[120px] focus:placeholder:opacity-0"
                             {...field}
                           />
                         </FormControl>
