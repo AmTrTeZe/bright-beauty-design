@@ -41,8 +41,7 @@ const Where = () => {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      // Replace with your PHP script URL
-      const response = await fetch("https://votre-serveur.com/contact.php", {
+      const response = await fetch("https://www.tmconseil.com/contact.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
