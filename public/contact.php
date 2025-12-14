@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // Configuration
-$to_email = "nbensari@gmail.com";
+$to_email = "n.bensari@gmail.com";
 $subject = "TRADEMARK - Nouveau message de contact";
 
 // Only accept POST requests
